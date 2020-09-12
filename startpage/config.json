@@ -1,0 +1,95 @@
+{
+  "disable24Hour": false,
+  "disableDate": false,
+  "disableMessage": false,
+  "disableSearchBar": false,
+  "disableWeather": true,
+  "searchEngine": "Google",
+  "squares": [
+    {
+      "links": [
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://youtube.com/"
+        },
+        {
+          "name": "lbry",
+          "url": "https://lbry.tv"
+        },
+        {
+          "name": "YoutubeMusic",
+          "url": "https://music.youtube.com"
+        }
+      ],
+      "name": "media"
+    },
+    {
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/rusty-electron"
+        },
+        {
+          "name": "Heroku",
+          "url": "http://heroku.com/"
+        },
+        {
+          "name": "localhost",
+          "url": "http://localhost:8000/"
+        }
+      ],
+      "name": "work"
+    },
+    {
+      "links": [
+        {
+          "name": "Reddit",
+          "url": "https://reddit.com"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com"
+        },
+        {
+          "name": "r/dankmemes",
+          "url": "https://www.reddit.com/r/dankmemes/"
+        },
+        {
+          "name": "r/vim",
+          "url": "https://www.reddit.com/r/vim"
+        }
+      ],
+      "name": "social"
+    },
+    {
+      "links": [
+        {
+          "name": "blog",
+          "url": "http://rustyelectron.live"
+        },
+        {
+          "name": "gmail",
+          "url": "http://gmail.com/"
+        },
+        {
+          "name": "torrent",
+          "url": "http://1337x.gd"
+        },
+        {
+          "name": "Material Colors",
+          "url": "http://materialuicolors.co/"
+        }
+      ],
+      "name": "Others"
+    }
+  ],
+  "user": "Pritom",
+  "weatherConf": {
+    "location": "Guwahati India",
+    "unit": "cel"
+  }
+}
