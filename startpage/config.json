@@ -2,7 +2,7 @@
   "disable24Hour": false,
   "disableDate": false,
   "disableMessage": false,
-  "disableSearchBar": false,
+  "disableSearchBar": true,
   "disableWeather": true,
   "searchEngine": "Google",
   "squares": [
@@ -87,6 +87,7 @@
       "name": "Others"
     }
   ],
+  "timeZone": "India/Calcutta",
   "user": "Pritom",
   "weatherConf": {
     "location": "Guwahati India",
