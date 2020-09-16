@@ -31,7 +31,7 @@
       "links": [
         {
           "name": "Github",
-          "url": "https://github.com/rusty-electron"
+          "url": "https://github.com"
         },
         {
           "name": "Heroku",
@@ -80,8 +80,8 @@
           "url": "http://1337x.gd"
         },
         {
-          "name": "Material Colors",
-          "url": "http://materialuicolors.co/"
+          "name": "covidstats",
+          "url": "http://covid19india.org/"
         }
       ],
       "name": "Others"
