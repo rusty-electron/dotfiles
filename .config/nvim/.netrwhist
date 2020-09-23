@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/pritom/myfiles/dev/opencv-test'
+let g:netrw_dirhist_9='/home/pritom/.config/nvim'
+let g:netrw_dirhist_8='/home/pritom/.config'
+let g:netrw_dirhist_7='/home/pritom'
+let g:netrw_dirhist_6='/home/pritom/myfiles'
+let g:netrw_dirhist_5='/home/pritom/myfiles/dev'
+let g:netrw_dirhist_4='/home/pritom/myfiles/dev/opencv-test'
+let g:netrw_dirhist_3='/home/pritom'
+let g:netrw_dirhist_2='/home/pritom/myfiles/projects/test'
+let g:netrw_dirhist_1='/home/pritom/.config/i3'
