@@ -8,7 +8,15 @@ Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'voldikss/vim-floaterm'
 call plug#end()
+
+" config for buffers
+nmap <leader>T :enew<cr>
+nmap <leader>l :bn<CR>
+nmap <leader>h :bp<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>bl :buffers<cr>:b<space>
 
 " run python scripts
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
@@ -41,6 +49,19 @@ autocmd BufWritePre * %s/\s\+$//e
 
 """ For Plugins
 
+" floaterm configs
+let g:floaterm_winblend = 8
+
+nnoremap   <silent>   <leader>U    :FloatermNew<CR>
+tnoremap   <silent>   <leader>U    <C-\><C-n>:FloatermNew<CR>
+nnoremap   <silent>   <leader>E    :FloatermNew nnn<CR>
+tnoremap   <silent>   <leader>E    <C-\><C-n>:FloatermNew nnn<CR>
+nnoremap   <silent>   <leader>n    :FloatermNext<CR>
+tnoremap   <silent>   <leader>n   <C-\><C-n>:FloatermNext<CR>
+nnoremap   <silent>   <leader>uu   :FloatermToggle<CR>
+tnoremap   <silent>   <leader>uu   <C-\><C-n>:FloatermToggle<CR>
+tnoremap   <silent>   <leader>uk   <C-\><C-n>:FloatermKill<CR>
+
 " hexokinase configs
 set termguicolors
 noremap <buffer> <F11> :HexokinaseToggle<CR>
@@ -63,6 +84,8 @@ let g:Hexokinase_ftEnabled = ['css', 'html', 'javascript']
 
 " vim airline
 let g:airline_theme = 'codedark'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Goyo
 noremap <leader>g :Goyo<CR>
@@ -101,7 +124,7 @@ function! NetrwMappings()
     " Hack fix to make ctrl-l work properly
     noremap <buffer> <A-l> <C-w>l
     noremap <buffer> <C-l> <C-w>l
-    noremap <silent> <A-f> :call ToggleNetrw()<CR>
+    noremap <silent> <A-f> :call ToggleNetrw()<CR><C-w>l
     noremap <buffer> V :call OpenToRight()<cr>
     noremap <buffer> H :call OpenBelow()<cr>
     noremap <buffer> T :call OpenTab()<cr>
@@ -256,8 +279,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>fc  <Plug>(coc-format-selected)
+nmap <leader>fc  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
