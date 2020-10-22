@@ -1,0 +1,6 @@
+#!/bin/sh
+
+[ $# -lt 1 ] && zip="$(ls *.zip|fzf)" ||zip="$1"
+[[ "$zip" == "" ]] && exit
+7z x $zip $(7z l -ba $zip|awk '{print $6}'|fzf -m|tr "\n" " ")
+

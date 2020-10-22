@@ -1,0 +1,13 @@
+#!/bin/sh
+mw sync
+
+for account in $(ls ~/.local/share/mail)
+do
+	newcount=$(find ~/.local/share/mail/"$account"/INBOX/new/ -type f -newer ~/.config/mutt/synclastrun 2> /dev/null | wc -l)
+	if [ "$newcount" -gt "0" ]
+	then
+		notify-send "neomutt" "You have $newcount new mail(s)"
+	fi
+done
+
+echo "1" > ~/.config/mutt/synclastrun

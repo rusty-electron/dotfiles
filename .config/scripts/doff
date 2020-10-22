@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# this script can be used to shutdown, reboot, hibernate or suspend a computer
+
+choice=$(printf "shutdown\nreboot\nhibernate\nsuspend" | dmenu -sb '#990000' -i -p "Choice: ")
+case "$choice" in
+	shutdown) poweroff;;
+	reboot) reboot;;
+	hibernate) systemctl hibernate;;
+	suspend) systemctl suspend;;
+esac	

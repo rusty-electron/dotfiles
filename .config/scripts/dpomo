@@ -1,0 +1,55 @@
+#!/bin/sh
+
+# pomodoro timer script that uses '$pomopath'
+pomopath=~/.local/bin/pomo
+
+# check current status of pomo timer to generate menu
+checkpomo(){
+	raw=$($pomopath clock)
+	if [[ $raw =~ 'W' || $raw =~ 'B' ]]; then
+		a="stop"
+	else
+		a="start"
+	fi
+
+	if [[ $raw =~ 'P' ]]; then
+		b="resume"
+	else
+		b="pause"
+	fi
+}
+checkpomo
+
+ptime(){
+	$pomopath clock | sed 's/ //g; s/P/(Paused) /g; s/W/<i>Working<\/i> - /g; s/B/<i>Break<\/i> /g;'
+}
+
+# starts pomo timer and makes sure that only one notify process is running
+startpomo(){
+	$pomopath start
+	notify-send -c "pomo" "pomo" "Timer started\n$(ptime)"
+	if [ $(ps aux | grep "pomo notify" | wc -l) -le 1 ] 
+	then 
+		$pomopath notify &
+	fi
+}
+
+# generate only 'start' option if not running previously
+if [[ $a =~ "start" && ! $raw =~ "B" ]]; then 
+	choice=$(printf "$a" | dmenu -sb '#008891' -i -p "Pomodoro prompt: ")
+elif [[ $raw =~ "B" ]]; then
+	choice=$(printf "$a\n$b\nshow\nskip break" | dmenu -sb '#008891' -i -p "Pomodoro prompt: ")
+else
+	choice=$(printf "$a\n$b\nshow" | dmenu -sb '#008891' -i -p "Pomodoro prompt: ")
+fi
+
+# case control
+case "$choice" in
+	start) startpomo ;;
+	resume) $pomopath pause && notify-send -c "pomo" "pomo" "Timer resumed \n$(ptime)" ;;
+ 	pause) $pomopath pause && notify-send -c "pomo" "pomo" "Timer paused \n$(ptime)" ;;
+
+	show) notify-send -c "pomo" "pomo" "Timer status\n$(ptime)";;
+	stop) $pomopath stop && notify-send -c "pomo" "pomo" "Timer stopped \n$(ptime)" ;;
+	skip\ break) $pomopath stop; killall "pomo"; $pomopath start; notify-send -c "pomo" "pomo" "Break Skipped \n$(ptime)";;
+esac	

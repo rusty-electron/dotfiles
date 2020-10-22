@@ -1,7 +1,7 @@
 let mapleader=" "
 
 " muh plugins
-call plug#begin('~/local/share/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'tomasiser/vim-code-dark'
 Plug 'junegunn/goyo.vim'
@@ -9,10 +9,16 @@ Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
+" floaterm for python console
+set splitbelow
+" autocmd FileType python map <buffer> <F10> :w<CR> :split term://python %<CR>i
+autocmd FileType python map <buffer> <F10> :w<CR> :cd %:p:h <CR> :FloatermNew python %<CR>
+
 " config for buffers
-nmap <leader>T :enew<cr>
+nmap <leader>t :enew<cr>
 nmap <leader>l :bn<CR>
 nmap <leader>h :bp<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
@@ -52,15 +58,15 @@ autocmd BufWritePre * %s/\s\+$//e
 " floaterm configs
 let g:floaterm_winblend = 8
 
-nnoremap   <silent>   <leader>U    :FloatermNew<CR>
-tnoremap   <silent>   <leader>U    <C-\><C-n>:FloatermNew<CR>
+nnoremap   <silent>   <leader>T    :FloatermNew<CR>
+tnoremap   <silent>   <leader>T    <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <leader>E    :FloatermNew nnn<CR>
 tnoremap   <silent>   <leader>E    <C-\><C-n>:FloatermNew nnn<CR>
 nnoremap   <silent>   <leader>n    :FloatermNext<CR>
 tnoremap   <silent>   <leader>n   <C-\><C-n>:FloatermNext<CR>
-nnoremap   <silent>   <leader>uu   :FloatermToggle<CR>
-tnoremap   <silent>   <leader>uu   <C-\><C-n>:FloatermToggle<CR>
-tnoremap   <silent>   <leader>uk   <C-\><C-n>:FloatermKill<CR>
+nnoremap   <silent>   <leader>tt   :FloatermToggle<CR>
+tnoremap   <silent>   <leader>tt   <C-\><C-n>:FloatermToggle<CR>
+tnoremap   <silent>   <leader>tk   <C-\><C-n>:FloatermKill<CR>
 
 " hexokinase configs
 set termguicolors

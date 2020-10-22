@@ -1,0 +1,5 @@
+#!/bin/sh
+
+file=$(find ~/ -type f | fzf | sed 's~/[^/]*$~/~')
+[[ "$file" == "" ]] && exit
+cd $file

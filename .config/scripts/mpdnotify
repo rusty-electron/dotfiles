@@ -1,0 +1,3 @@
+#!/bin/sh
+
+notify-send -c mpd "Now Playing" "$(mpc status | awk 'FNR==2{print $1}') <i>$(mpc current)<\/i>"
