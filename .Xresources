@@ -1,0 +1,61 @@
+! font settings
+URxvt.font: xft:Hack:size=12
+URxvt.letterSpace: 0
+
+! perl extensions
+URxvt.perl-ext-common: clipboard,resize-font
+
+! using clipboard functionalities
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c:clipboard:copy
+URxvt.keysym.M-v:clipboard:paste
+
+! terminal colours
+! special
+*.foreground:   #c7ccd1
+*.background:   #1c2023
+*.cursorColor:  #c7ccd1
+
+! black
+*.color0:       #1c2023
+*.color8:       #747c84
+
+! red
+*.color1:       #c7ae95
+*.color9:       #c7ae95
+
+! green
+*.color2:       #95c7ae
+*.color10:      #95c7ae
+
+! yellow
+*.color3:       #aec795
+*.color11:      #aec795
+
+! blue
+*.color4:       #ae95c7
+*.color12:      #ae95c7
+
+! magenta
+*.color5:       #c795ae
+*.color13:      #c795ae
+
+! cyan
+*.color6:       #95aec7
+*.color14:      #95aec7
+
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5
+
+! remove ugly scrollbar on left
+URxvt.scrollBar: false
+
+! disable a default key-binding for font-resize plugin to work
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.C-Down: resize-font:smaller
+URxvt.keysym.C-Up: resize-font:bigger
+
+Xcursor.theme: volantes_cursors

@@ -12,13 +12,33 @@ Plug 'voldikss/vim-floaterm'
 Plug 'mattn/emmet-vim'
 call plug#end()
 
+" fzf-vim
+set rtp+=/bin/
+noremap <leader>ff :FZF<cr>
+
+" Replace all is aliased to S.
+nnoremap S :%s//g<Left><Left>
+
+" Open corresponding .pdf/.html or preview
+map <leader>0 :!opout <c-r>%<CR>
+
+" compile, make, create, do shit!
+map <leader>m :w! \| !compiler "<c-r>%"
+
+" disabling auto-comment by default
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+""" external copy-paste
+noremap <leader>v :-1r !xclip -o -sel clip<CR>
+noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
+
 " floaterm for python console
-set splitbelow
+" set splitbelow
 " autocmd FileType python map <buffer> <F10> :w<CR> :split term://python %<CR>i
 autocmd FileType python map <buffer> <F10> :w<CR> :cd %:p:h <CR> :FloatermNew python %<CR>
 
 " config for buffers
-nmap <leader>t :enew<cr>
+nmap <leader>t :enew
 nmap <leader>l :bn<CR>
 nmap <leader>h :bp<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
@@ -40,8 +60,8 @@ map <A-k> <C-w>k
 map <A-l> <C-w>l
 
 " Enable and disable auto comment
-map <leader>c :setlocal formatoptions-=cro<CR>
-map <leader>C :setlocal formatoptions=cro<CR>
+" map <leader>c :setlocal formatoptions-=cro<CR>
+" map <leader>C :setlocal formatoptions=cro<CR>
 
 " Enable spell checking, s for spell check
 map <leader>s :setlocal spell! spelllang=en_us<CR>
@@ -50,8 +70,9 @@ map <leader>s :setlocal spell! spelllang=en_us<CR>
 map <leader>i :setlocal autoindent<CR>
 map <leader>I :setlocal noautoindent<CR>
 
-" Remove trailing whitespace on save
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
 autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\n\+\%$//e
 
 """ For Plugins
 
@@ -178,7 +199,7 @@ augroup ProjectDrawer
 augroup END
 
 "Move cursor to new window on opening vim
-  autocmd VimEnter * wincmd l
+  autocmd VimEnter * wincmd l | :call ToggleNetrw()
 
 let g:NetrwIsOpen=0
 

@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# support for some html strings
-$string1 = "<span color="red">"
-$endstring = "</span>"
-
 # Displays todays precipication chance (☔) and daily low (🥶) and high (🌞).
 # Usually intended for the statusbar.
 

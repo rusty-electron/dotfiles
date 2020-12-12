@@ -193,10 +193,12 @@ visualizer_look = ●▮
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 #
 #current_item_prefix = $(yellow)$r
+current_item_prefix = $(cyan)$r
 #
 #current_item_suffix = $/r$(end)
 #
 #current_item_inactive_column_prefix = $(white)$r
+current_item_inactive_column_prefix = $(magenta)$r
 #
 #current_item_inactive_column_suffix = $/r$(end)
 #
@@ -270,7 +272,7 @@ visualizer_look = ●▮
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-#execute_on_song_change = ""
+execute_on_song_change = mpdnotify
 #
 ##
 ## Note: Custom command that will be executed each time player state
@@ -523,6 +525,7 @@ external_editor = vim
 #state_flags_color = default:b
 #
 #main_window_color = yellow
+#main_window_color = white 
 #
 #color1 = white
 #

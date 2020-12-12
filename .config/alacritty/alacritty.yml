@@ -96,7 +96,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Anonymous Pro for Powerline
+    # family: Ubuntu Mono Derivative Powerline
+    family: Roboto Mono for Powerline
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -135,13 +136,13 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 8.0
+  size: 7.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 2
+    y: 4
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -219,64 +220,62 @@ font:
   #    background: CellForeground
   #    foreground: CellBackground
 
-# # Colors (Gruvbox dark)
-# colors:
-#   # Default colors
-#   primary:
-#     # hard contrast: background = '#1d2021'
-#     background: '#282828'
-#     # soft contrast: background = '#32302f'
-#     foreground: '#ebdbb2'
-
-#   # Normal colors
-#   normal:
-#     black:   '#282828'
-#     red:     '#cc241d'
-#     green:   '#98971a'
-#     yellow:  '#d79921'
-#     blue:    '#458588'
-#     magenta: '#b16286'
-#     cyan:    '#689d6a'
-#     white:   '#a89984'
-
-#   # Bright colors
-#   bright:
-#     black:   '#928374'
-#     red:     '#fb4934'
-#     green:   '#b8bb26'
-#     yellow:  '#fabd2f'
-#     blue:    '#83a598'
-#     magenta: '#d3869b'
-#     cyan:    '#8ec07c'
-#     white:   '#ebdbb2'
-
+# Colors (Iceberg Dark)
 colors:
   # Default colors
   primary:
-    background: '0x1c2023'
-    foreground: '0xc7ccd1'
+    background: '#161821'
+    foreground: '#d2d4de'
 
   # Normal colors
   normal:
-    black:   '0x1c2023'
-    red:     '0xc7ae95'
-    green:   '0x95c7ae'
-    yellow:  '0xaec795'
-    blue:    '0xae95c7'
-    magenta: '0xc795ae'
-    cyan:    '0x95aec7'
-    white:   '0xc7ccd1'
+    black:   '#161821'
+    red:     '#e27878'
+    green:   '#b4be82'
+    yellow:  '#e2a478'
+    blue:    '#84a0c6'
+    magenta: '#a093c7'
+    cyan:    '#89b8c2'
+    white:   '#c6c8d1'
 
   # Bright colors
   bright:
-    black:   '0x747c84'
-    red:     '0xc7ae95'
-    green:   '0x95c7ae'
-    yellow:  '0xaec795'
-    blue:    '0xae95c7'
-    magenta: '0xc795ae'
-    cyan:    '0x95aec7'
-    white:   '0xf3f4f5'
+    black:   '#6b7089'
+    red:     '#e98989'
+    green:   '#c0ca8e'
+    yellow:  '#e9b189'
+    blue:    '#91acd1'
+    magenta: '#ada0d3'
+    cyan:    '#95c4ce'
+    white:   '#d2d4de'
+
+#colors:
+#  # Default colors
+#  primary:
+#    background: '0x1c2023'
+#    foreground: '0xc7ccd1'
+#
+#  # Normal colors
+#  normal:
+#    black:   '0x1c2023'
+#    red:     '0xc7ae95'
+#    green:   '0x95c7ae'
+#    yellow:  '0xaec795'
+#    blue:    '0xae95c7'
+#    magenta: '0xc795ae'
+#    cyan:    '0x95aec7'
+#    white:   '0xc7ccd1'
+#
+#  # Bright colors
+#  bright:
+#    black:   '0x747c84'
+#    red:     '0xc7ae95'
+#    green:   '0x95c7ae'
+#    yellow:  '0xaec795'
+#    blue:    '0xae95c7'
+#    magenta: '0xc795ae'
+#    cyan:    '0x95aec7'
+#    white:   '0xf3f4f5'
 
   # Normal colors
   #normal:

@@ -1,0 +1,4 @@
+# speed up scrolling for the browser
+"^brave-browser$"
+	None, Up, Button4, 2
+	None, Down, Button5, 2

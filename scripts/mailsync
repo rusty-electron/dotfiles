@@ -1,5 +1,5 @@
 #!/bin/sh
-mw sync
+mw -Y
 
 for account in $(ls ~/.local/share/mail)
 do

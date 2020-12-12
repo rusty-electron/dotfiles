@@ -1,0 +1,12 @@
+[Default Applications]
+image/png=sxiv.desktop
+image/jpeg=sxiv.desktop
+image/jpg=sxiv.desktop
+x-scheme-handler/magnet=torrent.desktop
+application/x-bittorrent=torrent.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+application/epub+zip=zathura.desktop
+
+[Added Associations]
+text/plain=nvim.desktop;
+application/octet-stream=mpv.desktop;

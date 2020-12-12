@@ -9,26 +9,52 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# important envars 
+# important envars
 set $mod Mod4
 set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
 
+# run electron-apps
+bindsym $mod+F12 exec --no-startup-id ~/myfiles/scripts/electron-menu
+# workspace toggle
+bindsym $mod+Tab workspace back_and_forth
+# focus on next window
+bindsym $mod+a focus next
+
 ##### mpc controls #####
 # keybinding to play/pause mpd
 bindsym $mod+Shift+p exec --no-startup-id mpc toggle
+
+# move a window to scratchpad
+bindsym $mod+Shift+minus move scratchpad
+# run rofi
+bindsym $mod+o exec --no-startup-id rofi -show window
+
+# dmoji script
+bindsym $mod+period exec --no-startup-id ~/myfiles/scripts/dmoji
+# open nnn terminal
+bindsym $mod+backslash exec --no-startup-id $term -e nnn
+# youtubeplaypause
+bindsym $mod+Shift+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
+# run dpomo
+bindsym $mod+p exec --no-startup-id ~/myfiles/scripts/dpomo
 # run udiskie tray
 bindsym $mod+Shift+u exec --no-startup-id udiskie -t
 # run transmission-daemon
-bindsym $mod+t exec --no-startup-id transmission-daemon 
+bindsym $mod+t exec --no-startup-id transmission-daemon # to-do: write a better script
 # toggle imwheel
 bindsym $mod+Shift+m exec --no-startup-id ~/myfiles/scripts/toggle-imwheel.sh
+# toggle picom
+bindsym $mod+c exec --no-startup-id ~/myfiles/scripts/toggle-picom.sh
 # run blueman-applet
 bindsym $mod+Shift+b exec --no-startup-id blueman-applet
 
 # keybinding to lockscreen
-bindsym $mod+z exec --no-startup-id betterlockscreen -l
+bindsym $mod+x exec --no-startup-id betterlockscreen -l
+
+# keybinding for doff script
+bindsym $mod+Shift+x exec --no-startup-id ~/myfiles/scripts/doff
 
 # start screencasting to file
 bindsym $mod+Print exec --no-startup-id ~/myfiles/scripts/ffmpeg-record.sh
@@ -41,10 +67,10 @@ set $screenshot-folder ~/Downloads/screenshots
 bindsym $mod+b exec --no-startup-id $MYBROWSER
 
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_volume pkill -RTMIN+2 i3blocks 
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_volume
+set $refresh_volume pkill -RTMIN+10 i3blocks
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --allow-boost -i 5 && $refresh_volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --allow-boost -d 5 && $refresh_volume
+bindsym XF86AudioMute exec --no-startup-id pamixer -t && $refresh_volume
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_volume
 
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -57,26 +83,29 @@ bindsym Shift+Print exec flameshot gui -d 2000
 bindsym Ctrl+Print exec flameshot full -c -p $screenshot-folder
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id sudo xbacklight -dec 5 # decrease screen brightness
+
+# force floating on some windows
+for_window[class="Matplotlib" instance="matplotlib"] floating enable
 
 # setup for scratchpad - from luke's video
-exec --no-startup-id $termalt --title dropdown -e tmux
-#exec --no-startup-id $term --title math --config-file ~/.config/alacritty/bigfont.yml -e bc -q -l 
-exec --no-startup-id $termalt --title math -fn "xft:Anonymice Powerline:size=18" -e bc -q -l 
+exec --no-startup-id $termalt --title dropdown-f -e tmux
+#exec --no-startup-id $term --title math --config-file ~/.config/alacritty/bigfont.yml -e bc -q -l
+exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=18" -e bc -q -l
 
-for_window [title="dropdown"] floating enable, move scratchpad
-for_window [title="dropdown"] resize set 925 650
-for_window [title="dropdown"] border pixel 6
+for_window [title="dropdown-f"] floating enable, move scratchpad
+for_window [title="dropdown-f"] resize set 925 650
+for_window [title="dropdown-f"] border pixel 6
 
-bindsym $mod+u		[title="dropdown"] scratchpad show; [title="dropdown"] move position center 	
+bindsym $mod+u		[title="dropdown-f"] scratchpad show; [title="dropdown-f"] move position center
 
 # setup for arithmeticpad  - from luke's video
-for_window [title="math"] floating enable, move scratchpad
-for_window [title="math"] resize set 800 300
-for_window [title="math"] border pixel 6
+for_window [title="math-f"] floating enable, move scratchpad
+for_window [title="math-f"] resize set 800 300
+for_window [title="math-f"] border pixel 6
 
-bindsym $mod+m	[title="math"] scratchpad show; [title="math"] move position center 	
+bindsym $mod+m	[title="math-f"] scratchpad show; [title="math-f"] move position center
 
 # alter border width
 # default_border pixel 5
@@ -128,12 +157,14 @@ mode "$mode_gaps_inner" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
+
+# mode "$mode_gaps_outer" {
+#         bindsym plus  gaps outer current plus 5
+#         bindsym minus gaps outer current minus 5
+#         bindsym Return mode "default"
+#         bindsym Escape mode "default"
+# }
+
 mode "$mode_gaps_outer" {
         bindsym plus  gaps outer current plus 5
         bindsym minus gaps outer current minus 5
@@ -162,7 +193,7 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id picom -b
 
 # run redshift for bluelight filter
-exec --no-startup-id redshift
+exec --no-startup-id redshift -l 27.38:95.90
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -183,13 +214,16 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# make a horizontal split terminal
+# bindsym $mod+backslash split toggle, exec --no-startup-id alacritty, split toggle;
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty #i3-sensible-terminal
-bindsym $mod+Shift+Return exec urxvt 
+bindsym $mod+Shift+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -208,10 +242,10 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -246,7 +280,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+z focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -303,10 +337,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        #bindsym h resize shrink width 10 px or 10 ppt
+        #bindsym j resize grow height 10 px or 10 ppt
+        #bindsym k resize shrink height 10 px or 10 ppt
+        #bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -320,6 +354,11 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+bindsym $mod+Left resize shrink width 10 px or 10 ppt
+bindsym $mod+Up resize grow height 10 px or 10 ppt
+bindsym $mod+Down resize shrink height 10 px or 10 ppt
+bindsym $mod+Right resize grow width 10 px or 10 ppt
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -327,7 +366,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3blocks
-	font pango:Fira Code Medium  11
+	font pango:Roboto Mono for Powerline 11
 	height 30
 	workspace_min_width 30
 	colors {

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# this script can be used to shutdown, reboot, hibernate or suspend a computer
+
+choice=$(printf "whatsapp\nnotion" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
+case "$choice" in
+	whatsapp) ~/myfiles/nativefier-apps/whatsapp-linux-x64/whatsapp;;
+	notion) ~/myfiles/nativefier-apps/notion-linux-x64/notion;;
+esac
+

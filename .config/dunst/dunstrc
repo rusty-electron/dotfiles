@@ -51,17 +51,17 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 2
+    separator_height = 3
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 10
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#aaaaaa"
@@ -86,7 +86,7 @@
 
     ### Text ###
 
-    font = Monospace 12
+    font = "Inconsolata 13"
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -172,7 +172,7 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 40
 
     # Paths to default icons.
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -189,7 +189,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/local/bin/dmenu -p dunst: 
+    dmenu = /usr/local/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/brave# -new-tab
@@ -222,11 +222,11 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 4
+    corner_radius = 0
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
-    # parameter, an application may close the notification sent before the 
+    # parameter, an application may close the notification sent before the
     # user defined timeout.
     ignore_dbusclose = false
 
@@ -292,18 +292,19 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#1d1a31"
+    foreground = "#ffffff"
+    frame_color = "#03c4a1"
     timeout = 6
     # Icon for notifications with low urgency, uncomment to enable
-    icon = ~/.config/dunst/bell.png
 
 [urgency_normal]
-    background = "#285577"
+    background = "#1d1a31"
     foreground = "#ffffff"
+    frame_color = "#E16036"
     timeout = 8
     # Icon for notifications with normal urgency, uncomment to enable
-    icon = ~/.config/dunst/bell.png
+    icon = ~/.config/dunst/info.png
 
 [urgency_critical]
     background = "#900000"
@@ -312,6 +313,18 @@
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     icon = ~/.config/dunst/warning.png
+
+[pomo]
+    category = pomo
+    set_stack_tag = pomo
+    frame_color = "#03c4a1"
+    # Icon for notifications with normal urgency, uncomment to enable
+    new_icon = ~/.config/dunst/tomato.png
+
+[mpd]
+    set_stack_tag = mpdstack
+    category = mpd
+    new_icon = ~/.config/dunst/music.png
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

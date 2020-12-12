@@ -1,0 +1,6 @@
+set font "monospace normal 10"
+set selection-clipboard clipboard
+set sandbox none
+
+map = zoom in
+map + zoom default

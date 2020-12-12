@@ -1,0 +1,1386 @@
+Aug 23 17:40 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 17:40 : exception: Failed to open '/home/pritom/.config/mpd/state': No such file or directory
+Aug 23 17:40 : exception: Failed to access /home/pritom/myfiles/music: No such file or directory
+Aug 23 17:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 17:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 17:49 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 23 18:06 : update: added /Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3
+Aug 23 18:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 18:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 18:06 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 23 18:06 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:09 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 18:09 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 23 18:09 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:12 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 18:13 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 23 18:13 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:13 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 18:14 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 23 18:14 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:17 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:17 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 18:17 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 23 18:17 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Aug 23 18:20 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 18:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 18:21 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 18:21 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 18:24 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 22:29 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 22:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 22:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 23 22:35 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 22:41 : player: played "Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3"
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/02 Up All Night.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/03 This Isn't the End.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3
+Aug 23 23:56 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3
+Aug 24 00:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3"
+Aug 24 00:10 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Aug 24 00:14 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Aug 24 00:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 00:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 00:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 00:20 : update: removing Jeremy Zucker - not ur friend (Official Lyric Video)-i4mcU5iJv3Q.mp3
+Aug 24 00:20 : update: added /Jeremy Zucker - not ur friend.mp3
+Aug 24 00:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 24 00:29 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 24 00:32 : update: updating /Jeremy Zucker - not ur friend.mp3
+Aug 24 00:36 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 24 00:44 : update: added /Jeremy Zucker - comethru (Official Audio)-Yp4yF5hb89I.mp3
+Aug 24 00:44 : update: updating /Jeremy Zucker - comethru (Official Audio)-Yp4yF5hb89I.mp3
+Aug 24 00:45 : update: removing Jeremy Zucker - comethru (Official Audio)-Yp4yF5hb89I.mp3
+Aug 24 00:45 : update: updating /Jeremy Zucker - not ur friend.mp3
+Aug 24 00:45 : update: added /Jeremy Zucker - comethru.mp3
+Aug 24 00:49 : player: played "Jeremy Zucker - comethru.mp3"
+Aug 24 00:55 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 24 11:19 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 16:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 16:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 16:47 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 24 16:50 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 24 17:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/02 Up All Night.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/03 This Isn't the End.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3
+Aug 24 17:19 : update: updating Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/05 - Early Birdie.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/12 - West Coast Friendship.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/08 - Sky Diver.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/06 - Air Traffic.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/02 - Rainbow Veins.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/04 - The Saltwater Room.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/10 - I'll Meet You There.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/07 - The Technicolor Phase.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/09 - Dear Vienna.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Enchanted - Single/Owl City - Enchanted.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City and Carly Rae Jepsen - 2012 - Good Time/01 Good Time.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3
+Aug 24 17:19 : update: added Owl City - 2007-2015 - Discography/Others/Owl City - To The Sky.mp3
+Aug 24 17:32 : update: added mpdlinks/downloads/[LYRICS] Porter Robinson & Madeon - Shelter-JbrIpDlc9Ps.mp3
+Aug 24 17:36 : update: updating mpdlinks/downloads/[LYRICS] Porter Robinson & Madeon - Shelter-JbrIpDlc9Ps.mp3
+Aug 24 17:36 : update: updating /Jeremy Zucker - not ur friend.mp3
+Aug 24 17:36 : update: updating /Jeremy Zucker - comethru.mp3
+Aug 24 17:37 : update: removing mpdlinks/downloads/[LYRICS] Porter Robinson & Madeon - Shelter-JbrIpDlc9Ps.mp3
+Aug 24 17:37 : update: added mpdlinks/downloads/Porter Robinson & Madeon, Madeon - Shelter.mp3
+Aug 24 17:41 : player: played "mpdlinks/downloads/Porter Robinson & Madeon, Madeon - Shelter.mp3"
+Aug 24 17:47 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Enchanted - Single/Owl City - Enchanted.mp3"
+Aug 24 17:50 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3"
+Aug 24 17:57 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Aug 24 19:16 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 24 20:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 20:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 24 21:34 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 25 00:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 00:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 00:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 00:18 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 25 00:21 : player: played "Jeremy Zucker - comethru.mp3"
+Aug 25 00:25 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3"
+Aug 25 00:29 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 25 00:32 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City and Carly Rae Jepsen - 2012 - Good Time/01 Good Time.mp3"
+Aug 25 00:39 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3"
+Aug 25 00:42 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Aug 25 00:46 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 25 00:50 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 25 00:53 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 25 00:59 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City and Carly Rae Jepsen - 2012 - Good Time/01 Good Time.mp3"
+Aug 25 01:35 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3"
+Aug 25 01:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 01:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 01:55 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3"
+Aug 25 01:59 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 01:59 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 02:00 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3"
+Aug 25 13:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 13:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 14:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 15:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 25 17:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 17:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 17:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 25 20:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 20:21 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 20:26 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 25 20:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 20:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 21:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 25 21:10 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 21:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 21:33 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 25 21:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 21:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 25 21:48 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 26 11:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 26 11:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 26 19:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 26 19:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 26 19:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/05- Taylor Swift - All Too Well.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/11- Taylor Swift - Holy Ground.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/02 - Taylor Swift - Red.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/21- Taylor Swift  - State of Grace (Acoustic Version) (Deluxe Edition).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/18- Taylor Swift - Come Back...Be Here  (Deluxe Edition).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/04- Taylor Swift - I Knew You Were Trouble.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/03 - Taylor Swift - Treacherous.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/10- Taylor Swift - The Last Time (Ft. Gary Lightbody of Snow Patrol).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/12- Taylor Swift - Sad, Beautiful, Tragic.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/01- Taylor Swift - State of Grace.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/14- Taylor Swift - Everything Has Changed (Ft. Ed Sheeran).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/19- Taylor Swift - Girl at Home (Deluxe Edition).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/15- Taylor Swift - Starlight.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/20- Taylor Swift - Treacherous (Original Demo Recording) (Deluxe Edition).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/17- Taylor Swift - The Moment I Knew (Deluxe Edition).mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/09- Taylor Swift - Stay, Stay, Stay.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/08- Taylor Swift - We Are Never Ever Getting Back Together.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/07- Taylor Swift - I Almost Do.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/16- Taylor Swift - Begin Again.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/06- Taylor Swift - 22.mp3
+Aug 26 19:51 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/13- Taylor Swift - Lucky One.mp3
+Aug 26 19:54 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 26 22:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 26 22:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 26 23:15 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Aug 27 10:50 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 10:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 11:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 11:07 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3"
+Aug 27 11:11 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3"
+Aug 27 11:14 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/04- Taylor Swift - I Knew You Were Trouble.mp3"
+Aug 27 12:32 : player: played "Jeremy Zucker - not ur friend.mp3"
+Aug 27 12:36 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Aug 27 12:45 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3"
+Aug 27 12:48 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - To The Sky.mp3"
+Aug 27 12:53 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Enchanted - Single/Owl City - Enchanted.mp3"
+Aug 27 12:57 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3"
+Aug 27 13:01 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Aug 27 13:05 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3"
+Aug 27 13:05 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3"
+Aug 27 13:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Aug 27 13:13 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Aug 27 13:16 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 27 13:20 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 27 13:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Aug 27 13:27 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Aug 27 13:28 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 27 13:28 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:31 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 27 13:34 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3"
+Aug 27 13:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:35 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3"
+Aug 27 13:39 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 27 13:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:40 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 27 13:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3"
+Aug 27 13:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3"
+Aug 27 13:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 13:47 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3"
+Aug 27 13:48 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3"
+Aug 27 18:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 18:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 18:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 27 21:42 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3"
+Aug 27 22:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3"
+Aug 28 00:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 28 00:42 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3"
+Aug 28 00:46 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 28 00:50 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3"
+Aug 28 03:07 : player: played "Jeremy Zucker - not ur friend.mp3"
+Aug 28 15:50 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 28 15:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 28 22:04 : player: played "Jeremy Zucker - not ur friend.mp3"
+Aug 29 00:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 00:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 00:26 : update: added mpdlinks/downloads/Taylor Swift - Lover Remix Feat. Shawn Mendes (Lyric Video)-b5Zay_Hd_7Q.webm
+Aug 29 00:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 29 00:26 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 00:30 : update: removing mpdlinks/downloads/Taylor Swift - Lover Remix Feat. Shawn Mendes (Lyric Video)-b5Zay_Hd_7Q.webm
+Aug 29 00:30 : update: added mpdlinks/downloads/Taylor Swift - Lover Remix Feat. Shawn Mendes.webm
+Aug 29 00:32 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/08- Taylor Swift - We Are Never Ever Getting Back Together.mp3"
+Aug 29 00:37 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Aug 29 00:41 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 29 00:45 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 29 00:48 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 29 00:51 : player: played "Jeremy Zucker - comethru.mp3"
+Aug 29 00:54 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3"
+Aug 29 00:59 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 29 01:02 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City and Carly Rae Jepsen - 2012 - Good Time/01 Good Time.mp3"
+Aug 29 01:07 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3"
+Aug 29 01:08 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/02 - Rainbow Veins.mp3"
+Aug 29 01:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 01:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 01:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 01:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/02 - Rainbow Veins.mp3"
+Aug 29 01:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3"
+Aug 29 02:57 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 02:57 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 02:57 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 02:59 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3"
+Aug 29 05:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 05:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 05:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3"
+Aug 29 08:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 08:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 12:55 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3"
+Aug 29 16:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 16:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 18:59 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 29 20:40 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Aug 29 20:44 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3"
+Aug 29 20:47 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - To The Sky.mp3"
+Aug 29 20:52 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Enchanted - Single/Owl City - Enchanted.mp3"
+Aug 29 20:56 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3"
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/11 - Take It All Away.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/07 - Good Time.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/02 - Shooting Star.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/09 - Silhouette.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/04 - Dementia.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/01 - Dreams And Disasters.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/06 - Speed Of Love.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/10 - Metropolis.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/03 - Gold.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/05 - I'm Coming After You.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/12 - Tidal Wave.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/05 - The Saltwater Room.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/02 - The Bird and the Worm.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/09 - Fireflies.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/01 - Cave In.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/08 - On the Wing.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/03 - Hello Seattle.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/10 - The Tip of the Iceberg.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/04 - Umbrella Beach.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/07 - Meteor Shower.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/11 - Vanilla Twilight.mp3
+Aug 29 22:48 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/06 - Dental Care.mp3
+Aug 29 23:35 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/04 - Dementia.mp3"
+Aug 29 23:49 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/05 - The Saltwater Room.mp3"
+Aug 30 00:27 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/02 - The Bird and the Worm.mp3"
+Aug 30 00:33 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/09 - Fireflies.mp3"
+Aug 30 00:47 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Aug 30 00:51 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3"
+Aug 30 00:52 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3"
+Aug 30 00:55 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Aug 30 00:59 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Aug 30 01:03 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 30 01:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 30 01:10 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Aug 30 01:13 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Aug 30 01:17 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Aug 30 01:21 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3"
+Aug 30 01:25 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Aug 30 01:28 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3"
+Aug 30 01:32 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3"
+Aug 30 01:35 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3"
+Aug 30 01:39 : player: played "mpdlinks/downloads/Porter Robinson & Madeon, Madeon - Shelter.mp3"
+Aug 30 01:42 : player: played "Jeremy Zucker - not ur friend.mp3"
+Aug 30 02:04 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Aug 30 14:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 14:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 15:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 15:05 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Aug 30 15:09 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3"
+Aug 30 17:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 17:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 18:00 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3"
+Aug 30 22:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 22:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 22:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 30 23:50 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Aug 30 23:54 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3"
+Aug 30 23:55 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3"
+Aug 30 23:58 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Aug 31 00:02 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Aug 31 00:07 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Aug 31 03:29 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 31 03:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 03:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 03:36 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 31 19:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 19:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 19:11 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Aug 31 20:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 20:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 03:11 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Sep 01 03:12 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 03:12 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 03:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Sep 01 03:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 03:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 03:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Sep 01 18:58 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 18:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 20:11 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Sep 01 20:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 20:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 20:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 20:54 : player: played "Jeremy Zucker - not ur friend.mp3"
+Sep 01 20:58 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 01 21:03 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/21- Taylor Swift  - State of Grace (Acoustic Version) (Deluxe Edition).mp3"
+Sep 01 21:07 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/18- Taylor Swift - Come Back...Be Here  (Deluxe Edition).mp3"
+Sep 01 21:11 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/04- Taylor Swift - I Knew You Were Trouble.mp3"
+Sep 01 21:15 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/16- Taylor Swift - Begin Again.mp3"
+Sep 01 21:18 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/02 - Taylor Swift - Red.mp3"
+Sep 01 21:23 : exception: Failed to play on "pulse audio" (pulse): suspended
+Sep 01 21:23 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/01- Taylor Swift - State of Grace.mp3"
+Sep 01 21:27 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/06- Taylor Swift - 22.mp3"
+Sep 01 21:30 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/08- Taylor Swift - We Are Never Ever Getting Back Together.mp3"
+Sep 01 21:34 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 01 21:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/04 - Dementia.mp3"
+Sep 01 22:05 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/05 - The Saltwater Room.mp3"
+Sep 01 22:08 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/03 - Hello Seattle.mp3"
+Sep 01 22:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/02 - The Bird and the Worm.mp3"
+Sep 01 22:35 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/09 - Fireflies.mp3"
+Sep 01 22:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 01 22:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 01:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 02:44 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 02 10:36 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 10:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 10:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 02 14:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 14:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 15:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 16:56 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 04 15:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 04 15:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 04 22:42 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 04 23:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 04 23:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 01:35 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 05 03:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 03:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 03:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 05 13:07 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 13:07 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 14:46 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Sep 05 23:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 05 23:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 00:32 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2007 - Of June (EP)/07 - Hello Seattle.mp3
+Sep 06 00:32 : update: added mpdlinks/downloads/Timbaland - Apologize ft. OneRepublic.mp3
+Sep 06 00:32 : update: added mpdlinks/downloads/Toto - Africa (on screen).mp3
+Sep 06 00:32 : update: added mpdlinks/downloads/If I Die Young-The Band Perry- ).mp3
+Sep 06 00:32 : update: added mpdlinks/downloads/Taylor Swift - Lover (Remix).mp3
+Sep 06 00:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 00:36 : player: played "mpdlinks/downloads/If I Die Young-The Band Perry- ).mp3"
+Sep 06 00:41 : update: updating mpdlinks/downloads/If I Die Young-The Band Perry- ).mp3
+Sep 06 00:43 : update: updating mpdlinks/downloads/Timbaland - Apologize ft. OneRepublic.mp3
+Sep 06 00:46 : update: updating mpdlinks/downloads/Taylor Swift - Lover (Remix).mp3
+Sep 06 00:47 : update: updating mpdlinks/downloads/Toto - Africa (on screen).mp3
+Sep 06 00:49 : update: removing mpdlinks/downloads/Taylor Swift - Lover Remix Feat. Shawn Mendes.webm
+Sep 06 00:50 : player: played "mpdlinks/downloads/Timbaland - Apologize ft. OneRepublic.mp3"
+Sep 06 00:51 : update: updating mpdlinks/downloads/Taylor Swift - Lover (Remix).mp3
+Sep 06 00:55 : player: played "mpdlinks/downloads/If I Die Young-The Band Perry- ).mp3"
+Sep 06 01:00 : player: played "Jeremy Zucker - not ur friend.mp3"
+Sep 06 01:04 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 06 01:32 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/21- Taylor Swift  - State of Grace (Acoustic Version) (Deluxe Edition).mp3"
+Sep 06 17:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 17:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 21:43 : update: added mpdlinks/downloads/Jeremy Zucker - supercuts (Official Video)-eVwyvMVPd8U.mp3
+Sep 06 21:44 : update: updating mpdlinks/downloads/Jeremy Zucker - supercuts (Official Video)-eVwyvMVPd8U.mp3
+Sep 06 21:45 : update: removing mpdlinks/downloads/Timbaland - Apologize ft. OneRepublic.mp3
+Sep 06 21:45 : update: removing mpdlinks/downloads/Taylor Swift - Lover (Remix).mp3
+Sep 06 21:45 : update: removing mpdlinks/downloads/Toto - Africa (on screen).mp3
+Sep 06 21:45 : update: removing mpdlinks/downloads/Jeremy Zucker - supercuts (Official Video)-eVwyvMVPd8U.mp3
+Sep 06 21:45 : update: removing mpdlinks/downloads/If I Die Young-The Band Perry- ).mp3
+Sep 06 21:45 : update: added mpdlinks/downloads/One Republic feat. Timbaland - Apologize.mp3
+Sep 06 21:45 : update: added mpdlinks/downloads/Taylor Swift feat. Shawn Mendes - Lover (Remix).mp3
+Sep 06 21:45 : update: updating mpdlinks/downloads/Porter Robinson & Madeon, Madeon - Shelter.mp3
+Sep 06 21:45 : update: added mpdlinks/downloads/Jeremy Zucker - supercuts.mp3
+Sep 06 21:45 : update: added mpdlinks/downloads/Toto - Africa.mp3
+Sep 06 21:45 : update: added mpdlinks/downloads/The Band Perry - If I Die Young.mp3
+Sep 06 21:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 06 21:49 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 06 21:50 : player: played "mpdlinks/downloads/One Republic feat. Timbaland - Apologize.mp3"
+Sep 06 23:45 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 07 16:57 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 16:57 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 19:20 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 07 21:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 21:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 22:10 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 07 22:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 07 22:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 08 03:23 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 09 00:30 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 09 00:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 09 03:06 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 11 22:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 11 22:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 03:29 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 12 12:58 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 12:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 14:35 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 12 16:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 16:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 21:30 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 12 23:37 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 23:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 12 23:56 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 13 20:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 13 20:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 13 23:18 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 14 02:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 02:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 03:37 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 14 14:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 14:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 15:25 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 14 18:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 18:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 18:46 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 14 22:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 22:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 03:24 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 15 13:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 13:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 14:21 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 15 15:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 15:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 16:47 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 15 19:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 19:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 19:50 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 15 20:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 20:21 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 20:23 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 15 20:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 20:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 20:57 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 15 22:19 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 22:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 22:32 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 16 22:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 16 22:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 17 03:54 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 17 15:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 17 15:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 17 16:36 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 17 19:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 17 19:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 03:21 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 18 03:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 03:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 03:28 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 18 04:24 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 04:24 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 04:30 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 18 15:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 15:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 15:21 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 18 18:36 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 18:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 18 22:00 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 19 00:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 00:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 01:11 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 19 01:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 01:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 01:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 02:25 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 19 18:59 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 18:59 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 22:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 22:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 22:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 22:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 19 23:59 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 20 18:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 18:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 23:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 20 23:20 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 20 23:23 : player: played "mpdlinks/downloads/One Republic feat. Timbaland - Apologize.mp3"
+Sep 20 23:37 : player: played "Jeremy Zucker - not ur friend.mp3"
+Sep 21 02:00 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 21 14:12 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 21 14:12 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 21 16:08 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 21 18:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 21 18:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 21 23:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 22 00:02 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Sep 22 00:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Sep 22 00:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Sep 22 00:36 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Sep 22 10:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 22 10:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 22 23:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 22 23:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Sep 22 23:46 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Sep 22 23:49 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Sep 22 23:53 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3"
+Sep 22 23:57 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Sep 23 00:04 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3"
+Sep 23 00:08 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Sep 23 00:12 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3"
+Sep 23 00:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3"
+Sep 23 00:16 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Sep 23 00:20 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Sep 23 00:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Sep 23 00:27 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Sep 23 00:30 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Sep 23 00:34 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Sep 23 00:37 : player: played "Jeremy Zucker - not ur friend.mp3"
+Sep 23 00:41 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 23 00:46 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/21- Taylor Swift  - State of Grace (Acoustic Version) (Deluxe Edition).mp3"
+Sep 23 11:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 23 11:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 23 11:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 23 11:46 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/21- Taylor Swift  - State of Grace (Acoustic Version) (Deluxe Edition).mp3"
+Sep 23 13:11 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Sep 23 13:13 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/18- Taylor Swift - Come Back...Be Here  (Deluxe Edition).mp3"
+Sep 23 13:13 : exception: Failed to pause "pulse audio" (pulse): failed to connect the stream: Connection terminated
+Sep 23 13:14 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/04- Taylor Swift - I Knew You Were Trouble.mp3"
+Sep 23 13:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 23 13:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 23 13:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 23 13:17 : update: added mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3
+Sep 23 13:21 : player: played "mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3"
+Sep 23 22:45 : player: played "mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3"
+Sep 23 23:04 : player: played "mpdlinks/downloads/The Band Perry - If I Die Young.mp3"
+Sep 23 23:50 : player: played "mpdlinks/downloads/One Republic feat. Timbaland - Apologize.mp3"
+Sep 23 23:54 : player: played "mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3"
+Sep 23 23:57 : player: played "mpdlinks/downloads/Taylor Swift feat. Shawn Mendes - Lover (Remix).mp3"
+Sep 24 00:01 : player: played "mpdlinks/downloads/The Band Perry - If I Die Young.mp3"
+Sep 24 00:05 : player: played "mpdlinks/downloads/Jeremy Zucker - supercuts.mp3"
+Sep 24 00:08 : player: played "mpdlinks/downloads/One Republic feat. Timbaland - Apologize.mp3"
+Sep 24 00:12 : player: played "mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3"
+Sep 24 00:15 : player: played "mpdlinks/downloads/Taylor Swift feat. Shawn Mendes - Lover (Remix).mp3"
+Sep 24 00:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 00:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 02:59 : player: played "mpdlinks/downloads/Taylor Swift feat. Shawn Mendes - Lover (Remix).mp3"
+Sep 24 13:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 13:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 14:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 16:15 : player: played "Jeremy Zucker - comethru.mp3"
+Sep 24 16:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 16:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 16:34 : player: played "Jeremy Zucker - comethru.mp3"
+Sep 24 16:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 16:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 17:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 24 17:41 : update: updating mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3
+Sep 24 17:46 : update: updating mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3
+Sep 25 03:33 : update: added mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3
+Sep 25 03:33 : update: added mpdlinks/downloads/ONE _ Aimer [English subtitle]--3bD6Y6Yju8.mp3
+Sep 25 03:36 : update: updating mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3
+Sep 25 03:36 : player: played "mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3"
+Sep 25 03:38 : update: updating mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3
+Sep 25 03:42 : update: updating mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3
+Sep 25 03:43 : update: updating mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/Jeremy Zucker - supercuts.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/Toto - Africa.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/The Band Perry - If I Die Young.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/Porter Robinson & Madeon, Madeon - Shelter.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/ONE _ Aimer [English subtitle]--3bD6Y6Yju8.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/One Republic feat. Timbaland - Apologize.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/Sasha Sloan - Lie (Lyric Video)-AzjTJpzfB8U.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3
+Sep 25 03:43 : update: removing mpdlinks/downloads/Taylor Swift feat. Shawn Mendes - Lover (Remix).mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/Lie - Sasha Sloan.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/If I Die Young - The Band Perry.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/Older - Daya & Shallou.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/ONE - Aimer.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/Lover (Remix) - Taylor Swift feat. Shawn Mendes.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/Shelter - Porter Robinson & Madeon, Madeon.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/supercuts - Jeremy Zucker.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/Africa - Toto.mp3
+Sep 25 03:43 : update: added mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3
+Sep 25 03:44 : player: played "mpdlinks/downloads/Shallou & Daya - Older (Lyrics)-AhxSFQ-wlwE.mp3"
+Sep 25 13:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 25 13:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 25 13:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 25 19:33 : player: played "mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3"
+Sep 25 20:09 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Sep 25 22:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 25 22:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 25 22:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 00:00 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3"
+Sep 26 01:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 01:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 01:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 01:50 : player: played "mpdlinks/downloads/Lie - Sasha Sloan.mp3"
+Sep 26 12:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 13:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 14:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 14:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 14:28 : player: played "Jeremy Zucker - not ur friend.mp3"
+Sep 26 15:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 15:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 15:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 26 15:40 : player: played "Jeremy Zucker - not ur friend.mp3"
+Sep 28 22:18 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 28 22:29 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 28 22:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 29 03:37 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Sep 29 15:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 29 15:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 04 22:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 04 23:39 : player: played "mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3"
+Oct 04 23:44 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 04 23:47 : player: played "mpdlinks/downloads/Lie - Sasha Sloan.mp3"
+Oct 05 00:02 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3"
+Oct 05 00:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Oct 05 00:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Oct 05 00:13 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Oct 05 00:16 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Oct 05 22:34 : player: played "Jeremy Zucker - comethru.mp3"
+Oct 05 22:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3"
+Oct 05 22:42 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Oct 05 22:45 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City and Carly Rae Jepsen - 2012 - Good Time/01 Good Time.mp3"
+Oct 05 22:50 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3"
+Oct 05 22:55 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/02 - Rainbow Veins.mp3"
+Oct 05 22:58 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3"
+Oct 05 23:03 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/04 - The Saltwater Room.mp3"
+Oct 05 23:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/06 - Air Traffic.mp3"
+Oct 05 23:10 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/05 - Early Birdie.mp3"
+Oct 05 23:15 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/07 - The Technicolor Phase.mp3"
+Oct 05 23:18 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/08 - Sky Diver.mp3"
+Oct 05 23:22 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/09 - Dear Vienna.mp3"
+Oct 05 23:26 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/10 - I'll Meet You There.mp3"
+Oct 05 23:29 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3"
+Oct 05 23:33 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/12 - West Coast Friendship.mp3"
+Oct 05 23:36 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3"
+Oct 05 23:40 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/02 Up All Night.mp3"
+Oct 05 23:44 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/03 This Isn't the End.mp3"
+Oct 05 23:47 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Oct 05 23:51 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3"
+Oct 05 23:55 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - To The Sky.mp3"
+Oct 06 00:00 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Enchanted - Single/Owl City - Enchanted.mp3"
+Oct 06 00:04 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3"
+Oct 06 00:08 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Oct 06 00:12 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3"
+Oct 06 00:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3"
+Oct 06 00:16 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Oct 06 00:20 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 06 00:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Oct 06 00:27 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Oct 06 00:28 : exception: Failed to play on "pulse audio" (pulse): suspended
+Oct 06 00:30 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Oct 06 00:34 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Oct 06 00:37 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3"
+Oct 06 00:41 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3"
+Oct 06 00:45 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3"
+Oct 06 00:49 : exception: Failed to play on "pulse audio" (pulse): suspended
+Oct 06 00:51 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 06 01:03 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 06 01:07 : player: played "mpdlinks/downloads/Lie - Sasha Sloan.mp3"
+Oct 06 01:08 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 06 01:26 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 01:26 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 02:54 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 06 06:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 06:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 09:00 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 06 16:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 16:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 20:07 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 06 20:10 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 20:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 06 23:08 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 07 16:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 07 16:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 07 17:29 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 07 17:29 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 07 17:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 07 20:11 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 07 21:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 07 21:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 12:16 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 08 12:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 12:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 13:48 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 08 13:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 13:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 14:43 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 08 16:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 16:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 16:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 08 23:02 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 08 23:03 : exception: Not playing
+Oct 09 01:42 : player: played "mpdlinks/downloads/Lie - Sasha Sloan.mp3"
+Oct 09 15:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 09 15:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 09 15:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 10 21:41 : player: played "Jeremy Zucker - not ur friend.mp3"
+Oct 10 22:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 10 22:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 10 22:44 : player: played "Jeremy Zucker - not ur friend.mp3"
+Oct 11 00:03 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 11 00:03 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 11 00:35 : player: played "Jeremy Zucker - not ur friend.mp3"
+Oct 11 12:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 11 12:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 12 01:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 12 01:31 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 12 01:35 : player: played "mpdlinks/downloads/Lover (Remix) - Taylor Swift feat. Shawn Mendes.mp3"
+Oct 12 01:39 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3"
+Oct 12 01:43 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/02 Up All Night.mp3"
+Oct 12 01:46 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/03 This Isn't the End.mp3"
+Oct 12 01:50 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3"
+Oct 12 01:54 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Oct 12 01:58 : player: played "Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3"
+Oct 12 01:59 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3"
+Oct 12 02:02 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Oct 12 02:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 12 03:14 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3"
+Oct 12 03:18 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3"
+Oct 12 03:21 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3"
+Oct 12 03:24 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Oct 12 13:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 12 13:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 12 13:31 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3"
+Oct 13 17:52 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 13 17:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 13 17:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 13 18:04 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 14 00:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 14 00:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 14 01:47 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 14 16:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 14 16:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 14 16:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 14 16:17 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 14 18:28 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 14 18:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 00:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 00:54 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 15 01:01 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 15 01:06 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/05 - The Saltwater Room.mp3"
+Oct 15 01:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/03 - Hello Seattle.mp3"
+Oct 15 01:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/02 - The Bird and the Worm.mp3"
+Oct 15 01:16 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/09 - Fireflies.mp3"
+Oct 15 01:19 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/10 - The Tip of the Iceberg.mp3"
+Oct 15 01:23 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/02 - Shooting Star.mp3"
+Oct 15 01:27 : player: played "mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3"
+Oct 15 01:32 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 15 01:36 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 15 01:39 : player: played "mpdlinks/downloads/Lie - Sasha Sloan.mp3"
+Oct 15 01:54 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 15 11:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 11:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 11:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 19:07 : player: played "mpdlinks/downloads/supercuts - Jeremy Zucker.mp3"
+Oct 18 19:21 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/11 - Take It All Away.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/07 - Good Time.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/02 - Shooting Star.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/09 - Silhouette.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/04 - Dementia.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/01 - Dreams And Disasters.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/06 - Speed Of Love.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/10 - Metropolis.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/03 - Gold.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/05 - I'm Coming After You.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/02 Up All Night.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/04 Wolf Bite.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/03 This Isn't the End.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2014 - Ultraviolet (EP)/01 Beautiful Times (feat. Lindsey St.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/12 - Tidal Wave.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/05 - The Saltwater Room.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/02 - The Bird and the Worm.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/09 - Fireflies.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/01 - Cave In.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/08 - On the Wing.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/03 - Hello Seattle.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/10 - The Tip of the Iceberg.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/04 - Umbrella Beach.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/07 - Meteor Shower.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/11 - Vanilla Twilight.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2010 - Ocean Eyes (Deluxe Edition)/Ocean Eyes/06 - Dental Care.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2007 - Of June (EP)/07 - Hello Seattle.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/12 You're Not Alone (feat. Britt Nicole).mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/13 Can't Live Without You.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/04 Tokyo.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/08 Back Home (feat. Jake Owen).mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/09 Bird With A Broken Wing.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/07 My Everything.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/10 Thunderstruck (feat. Sarah Russell).mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/05 I Found Love.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/06 Unbelievable (feat. Hanson).mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/01 Mobile Orchestra.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/11 This Isn't The End.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/05 - Early Birdie.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/12 - West Coast Friendship.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/08 - Sky Diver.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/11 - This is the Future.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/06 - Air Traffic.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/02 - Rainbow Veins.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/04 - The Saltwater Room.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/10 - I'll Meet You There.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/07 - The Technicolor Phase.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/09 - Dear Vienna.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City - 2014 - You're Not Alone - Single/Owl City - You’re Not Alone (feat. Britt Nicole).mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Enchanted - Single/Owl City - Enchanted.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City and Carly Rae Jepsen - 2012 - Good Time/01 Good Time.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Singles/Owl City - 2011 - Peppermint Winter - Promo Single/01 - Peppermint Winter.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Others/Owl City - When Can I See You Again.mp3
+Oct 19 01:35 : update: added Owl City - 2007-2015 - Discography/Others/Owl City - To The Sky.mp3
+Oct 19 01:35 : update: added /Jeremy Zucker - not ur friend.mp3
+Oct 19 01:35 : update: added /Jeremy Zucker - comethru.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Lie - Sasha Sloan.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/If I Die Young - The Band Perry.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Older - Daya & Shallou.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/ONE - Aimer.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/05- Taylor Swift - All Too Well.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/11- Taylor Swift - Holy Ground.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/22 Taylor Swift  - Red (Original Demo Recording) (Deluxe Edition).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/02 - Taylor Swift - Red.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/21- Taylor Swift  - State of Grace (Acoustic Version) (Deluxe Edition).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/18- Taylor Swift - Come Back...Be Here  (Deluxe Edition).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/04- Taylor Swift - I Knew You Were Trouble.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/03 - Taylor Swift - Treacherous.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/10- Taylor Swift - The Last Time (Ft. Gary Lightbody of Snow Patrol).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/12- Taylor Swift - Sad, Beautiful, Tragic.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/01- Taylor Swift - State of Grace.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/14- Taylor Swift - Everything Has Changed (Ft. Ed Sheeran).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/19- Taylor Swift - Girl at Home (Deluxe Edition).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/15- Taylor Swift - Starlight.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/20- Taylor Swift - Treacherous (Original Demo Recording) (Deluxe Edition).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/17- Taylor Swift - The Moment I Knew (Deluxe Edition).mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/09- Taylor Swift - Stay, Stay, Stay.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/08- Taylor Swift - We Are Never Ever Getting Back Together.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/07- Taylor Swift - I Almost Do.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/16- Taylor Swift - Begin Again.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/06- Taylor Swift - 22.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Taylor Swift - Red (Deluxe  Edition ) (Album - 2012) - [HP]/13- Taylor Swift - Lucky One.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Lover (Remix) - Taylor Swift feat. Shawn Mendes.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Shelter - Porter Robinson & Madeon, Madeon.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/supercuts - Jeremy Zucker.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Africa - Toto.mp3
+Oct 19 01:35 : update: added mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3
+Oct 19 02:40 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 20 02:29 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 20 02:36 : update: added mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/16. 929.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/11. Alanis' Interlude.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/01. Ashley.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/06. Dominic's Interlude.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/03. Graveyard.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/13. SUGA's Interlude.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/07. I HATE EVERYBODY.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/15. Still Learning.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/08. 3am.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/12. killing boys.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/10. Finally __ beautiful stranger.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/02. clementine.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/05. Forever ... (is a long time).mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/04. You should be sad.mp3
+Oct 20 02:47 : update: added mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/14. More.mp3
+Oct 20 02:53 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 20 11:58 : exception: Failed to decode /home/pritom/myfiles/music/mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3; Failed to open '/home/pritom/myfiles/music/mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3': No such file or directory
+Oct 20 11:58 : player: played "mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3"
+Oct 20 11:58 : exception: Failed to decode /home/pritom/myfiles/music/mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3; Failed to open '/home/pritom/myfiles/music/mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3': No such file or directory
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/01. Ashley.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/02. clementine.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/03. Graveyard.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/04. You should be sad.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/05. Forever ... (is a long time).mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/06. Dominic's Interlude.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/07. I HATE EVERYBODY.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/08. 3am.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/09. Without Me.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/16. 929.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/15. Still Learning.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/14. More.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/13. SUGA's Interlude.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/12. killing boys.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/11. Alanis' Interlude.mp3
+Oct 20 11:58 : update: removing mpdlinks/downloads/Halsey - Manic (2020) [320KBPS]/10. Finally __ beautiful stranger.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/11 3am (Stripped).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/01 wipe your tears.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/08 Alanis' Interlude (Stripped).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/06 Graveyard (Acoustic).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/10 Graveyard (Stripped).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/02 I'm Not Mad.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/09 Without Me (Stripped).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/05 Without Me (ILLENIUM Remix).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/04 Without Me (feat. Juice WRLD).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/07 You should be sad (Acoustic).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/05 Forever ... (is a long time).mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/16 929.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/03 Graveyard.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/11 Alanis' Interlude.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/14 More.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/10 Finally __ beautiful stranger.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/07 I HATE EVERYBODY.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/09 Without Me.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/15 Still Learning.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/13 SUGA's Interlude.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/01 Ashley.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/04 You should be sad.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/12 killing boys.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/08 3am.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/06 Dominic's Interlude.mp3
+Oct 20 14:55 : update: added mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/02 clementine.mp3
+Oct 20 14:59 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Oct 20 15:52 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Oct 20 15:56 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/08 Alanis' Interlude (Stripped).mp3"
+Oct 20 16:06 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 20 16:09 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Oct 20 16:11 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/11 Alanis' Interlude.mp3"
+Oct 20 16:15 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/03 Graveyard.mp3"
+Oct 20 16:17 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/08 Alanis' Interlude (Stripped).mp3"
+Oct 22 19:07 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/05 Forever ... (is a long time).mp3"
+Oct 22 23:03 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/05 Forever ... (is a long time).mp3"
+Oct 24 22:52 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 25 00:38 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 25 00:54 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 27 23:48 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Oct 27 23:51 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 27 23:54 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Oct 27 23:59 : player: played "mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3"
+Oct 28 00:04 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/01 - On the Wing.mp3"
+Oct 28 00:09 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/02 - Rainbow Veins.mp3"
+Oct 28 00:13 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/03 - Super Honeymoon.mp3"
+Oct 28 00:18 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/04 - The Saltwater Room.mp3"
+Oct 28 00:24 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/05 - Early Birdie.mp3"
+Oct 28 00:27 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/06 - Air Traffic.mp3"
+Oct 28 00:31 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/07 - The Technicolor Phase.mp3"
+Oct 28 00:34 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2008 - Maybe I'm Dreaming/08 - Sky Diver.mp3"
+Oct 28 00:42 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/03 - Gold.mp3"
+Oct 28 00:46 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/04 - Dementia.mp3"
+Oct 28 00:49 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/05 - I'm Coming After You.mp3"
+Oct 28 00:53 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/06 - Speed Of Love.mp3"
+Oct 28 00:56 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/07 - Good Time.mp3"
+Oct 28 01:00 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/08 - Embers.mp3"
+Oct 28 01:04 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/09 - Silhouette.mp3"
+Oct 28 01:08 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/10 - Metropolis.mp3"
+Oct 28 01:11 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2012 - The Midsummer Station/11 - Take It All Away.mp3"
+Oct 28 01:22 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Oct 28 01:25 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Oct 28 01:27 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Oct 28 01:30 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/11 Alanis' Interlude.mp3"
+Oct 28 01:33 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/03 Graveyard.mp3"
+Oct 28 01:36 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/08 Alanis' Interlude (Stripped).mp3"
+Oct 28 01:59 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 28 02:12 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 28 12:13 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 28 14:31 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 30 00:05 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Oct 30 00:11 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Nov 07 23:50 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Nov 07 23:52 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/03 Up All Night.mp3"
+Nov 07 23:55 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Nov 08 00:11 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Nov 08 00:14 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Nov 08 00:17 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Nov 08 00:21 : player: played "mpdlinks/downloads/Older - Daya & Shallou.mp3"
+Nov 08 00:24 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Nov 08 00:27 : player: played "mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3"
+Nov 08 00:30 : player: played "mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3"
+Nov 09 00:05 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Nov 10 14:34 : player: played "mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3"
+Nov 10 14:35 : update: removing Jeremy Zucker - comethru.mp3
+Nov 10 14:35 : update: removing Jeremy Zucker - not ur friend.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/12. When I Needed You.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/05. All That.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/10. LA Hallucinations.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/04. Gimmie Love.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/13. Black Heart.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/17. Love Again.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/07. Making The Most Of The Night.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/11. Warm Blood.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/08. Your Type.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/09. Let’s Get Lost.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/03. I Really Like You.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/14. I Didn’t Just Come Here To Dance.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/16. Never Get to Hold You.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/06. Boy Problems.mp3
+Nov 10 14:35 : update: added music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/15. Favourite Colour.mp3
+Nov 10 14:35 : update: added music/Porter Robinson - Shelter.mp3
+Nov 10 14:35 : update: added music/04. bloody valentine.mp3
+Nov 10 14:35 : update: added music/Tritonal - When I'm With U (feat. Maia Wright).mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/01 - I Forgot That You Existed.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/10 - Death By A Thousand Cuts.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/03 - Lover.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/18 - Daylight.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/14 - You Need To Calm Down.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/06 - I Think He Knows.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/12 - Soon You’ll Get Better (feat. Dixie Chicks).mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/13 - False God.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/15 - Afterglow.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/11 - London Boy.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/05 - The Archer.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/16 - ME! (feat. Brendon Urie of Panic! At The Disco).mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/09 - Cornelia Street.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/17 - It’s Nice To Have A Friend.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/02 - Cruel Summer.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/04 - The Man.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/08 - Paper Rings.mp3
+Nov 10 14:35 : update: added music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/07 - Miss Americana & The Heartbreak Prince.mp3
+Nov 10 14:35 : update: added music/Arize - Home (ft. Melissa Lamm).mp3
+Nov 10 14:35 : update: added music/11. always, i'll care.mp3
+Nov 10 14:35 : update: added music/01 - Mind Is A Prison.flac
+Nov 10 14:35 : update: added music/07. not ur friend.mp3
+Nov 10 14:35 : update: added music/XYLØ - I Still Wait For You (Nolan van Linth x Felix Palmqvist Remix).mp3
+Nov 10 14:35 : update: added music/JP Saxe Ft. Julia Michaels-If The World Was Ending.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/01 wipe your tears.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/08 Alanis' Interlude (Stripped).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/06 Graveyard (Acoustic).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/04 Without Me.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/10 Graveyard (Stripped).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/02 I'm Not Mad.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/09 Without Me (Stripped).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/05 Without Me (ILLENIUM Remix).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/07 You should be sad (Acoustic).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/03 Be Kind.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/05 Forever ... (is a long time).mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/16 929.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/03 Graveyard.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/11 Alanis' Interlude.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/14 More.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/07 I HATE EVERYBODY.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/10 Finally - beautiful stranger.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/09 Without Me.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/15 Still Learning.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/13 SUGA's Interlude.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/01 Ashley.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/04 You should be sad.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/12 killing boys.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/08 3am.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/06 Dominic's Interlude.mp3
+Nov 10 14:35 : update: added music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/02 clementine.mp3
+Nov 10 14:35 : update: added music/Phoebe Ryan - Mine (Illenium Remix).mp3
+Nov 10 14:35 : update: added music/04 Tie Me Down.mp3
+Nov 10 14:35 : update: added music/Wait No More.mp3
+Nov 10 14:35 : update: added music/05. forget me too (Feat. Halsey).mp3
+Nov 10 14:35 : update: added music/Lamhe - Raghav Chaitanya.mp3
+Nov 10 14:35 : update: added music/SHAUN - Way Back Home (feat. Conor Maynard) [Sam Feldt Edit].mp3
+Nov 10 14:35 : update: added music/04. Lie.mp3
+Nov 10 14:35 : update: added music/supercuts.mp3
+Nov 10 14:35 : update: added music/15. comethru (bonus track).mp3
+Nov 10 14:35 : update: added music/03 Be Kind.mp3
+Nov 10 14:35 : update: added music/03 A Thousand Miles.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/01 Ashley.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/02 clementine.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/03 Graveyard.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/04 You should be sad.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/05 Forever ... (is a long time).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/12 killing boys.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/11 Alanis' Interlude.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/10 Finally __ beautiful stranger.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/09 Without Me.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/08 3am.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/07 I HATE EVERYBODY.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/06 Dominic's Interlude.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/13 SUGA's Interlude.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/14 More.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/15 Still Learning.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 1/16 929.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/11 3am (Stripped).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/01 wipe your tears.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/02 I'm Not Mad.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/03 Be Kind.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/04 Without Me (feat. Juice WRLD).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/05 Without Me (ILLENIUM Remix).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/06 Graveyard (Acoustic).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/07 You should be sad (Acoustic).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/08 Alanis' Interlude (Stripped).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/09 Without Me (Stripped).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Halsey - Manic (Super Deluxe) (2020) Mp3 320kbps [PMEDIA] ⭐/CD 2/10 Graveyard (Stripped).mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Machine Gun Kelly ft. Halsey - forget me too (Official Audio)-7gVNNPv8w4Q.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Shelter - Porter Robinson & Madeon, Madeon.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/supercuts - Jeremy Zucker.mp3
+Nov 10 14:35 : update: removing mpdlinks/downloads/Lie - Sasha Sloan.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/01 wipe your tears.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/16 929.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/15 Still Learning.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/14 More.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/13 SUGA's Interlude.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/12 killing boys.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/11 Alanis' Interlude.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/10 Finally - beautiful stranger.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/09 Without Me.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/08 3am.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/07 I HATE EVERYBODY.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/06 Dominic's Interlude.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/05 Forever ... (is a long time).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/04 You should be sad.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/03 Graveyard.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/02 clementine.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/01 Ashley.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/17. Love Again.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/16. Never Get to Hold You.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/15. Favourite Colour.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/14. I Didn’t Just Come Here To Dance.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/13. Black Heart.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/12. When I Needed You.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/11. Warm Blood.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/10. LA Hallucinations.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/09. Let’s Get Lost.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/08. Your Type.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/07. Making The Most Of The Night.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/06. Boy Problems.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/05. All That.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/04. Gimmie Love.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/03. I Really Like You.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3
+Nov 10 14:36 : update: removing music/Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3
+Nov 10 14:36 : update: removing music/Tritonal - When I'm With U (feat. Maia Wright).mp3
+Nov 10 14:36 : update: removing music/05. forget me too (Feat. Halsey).mp3
+Nov 10 14:36 : update: removing music/04. bloody valentine.mp3
+Nov 10 14:36 : update: removing music/01 - Mind Is A Prison.flac
+Nov 10 14:36 : update: removing music/supercuts.mp3
+Nov 10 14:36 : update: removing music/JP Saxe Ft. Julia Michaels-If The World Was Ending.mp3
+Nov 10 14:36 : update: removing music/XYLØ - I Still Wait For You (Nolan van Linth x Felix Palmqvist Remix).mp3
+Nov 10 14:36 : update: removing music/SHAUN - Way Back Home (feat. Conor Maynard) [Sam Feldt Edit].mp3
+Nov 10 14:36 : update: removing music/Porter Robinson - Shelter.mp3
+Nov 10 14:36 : update: removing music/04. Lie.mp3
+Nov 10 14:36 : update: removing music/Wait No More.mp3
+Nov 10 14:36 : update: removing music/Phoebe Ryan - Mine (Illenium Remix).mp3
+Nov 10 14:36 : update: removing music/03 Be Kind.mp3
+Nov 10 14:36 : update: removing music/15. comethru (bonus track).mp3
+Nov 10 14:36 : update: removing music/11. always, i'll care.mp3
+Nov 10 14:36 : update: removing music/07. not ur friend.mp3
+Nov 10 14:36 : update: removing music/Lamhe - Raghav Chaitanya.mp3
+Nov 10 14:36 : update: removing music/Arize - Home (ft. Melissa Lamm).mp3
+Nov 10 14:36 : update: removing music/04 Tie Me Down.mp3
+Nov 10 14:36 : update: removing music/03 A Thousand Miles.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/18 - Daylight.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/17 - It’s Nice To Have A Friend.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/16 - ME! (feat. Brendon Urie of Panic! At The Disco).mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/15 - Afterglow.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/14 - You Need To Calm Down.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/13 - False God.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/12 - Soon You’ll Get Better (feat. Dixie Chicks).mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/11 - London Boy.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/10 - Death By A Thousand Cuts.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/09 - Cornelia Street.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/08 - Paper Rings.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/07 - Miss Americana & The Heartbreak Prince.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/06 - I Think He Knows.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/05 - The Archer.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/04 - The Man.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/03 - Lover.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/02 - Cruel Summer.mp3
+Nov 10 14:36 : update: removing music/Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/01 - I Forgot That You Existed.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/10 Graveyard (Stripped).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/09 Without Me (Stripped).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/08 Alanis' Interlude (Stripped).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/07 You should be sad (Acoustic).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/06 Graveyard (Acoustic).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/05 Without Me (ILLENIUM Remix).mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/04 Without Me.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/03 Be Kind.mp3
+Nov 10 14:36 : update: removing music/Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/02 I'm Not Mad.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/12. When I Needed You.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/05. All That.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/10. LA Hallucinations.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/04. Gimmie Love.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/13. Black Heart.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/17. Love Again.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/07. Making The Most Of The Night.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/11. Warm Blood.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/08. Your Type.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/09. Let’s Get Lost.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/03. I Really Like You.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/14. I Didn’t Just Come Here To Dance.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/16. Never Get to Hold You.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/06. Boy Problems.mp3
+Nov 10 14:36 : update: added Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/15. Favourite Colour.mp3
+Nov 10 14:36 : update: added /Porter Robinson - Shelter.mp3
+Nov 10 14:36 : update: added /04. bloody valentine.mp3
+Nov 10 14:36 : update: added /Tritonal - When I'm With U (feat. Maia Wright).mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/01 - I Forgot That You Existed.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/10 - Death By A Thousand Cuts.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/03 - Lover.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/18 - Daylight.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/14 - You Need To Calm Down.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/06 - I Think He Knows.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/12 - Soon You’ll Get Better (feat. Dixie Chicks).mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/13 - False God.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/15 - Afterglow.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/11 - London Boy.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/05 - The Archer.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/16 - ME! (feat. Brendon Urie of Panic! At The Disco).mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/09 - Cornelia Street.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/17 - It’s Nice To Have A Friend.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/02 - Cruel Summer.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/04 - The Man.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/08 - Paper Rings.mp3
+Nov 10 14:36 : update: added Taylor Swift - Lover (2019) Mp3 (320kbps) [Hunter]/Taylor Swift - Lover (2019)/07 - Miss Americana & The Heartbreak Prince.mp3
+Nov 10 14:36 : update: added /Arize - Home (ft. Melissa Lamm).mp3
+Nov 10 14:36 : update: added /11. always, i'll care.mp3
+Nov 10 14:36 : update: added /01 - Mind Is A Prison.flac
+Nov 10 14:36 : update: added /07. not ur friend.mp3
+Nov 10 14:36 : update: added /XYLØ - I Still Wait For You (Nolan van Linth x Felix Palmqvist Remix).mp3
+Nov 10 14:36 : update: added /JP Saxe Ft. Julia Michaels-If The World Was Ending.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/01 wipe your tears.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/08 Alanis' Interlude (Stripped).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/06 Graveyard (Acoustic).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/04 Without Me.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/10 Graveyard (Stripped).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/02 I'm Not Mad.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/09 Without Me (Stripped).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/05 Without Me (ILLENIUM Remix).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/07 You should be sad (Acoustic).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/03 Be Kind.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/05 Forever ... (is a long time).mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/16 929.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/03 Graveyard.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/11 Alanis' Interlude.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/14 More.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/07 I HATE EVERYBODY.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/10 Finally - beautiful stranger.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/09 Without Me.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/15 Still Learning.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/13 SUGA's Interlude.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/01 Ashley.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/04 You should be sad.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/12 killing boys.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/08 3am.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/06 Dominic's Interlude.mp3
+Nov 10 14:36 : update: added Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 01/02 clementine.mp3
+Nov 10 14:36 : update: added /Phoebe Ryan - Mine (Illenium Remix).mp3
+Nov 10 14:36 : update: added /04 Tie Me Down.mp3
+Nov 10 14:36 : update: added /Wait No More.mp3
+Nov 10 14:36 : update: added /05. forget me too (Feat. Halsey).mp3
+Nov 10 14:36 : update: added /Lamhe - Raghav Chaitanya.mp3
+Nov 10 14:36 : update: added /SHAUN - Way Back Home (feat. Conor Maynard) [Sam Feldt Edit].mp3
+Nov 10 14:36 : update: added /04. Lie.mp3
+Nov 10 14:36 : update: added /supercuts.mp3
+Nov 10 14:36 : update: added /15. comethru (bonus track).mp3
+Nov 10 14:36 : update: added /03 Be Kind.mp3
+Nov 10 14:36 : update: added /03 A Thousand Miles.mp3
+Nov 10 14:40 : player: played "03 A Thousand Miles.mp3"
+Nov 10 14:44 : player: played "mpdlinks/downloads/Lover (Remix) - Taylor Swift feat. Shawn Mendes.mp3"
+Nov 10 14:50 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3"
+Nov 10 14:53 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3"
+Nov 10 14:56 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/03. I Really Like You.mp3"
+Nov 10 15:01 : player: played "mpdlinks/downloads/Older - Daya & Shallou.mp3"
+Nov 10 15:09 : player: played "03 Be Kind.mp3"
+Nov 10 21:54 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3"
+Nov 10 21:57 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3"
+Nov 10 22:01 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/03. I Really Like You.mp3"
+Nov 10 22:04 : player: played "03 Be Kind.mp3"
+Nov 10 22:20 : player: played "Phoebe Ryan - Mine (Illenium Remix).mp3"
+Nov 10 22:23 : player: played "01 - Mind Is A Prison.flac"
+Nov 10 22:27 : player: played "mpdlinks/downloads/Apologize - One Republic feat. Timbaland.mp3"
+Nov 13 18:14 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Nov 17 23:58 : player: played "03 Be Kind.mp3"
+Nov 18 00:02 : player: played "supercuts.mp3"
+Nov 18 00:04 : player: played "07. not ur friend.mp3"
+Nov 18 00:07 : player: played "11. always, i'll care.mp3"
+Nov 18 00:10 : player: played "15. comethru (bonus track).mp3"
+Nov 18 00:28 : player: played "JP Saxe Ft. Julia Michaels-If The World Was Ending.mp3"
+Nov 18 02:37 : player: played "04. bloody valentine.mp3"
+Nov 21 02:35 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 22 14:22 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 22 20:04 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 22 23:24 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 24 00:53 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 24 02:53 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 24 22:16 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 26 01:05 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 26 01:19 : player: played "Halsey - Manic (2020) Mp3 320kbps [PMEDIA] ⭐️/Disc 02/11 3am (Stripped).mp3"
+Nov 27 01:13 : player: played "03 Be Kind.mp3"
+Nov 27 15:12 : player: played "03 Be Kind.mp3"
+Nov 27 19:50 : player: played "03 Be Kind.mp3"
+Nov 27 20:04 : player: played "03 Be Kind.mp3"
+Nov 30 02:06 : player: played "03 Be Kind.mp3"
+Nov 30 13:23 : player: played "03 Be Kind.mp3"
+Nov 30 15:44 : player: played "03 Be Kind.mp3"
+Nov 30 23:46 : player: played "03 Be Kind.mp3"
+Dec 01 00:02 : player: played "Phoebe Ryan - Mine (Illenium Remix).mp3"
+Dec 03 23:58 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Dec 04 00:45 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Dec 04 01:48 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Dec 04 02:09 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Dec 04 16:00 : player: played "mpdlinks/downloads/ONE - Aimer.mp3"
+Dec 06 14:58 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3"
+Dec 06 15:01 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3"
+Dec 06 15:05 : player: played "03 Be Kind.mp3"
+Dec 06 15:09 : player: played "04. bloody valentine.mp3"
+Dec 06 15:12 : player: played "05. forget me too (Feat. Halsey).mp3"
+Dec 07 17:56 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/01. Run Away With Me.mp3"
+Dec 07 18:00 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/02. Emotion.mp3"
+Dec 07 18:03 : player: played "Carly Rae Jepsen - Emotion (Deluxe Expanded Edition) (2020) Mp3 320kbps [PMEDIA] ⭐️/03. I Really Like You.mp3"
+Dec 07 18:08 : player: played "03 Be Kind.mp3"
+Dec 08 02:43 : player: played "03 Be Kind.mp3"
+Dec 10 16:50 : player: played "XYLØ - I Still Wait For You (Nolan van Linth x Felix Palmqvist Remix).mp3"
+Dec 10 16:56 : player: played "04 Tie Me Down.mp3"
+Dec 10 17:20 : player: played "03 Be Kind.mp3"
+Dec 10 17:28 : player: played "03 Be Kind.mp3"
+Dec 11 23:34 : player: played "Owl City - 2007-2015 - Discography/Others/Owl City - Kiss Me Babe, It's Christmas Time.mp3"
+Dec 11 23:38 : player: played "Owl City - 2007-2015 - Discography/Studio Albums & EP/Owl City - 2015 - Mobile Orchestra (Japanese Edition)/02 Verge (feat. Aloe Blacc).mp3"
+Dec 12 13:17 : player: played "03 Be Kind.mp3"
