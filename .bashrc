@@ -27,6 +27,7 @@ alias nf="neofetch"
 # life improvements
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
 alias update="sudo pacman -Syyu"
+alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
 
 # devour aliases
 alias fehd="devour feh --scale-down"
