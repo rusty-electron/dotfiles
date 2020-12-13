@@ -7,10 +7,7 @@ cp -f ~/.bashrc ~/.bash_profile ~/.imwheelrc ~/.vimrc ~/.xprofile ~/.Xresources 
 
 # .config folder dotfiles
 mkdir -p $loc/.config
-cp -rf $c/alacritty $c/betterlockscreenrc $c/dunst $c/fontconfig $c/i3 $c/i3blocks $c/mimeapps.list $c/mpd $c/ncmpcpp $c/nnn $c/nvim $c/picom.conf $c/sxiv $c/zathura $c/youtube-viewer $loc/.config
-
-# clear stuff
-rm $loc/.config/youtube-viewer/watched.txt
+cp -rf $c/alacritty $c/betterlockscreenrc $c/dunst $c/fontconfig $c/i3 $c/i3blocks $c/mimeapps.list $c/mpd $c/ncmpcpp $c/nnn $c/nvim $c/picom.conf $c/sxiv $c/zathura $c/youtube-viewer/youtube-viewer.conf $loc/.config
 
 # scripts folder
 cp -rf ~/myfiles/scripts $loc
