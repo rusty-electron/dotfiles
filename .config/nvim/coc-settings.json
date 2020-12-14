@@ -1,4 +1,4 @@
 {
-	"python.venvPath": "/home/pritom/myfiles/dev",
+	"python.venvPath": "/home/pritom/minconda3/envs/",
 	"python.jediEnabled": false
 }

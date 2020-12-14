@@ -216,7 +216,7 @@ let g:coc_global_extensions = [
     \ ]
 
 " for jedi + coc-python
-let g:python3_host_prog = '~/myfiles/dev/first/bin/python'
+let g:python3_host_prog = '~/miniconda3/bin/python'
 
 " ---------- COC -----------
 " -------- settings --------
