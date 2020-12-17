@@ -117,8 +117,8 @@ bindsym $mod+m	[title="math-f"] scratchpad show; [title="math-f"] move position 
 for_window [class="^.*"] border pixel 3
 
 # Set inner/outer gaps
-gaps inner 10
-gaps outer 15
+gaps inner 12
+gaps outer 8
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

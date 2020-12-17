@@ -3,6 +3,9 @@ URxvt.font: xft:Roboto Mono for Powerline:size=12
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
 
+! sxiv settings
+Sxiv.font: xft:Hack:size=11
+
 ! perl extensions
 URxvt.perl-ext-common: clipboard,resize-font
 

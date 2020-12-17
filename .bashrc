@@ -27,6 +27,8 @@ alias nf="neofetch"
 # life improvements
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
 alias update="sudo pacman -Syyu"
+alias myip="curl ipinfo.io/ip"
+alias lm="ls -tlh"
 
 # quiet and interacture youtube audio player
 alias ytp="youtube-viewer -n --no-video-info --player=mpvt"

@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/pritom'
+let g:netrw_dirhist_2='/home/pritom/myfiles/projects/pyimg/pyimgbook'
 let g:netrw_dirhist_1='/home/pritom/myfiles/projects/spmallick/HandPose'
 let g:netrw_dirhist_0='/home/pritom/myfiles/projects/pyimg/pyimgbook'
 let g:netrw_dirhist_9='/home/pritom/myfiles/blog'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_7='/home/pritom/myfiles/projects/handpoints/convolutional-po
 let g:netrw_dirhist_6='/home/pritom'
 let g:netrw_dirhist_5='/home/pritom/myfiles/projects/pyimg/pyimgbook'
 let g:netrw_dirhist_4='/home/pritom/myfiles/projects/bioinformatics'
-let g:netrw_dirhist_3='/home/pritom/myfiles/notes'
-let g:netrw_dirhist_2='/home/pritom/myfiles/projects/pyimg/pyimgbook'
