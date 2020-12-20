@@ -2,8 +2,6 @@ let mapleader=" "
 
 set t_md=
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-set relativenumber
-set number
 set number relativenumber
 syntax on
 " set clipboard=unnamedplus

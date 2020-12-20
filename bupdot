@@ -1,13 +1,7 @@
 #!/bin/sh
-loc=$1
-c=~/.config
-
-# home folder dotfiles
-cp -fv ~/.bashrc ~/.bash_profile ~/.imwheelrc ~/.vimrc ~/.xprofile ~/.Xresources $loc
 
 # .config folder dotfiles
-mkdir -p $loc/.config
-cp -rvf $c/alacritty $c/betterlockscreenrc $c/dunst $c/fontconfig $c/i3 $c/i3blocks $c/mimeapps.list $c/mpd $c/ncmpcpp $c/nnn $c/nvim $c/picom.conf $c/sxiv $c/zathura $c/youtube-viewer/youtube-viewer.conf $loc/.config
+rsync -avr --exclude-from=./excludelist --files-from=filelist /home/$USER/ $1
 
 # scripts folder
-cp -rvf ~/myfiles/scripts $loc
+rsync -avz ~/myfiles/scripts $1

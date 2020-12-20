@@ -2,7 +2,11 @@
 
 # The famous "get a menu of emojis to copy" script.
 
+# find the pid of the active window
+winpid=$(xdotool getactivewindow getwindowpid)
+
 # Get user selection via dmenu from emoji file.
+echo $win
 chosen=$(cut -d ';' -f1 ~/.local/share/emoji | dmenu -i -l 25 | sed "s/ .*//")
 
 # Exit if none chosen.
@@ -16,4 +20,5 @@ else
 	echo "$chosen" | tr -d '\n' | xclip -selection clipboard
 	#echo "$chosen" | tr -d '\n' | clipit &> /dev/null
 	notify-send -t 2000 "'$chosen' copied to clipboard." &
+	sleep .2 && xdotool search --any --pid $winpid windowactivate type "$chosen"
 fi

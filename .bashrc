@@ -24,6 +24,8 @@ alias vv="nvim"
 alias nv="nvim"
 alias nf="neofetch"
 
+alias qn="vim ~/myfiles/junk/qnotes/$(date +%d-%m-%4Y).md"
+
 # life improvements
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
 alias update="sudo pacman -Syyu"
@@ -50,7 +52,7 @@ alias n="nnn -rcC"
 alias nn="nnn -r"
 alias nnp="nnn -r -P p"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
+export NNN_BMS='w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 
 # aliases for blog sync
@@ -98,6 +100,7 @@ export NMBGIT="$XDG_DATA_HOME"/notmuch/nmbug
 
 # pass
 #export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+# ------------------
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

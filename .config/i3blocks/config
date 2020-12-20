@@ -11,6 +11,7 @@ border_right=0
 border_bottom=3
 
 ##### BLOCKS #####
+#[life]
 
 #[music]
 #label=
@@ -39,9 +40,9 @@ border=#e16428
 interval=30
 border=#a7d129
 
-[internet]
-interval=10
-border=#219897
+#[internet]
+#interval=10
+#border=#219897
 
 [clock]
 label=📅

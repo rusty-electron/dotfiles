@@ -366,7 +366,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3blocks
-	font pango:Roboto Mono for Powerline 11
+	font pango:Fantasque Sans Mono 12.5
 	height 30
 	workspace_min_width 30
 	colors {
