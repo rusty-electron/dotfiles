@@ -15,6 +15,8 @@ set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
 
+# run rofi-powered qutebrowser search
+bindsym $mod+q exec --no-startup-id ~/myfiles/scripts/qbrofi
 # run electron-apps
 bindsym $mod+F12 exec --no-startup-id ~/myfiles/scripts/electron-menu
 # workspace toggle
@@ -89,6 +91,23 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo xbacklight -dec 5 # decr
 # force floating on some windows
 for_window[class="Matplotlib" instance="matplotlib"] floating enable
 
+# for qbrowser window
+for_window [class="qutebrowser" instance="qutebrowser"] floating enable
+for_window [class="qutebrowser" instance="qutebrowser"] resize set 1025 850
+for_window [class="qutebrowser" instance="qutebrowser"] move absolute position center
+
+for_window[class="Pavucontrol" instance="pavucontrol"] floating enable
+
+# for weather term
+for_window [title="weather-f"] floating enable
+for_window [title="weather-f"] resize set 1325 850
+for_window [title="weather-f"] move absolute position center
+
+# for clock term
+for_window [title="clock-f"] floating enable
+for_window [title="clock-f"] resize set 1325 850
+for_window [title="clock-f"] move absolute position center
+
 # setup for scratchpad - from luke's video
 exec --no-startup-id $termalt --title dropdown-f -e tmux
 #exec --no-startup-id $term --title math --config-file ~/.config/alacritty/bigfont.yml -e bc -q -l
@@ -118,7 +137,7 @@ for_window [class="^.*"] border pixel 3
 
 # Set inner/outer gaps
 gaps inner 12
-gaps outer 8
+gaps outer 5
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

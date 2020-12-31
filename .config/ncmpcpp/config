@@ -355,7 +355,7 @@ execute_on_song_change = mpdnotify
 #
 #lines_scrolled = 2
 #
-lyrics_fetchers = lyricwiki, azlyrics, genius, sing365, lyricsmania, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, internet
+lyrics_fetchers = azlyrics, genius, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, internet
 #
 #follow_now_playing_lyrics = no
 #
@@ -525,7 +525,7 @@ external_editor = vim
 #state_flags_color = default:b
 #
 #main_window_color = yellow
-#main_window_color = white 
+#main_window_color = white
 #
 #color1 = white
 #

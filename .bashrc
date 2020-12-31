@@ -31,6 +31,9 @@ alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
+alias passgh="pass -c github-pat"
+alias coa="conda activate"
+alias joplin="joplin-cli"
 
 # quiet and interacture youtube audio player
 alias ytp="youtube-viewer -n --no-video-info --player=mpvt"

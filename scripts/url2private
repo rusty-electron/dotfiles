@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# script that uses xdotool to copy the link in the browsers urlbar and then it opens the site in a private window
+
+windowid="$(xdotool selectwindow)"
+xdotool windowactivate --sync "$windowid"
+xdotool key --window "$windowid" "alt+d" "ctrl+c"
+sleep 0.1
+
+brave --incognito "$(xclip -o)"
+

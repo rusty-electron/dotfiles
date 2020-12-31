@@ -1,7 +1,7 @@
 command=~/myfiles/scripts/statusbar/$BLOCK_NAME
 markup=pango
 separator_block_width=15
-LOCATION=guwahati
+LOCATION=jagun
 
 # adding bottom borders
 separator=false
@@ -11,8 +11,6 @@ border_right=0
 border_bottom=3
 
 ##### BLOCKS #####
-#[life]
-
 #[music]
 #label=
 #interval=5

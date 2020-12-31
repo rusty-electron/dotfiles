@@ -1500,3 +1500,24 @@ Dec 19 18:28 : player: played "Xoru Manuh - Kool-D.mp3"
 Dec 19 19:17 : player: played "03 Be Kind.mp3"
 Dec 19 19:21 : player: played "04. bloody valentine.mp3"
 Dec 19 19:23 : player: played "05. forget me too (Feat. Halsey).mp3"
+Dec 26 22:59 : update: added mpdlinks/downloads/01 Absofacto - Dissolve.mp3
+Dec 26 22:59 : update: added mpdlinks/downloads/01 Someone Else's Dream.mp3
+Dec 26 22:59 : update: added mpdlinks/downloads/low/09 Malibu Nights.mp3
+Dec 26 23:15 : player: played "mpdlinks/downloads/01 Someone Else's Dream.mp3"
+Dec 27 13:43 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 27 13:49 : player: played "mpdlinks/downloads/01 Someone Else's Dream.mp3"
+Dec 27 13:57 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 27 13:59 : exception: Failed to decode /home/pritom/myfiles/music/Push to Talk - Problems.mp3; Failed to open '/home/pritom/myfiles/music/Push to Talk - Problems.mp3': No such file or directory
+Dec 27 13:59 : player: played "Push to Talk - Problems.mp3"
+Dec 27 13:59 : exception: Failed to decode /home/pritom/myfiles/music/Push to Talk - Problems.mp3; Failed to open '/home/pritom/myfiles/music/Push to Talk - Problems.mp3': No such file or directory
+Dec 27 13:59 : update: removing Push to Talk - Problems.mp3
+Dec 27 13:59 : update: added /03 Problems.mp3
+Dec 28 20:28 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 29 02:52 : player: played "mpdlinks/downloads/01 Someone Else's Dream.mp3"
+Dec 30 03:03 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 30 14:34 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 30 23:21 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 30 23:24 : player: played "mpdlinks/downloads/01 Someone Else's Dream.mp3"
+Dec 30 23:29 : player: played "mpdlinks/downloads/Older - Daya & Shallou.mp3"
+Dec 31 15:37 : player: played "mpdlinks/downloads/01 Absofacto - Dissolve.mp3"
+Dec 31 15:41 : player: played "mpdlinks/downloads/01 Someone Else's Dream.mp3"

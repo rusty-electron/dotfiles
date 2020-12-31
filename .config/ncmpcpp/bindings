@@ -568,7 +568,7 @@ def_key "j"
 def_key "k"
     scroll_up
 
-# big page nav 
+# big page nav
 def_key "ctrl-u"
     page_up
 def_key "ctrl-d"

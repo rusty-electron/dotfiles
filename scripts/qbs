@@ -1,0 +1,2 @@
+#!/bin/sh
+qutebrowser ":open $1" &> /dev/null &
