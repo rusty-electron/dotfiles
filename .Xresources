@@ -14,8 +14,8 @@ URxvt.perl-ext-common: clipboard,resize-font
 
 ! using clipboard functionalities
 URxvt.clipboard.autocopy: true
-URxvt.keysym.M-c:clipboard:copy
-URxvt.keysym.M-v:clipboard:paste
+URxvt.keysym.C-c:clipboard:copy
+URxvt.keysym.C-v:clipboard:paste
 
 ! terminal colours
 ! special

@@ -106,6 +106,8 @@ export NMBGIT="$XDG_DATA_HOME"/notmuch/nmbug
 
 # pass
 #export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+export PASSWORD_STORE_X_SELECTION=primary
+
 # ------------------
 
 # >>> conda initialize >>>

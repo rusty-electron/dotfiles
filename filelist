@@ -12,11 +12,13 @@
 .config/i3
 .config/i3blocks
 .config/mimeapps.list
-.config/mpd
-.config/ncmpcpp
+.config/mpd/mpd.conf
+.config/ncmpcpp/bindings
+.config/ncmpcpp/config
 .config/nnn
 .config/nvim
 .config/picom.conf
 .config/sxiv
+.config/sxhkd
 .config/zathura
 .config/youtube-viewer/youtube-viewer.conf
