@@ -13,6 +13,9 @@ PS1='\[\e[0;1;91m\][\[\e[0;1;94m\]\u\[\e[0m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;3m
 alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
+alias cfi="vim ~/.config/i3/config"
+alias cfv="vim ~/.vimrc"
+alias cfvv="vim ~/.config/nvim/init.vim"
 alias clc="calcurse"
 
 # for setting default scale as 4 in bc

@@ -560,8 +560,11 @@ def_key "h"
 
 def_key "+"
     show_clock
-def_key "="
+# volume keys like mpv
+def_key "0"
     volume_up
+def_key "9"
+    volume_down
 
 def_key "j"
     scroll_down

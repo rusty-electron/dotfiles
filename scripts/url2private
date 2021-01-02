@@ -4,7 +4,11 @@
 
 windowid="$(xdotool selectwindow)"
 xdotool windowactivate --sync "$windowid"
+
+
+# TO DO: add a condition to run following steps only if the current window is a browser window
 xdotool key --window "$windowid" "alt+d" "ctrl+c"
+# xdotool key "alt+d" "ctrl+c"
 sleep 0.1
 
 brave --incognito "$(xclip -o)"

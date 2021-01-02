@@ -20,5 +20,5 @@ else
 	echo "$chosen" | tr -d '\n' | xclip -selection clipboard
 	#echo "$chosen" | tr -d '\n' | clipit &> /dev/null
 	notify-send -t 2000 "'$chosen' copied to clipboard." &
-	sleep .2 && xdotool search --any --pid $winpid windowactivate type "$chosen"
+	sleep .1 && xdotool search --any --pid $winpid windowactivate type "$chosen"
 fi

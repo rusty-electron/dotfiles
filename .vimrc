@@ -1,7 +1,6 @@
 let mapleader=" "
 
 set t_md=
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set number relativenumber
 syntax on
 " set clipboard=unnamedplus
@@ -11,6 +10,8 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-vinegar'
 call plug#end()
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e

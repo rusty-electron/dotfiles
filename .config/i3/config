@@ -15,6 +15,11 @@ set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
 
+#### Assign workspaces
+for_window [class=".*whatsapp.*"] move to workspace $ws9
+
+# switch to urgent window
+bindsym $mod+g [urgent=latest] focus
 # run rofi-powered qutebrowser search
 bindsym $mod+q exec --no-startup-id ~/myfiles/scripts/qbrofi
 # run electron-apps
@@ -96,7 +101,7 @@ for_window [class="qutebrowser" instance="qutebrowser"] floating enable
 for_window [class="qutebrowser" instance="qutebrowser"] resize set 1025 850
 for_window [class="qutebrowser" instance="qutebrowser"] move absolute position center
 
-for_window[class="Pavucontrol" instance="pavucontrol"] floating enable
+for_window[class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move absolute position center
 
 # for weather term
 for_window [title="weather-f"] floating enable
@@ -198,7 +203,7 @@ mode "$mode_gaps_outer" {
 }
 
 ###### startup programs ######
-
+exec --no-startup-id autotiling
 # run mpd
 exec --no-startup-id mpd
 
@@ -279,10 +284,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+semicolon split h
+bindsym $mod+semicolon split h ;; exec --no-startup-id $term
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split v ;; exec --no-startup-id $term
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle

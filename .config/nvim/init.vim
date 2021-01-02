@@ -1,3 +1,7 @@
+" #####################
+"     nvim configs
+" ####################
+
 let mapleader=" "
 
 " muh plugins
