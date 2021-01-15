@@ -2,3 +2,7 @@
 "^brave-browser$"
 	None, Up, Button4, 2
 	None, Down, Button5, 2
+
+# "^Zathura$"
+# 	None, Up, Button4, 2
+# 	None, Down, Button5, 2

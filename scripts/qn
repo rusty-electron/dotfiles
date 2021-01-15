@@ -1,0 +1,5 @@
+#!/bin/sh
+# use this script for the 'qn' bash alias
+
+vim ~/myfiles/junk/qnotes/$(date +%d-%m-%4Y).md
+

@@ -1,0 +1,2 @@
+conda activate utils
+python ~/myfiles/projects/github/gmeet-linkgen/linkgen.py | xclip -selection primary && notify-send "info" "gmeet link copied to clipboard"

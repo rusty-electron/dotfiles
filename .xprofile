@@ -1,7 +1,7 @@
+sxhkd &
 feh --bg-fill --randomize ~/myfiles/wallpapers/*
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1
 export GDK_SCALE=.8
 dunst &
-sxhkd &
 #imwheel -b 45 &

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+searchstr="meet.google.com is sharing your screen."
+
+refresh() {
+	if [ ! -z $(xdotool search --name "$searchstr" getwindowpid) ]
+	then
+		echo "↪️ shared"
+	else
+		echo ""
+	fi
+}
+
+if $BLOCK_BUTTON
+then
+	refresh
+fi
+
+refresh

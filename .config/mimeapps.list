@@ -6,7 +6,10 @@ x-scheme-handler/magnet=torrent.desktop
 application/x-bittorrent=torrent.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
 application/epub+zip=zathura.desktop
+x-scheme-handler/msteams=teams.desktop
+inode/directory=pcmanfm.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
 application/octet-stream=mpv.desktop;
+application/epub+zip=mpv.desktop;

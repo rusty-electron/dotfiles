@@ -11,13 +11,18 @@ border_right=0
 border_bottom=3
 
 ##### BLOCKS #####
-#[music]
-#label=
-#interval=5
-#signal=11
+[gmeet]
+signal=19
+
+# [yearc]
+# full_text=lol
+# label=YEAR:
+# align=left
+# min_width=850
+# interval=18000
 
 [weather]
-interval=18000
+interval=10800
 signal=5
 border=#acdbdf
 
@@ -35,7 +40,7 @@ interval=20
 border=#e16428
 
 [battery]
-interval=30
+interval=10
 border=#a7d129
 
 #[internet]

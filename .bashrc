@@ -14,9 +14,14 @@ alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
 alias cfi="vim ~/.config/i3/config"
+alias cff="vim ~/.config/fontconfig/fonts.conf"
 alias cfv="vim ~/.vimrc"
 alias cfvv="vim ~/.config/nvim/init.vim"
 alias clc="calcurse"
+alias tdwn="transmission-daemon"
+alias tdir="cd ~/myfiles/junk/testspace"
+alias jupy="coa pyimg;jupyter notebook"
+
 
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"
@@ -27,7 +32,8 @@ alias vv="nvim"
 alias nv="nvim"
 alias nf="neofetch"
 
-alias qn="vim ~/myfiles/junk/qnotes/$(date +%d-%m-%4Y).md"
+# alias qn="export QNDATE=$(date +%d-%m-%4Y); vim ~/myfiles/junk/qnotes/$QNDATE"
+alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
@@ -52,13 +58,15 @@ export browser=brave
 export PATH="$HOME/.local/bin:$HOME/myfiles/scripts:$PATH"
 
 # nnn envars
+[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
+
 export NNN_PLUG='d:dragdrop;p:preview-tabbed;f:fzopen'
 alias nnn="nnn -rcC"
 alias n="nnn -rcC"
 alias nn="nnn -r"
 alias nnp="nnn -r -P p"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
+export NNN_BMS='g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 
 # aliases for blog sync
@@ -124,4 +132,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-

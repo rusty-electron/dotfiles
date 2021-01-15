@@ -2,7 +2,7 @@
 
 case $BLOCK_BUTTON in
 	1) notify-send -u low "🖥 CPU hogs" "$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)\\n(100% per core)" ;;
-	2) setsid -f alacritty -e gotop ;;
+	2) setsid -f alacritty --title cpu-f -e gotop ;;
 	3) notify-send -u low "🖥 CPU module " "\- Shows CPU temperature.
 - Click to show intensive processes.
 - Middle click to open htop." ;;

@@ -8,6 +8,8 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+client.focused 			#526f9e #526f9e #526f9e #526f9e
+client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252
 
 # important envars
 set $mod Mod4
@@ -15,8 +17,19 @@ set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
 
+for_window [class="Dragon"] sticky enable
+for_window [class="flameshot"] floating enable
+for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/gms
+
 #### Assign workspaces
 for_window [class=".*whatsapp.*"] move to workspace $ws9
+
+# open pcmanfm
+bindsym $mod+F1 exec --no-startup-id pcmanfm
+
+# change songs n/p
+bindsym $mod+F2 exec --no-startup-id mpc prev
+bindsym $mod+F3 exec --no-startup-id mpc next
 
 # switch to urgent window
 bindsym $mod+g [urgent=latest] focus
@@ -27,7 +40,7 @@ bindsym $mod+F12 exec --no-startup-id ~/myfiles/scripts/electron-menu
 # workspace toggle
 bindsym $mod+Tab workspace back_and_forth
 # focus on next window
-bindsym $mod+a focus next
+bindsym $mod+a focus left
 
 ##### mpc controls #####
 # keybinding to play/pause mpd
@@ -41,9 +54,9 @@ bindsym $mod+o exec --no-startup-id rofi -show window
 # dmoji script
 bindsym $mod+period exec --no-startup-id ~/myfiles/scripts/dmoji
 # open nnn terminal
-bindsym $mod+backslash exec --no-startup-id $term -e nnn
+bindsym $mod+backslash exec --no-startup-id $term -e nnn -rcC
 # youtubeplaypause
-bindsym $mod+Shift+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
+bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
 # run dpomo
 bindsym $mod+p exec --no-startup-id ~/myfiles/scripts/dpomo
 # run udiskie tray
@@ -108,9 +121,14 @@ for_window [title="weather-f"] floating enable
 for_window [title="weather-f"] resize set 1325 850
 for_window [title="weather-f"] move absolute position center
 
+# for gotop term
+for_window [title="cpu-f"] floating enable
+for_window [title="cpu-f"] resize set 1025 850
+for_window [title="cpu-f"] move absolute position center
+
 # for clock term
 for_window [title="clock-f"] floating enable
-for_window [title="clock-f"] resize set 1325 850
+for_window [title="clock-f"] resize set 1025 650
 for_window [title="clock-f"] move absolute position center
 
 # setup for scratchpad - from luke's video
@@ -247,7 +265,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty #i3-sensible-terminal
-bindsym $mod+Shift+Return exec --no-startup-id urxvt
+bindsym $mod+Mod1+Return exec --no-startup-id $termalt
+# start terminal according to the open directory
+bindsym $mod+Shift+Return exec --no-startup-id alacritty --working-directory $(xcwd)
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -311,15 +331,15 @@ bindsym $mod+space focus mode_toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 "1 <span font='18'></span>"
+set $ws2 "2 <span font='17'></span>"
+set $ws3 "3 <span font='17'></span>"
+set $ws4 "4 <span font='17'></span>"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
+set $ws8 "8 <span font='17'></span>"
+set $ws9 "9 <span font='17'></span>"
 set $ws10 "10"
 
 # switch to workspace
@@ -390,7 +410,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3blocks
-	font pango:Fantasque Sans Mono 12.5
+	font pango:Fantasque Sans Mono, Hurmit Nerd Font Mono 12.5
 	height 30
 	workspace_min_width 30
 	colors {
