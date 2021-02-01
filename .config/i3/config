@@ -11,25 +11,33 @@
 client.focused 			#526f9e #526f9e #526f9e #526f9e
 client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252
 
+# multi-monitor stuff
+bindsym $mod+Ctrl+Right move workspace to output right
+bindsym $mod+Ctrl+Left move workspace to output left
+
 # important envars
 set $mod Mod4
 set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
 
+# switch to greeter
+# bindsym $mod+Escape exec --no-startup-id dm-tool switch-to-greeter
+
+# run sxhkd, will remove from this config later
+# exec_always --no-startup-id sxhkd
+# special settings for some programs
 for_window [class="Dragon"] sticky enable
 for_window [class="flameshot"] floating enable
-for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/gms
+
+# google meet widget
+for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
 
 #### Assign workspaces
 for_window [class=".*whatsapp.*"] move to workspace $ws9
 
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
-
-# change songs n/p
-bindsym $mod+F2 exec --no-startup-id mpc prev
-bindsym $mod+F3 exec --no-startup-id mpc next
 
 # switch to urgent window
 bindsym $mod+g [urgent=latest] focus
@@ -45,6 +53,10 @@ bindsym $mod+a focus left
 ##### mpc controls #####
 # keybinding to play/pause mpd
 bindsym $mod+Shift+p exec --no-startup-id mpc toggle
+
+# change songs n/p
+bindsym $mod+F2 exec --no-startup-id mpc prev
+bindsym $mod+F3 exec --no-startup-id mpc next
 
 # move a window to scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -98,9 +110,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # screenshot utility
-bindsym Print exec flameshot gui
-bindsym Shift+Print exec flameshot gui -d 2000
-bindsym Ctrl+Print exec flameshot full -c -p $screenshot-folder
+bindsym Print exec --no-startup-id flameshot gui
+bindsym Shift+Print exec --no-startup-id flameshot gui -d 2000
+bindsym Ctrl+Print exec --no-startup-id flameshot full -c -p $screenshot-folder
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id sudo xbacklight -inc 5 # increase screen brightness
@@ -123,7 +135,7 @@ for_window [title="weather-f"] move absolute position center
 
 # for gotop term
 for_window [title="cpu-f"] floating enable
-for_window [title="cpu-f"] resize set 1025 850
+for_window [title="cpu-f"] resize set 1025 750
 for_window [title="cpu-f"] move absolute position center
 
 # for clock term
@@ -139,6 +151,12 @@ exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=1
 for_window [title="dropdown-f"] floating enable, move scratchpad
 for_window [title="dropdown-f"] resize set 925 650
 for_window [title="dropdown-f"] border pixel 6
+
+# load arandr in floating mode
+for_window [class="Arandr"] floating enable
+for_window [class="Arandr"] resize set 925 650
+for_window [class="Arandr"] border pixel 6
+for_window [class="Arandr"] move absolute position center
 
 bindsym $mod+u		[title="dropdown-f"] scratchpad show; [title="dropdown-f"] move position center
 
@@ -221,12 +239,12 @@ mode "$mode_gaps_outer" {
 }
 
 ###### startup programs ######
-exec --no-startup-id autotiling
+exec_always --no-startup-id autotiling
 # run mpd
 exec --no-startup-id mpd
 
 # i3-battery-popup for notifications
-exec --no-startup-id i3-battery-popup -L 21 -n
+exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-error.ogg
 
 # make use of settings specified in Xresources file
 exec --no-startup-id xrdb -merge ~/.Xresources
@@ -340,7 +358,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8 <span font='17'></span>"
 set $ws9 "9 <span font='17'></span>"
-set $ws10 "10"
+set $ws10 "10 <span font='17'></span>"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -413,6 +431,7 @@ bar {
 	font pango:Fantasque Sans Mono, Hurmit Nerd Font Mono 12.5
 	height 30
 	workspace_min_width 30
+	tray_output primary
 	colors {
 		focused_workspace  #4c7899 #285577 #ffffff
 		background #322f3d

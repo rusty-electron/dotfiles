@@ -1,0 +1,9 @@
+#!/bin/sh
+
+searchstr="meet.google.com is sharing your screen"
+while [ ! -z $(xdotool search --name "$searchstr" getwindowpid) ]
+do
+	sleep 30s
+	pkill -RTMIN+19 i3blocks
+done
+

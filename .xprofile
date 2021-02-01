@@ -1,7 +1,9 @@
-sxhkd &
+#sxhkd &
+mpv --volume=40 ~/.local/share/sounds/system-ready.ogg &
 feh --bg-fill --randomize ~/myfiles/wallpapers/*
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1
+# export WINIT_X11_SCALE_FACTOR=1
 export GDK_SCALE=.8
 dunst &
 #imwheel -b 45 &
