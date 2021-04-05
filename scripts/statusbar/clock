@@ -20,7 +20,7 @@ esac
 
 case $BLOCK_BUTTON in
 	1) notify-send -u low "This Month" "$(cal --color=always | sed "s/..7m/<b><span color=\"red\">/;s/..27m/<\/span><\/b>/")" && notify-send "Appointments" "$(calcurse -d3)" ;;
-	2) setsid -f urxvt --title clock-f -e calcurse ;;
+	2) setsid -f alacritty --title clock-f -e calcurse ;;
 	3) notify-send -u low "📅 Time/date module" "\- Left click to show upcoming appointments for the next\n  three days via \`calcurse -d3\` and show the month via \`cal\`
 - Middle click opens calcurse if installed" ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;

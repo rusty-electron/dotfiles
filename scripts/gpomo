@@ -1,0 +1,8 @@
+#!/bin/sh
+
+choice=$(printf "start-stop\npause-resume" | dmenu -sb '#008891' -i -p "Pomodoro prompt: ")
+
+case "$choice" in
+	start-stop) gnome-pomodoro --start-stop ;;
+	pause-resume) gnome-pomodoro --pause-resume ;;
+esac

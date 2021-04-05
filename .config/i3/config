@@ -11,6 +11,8 @@
 client.focused 			#526f9e #526f9e #526f9e #526f9e
 client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252
 
+bindsym XF86Display exec --no-startup-id $SCRIPT/dmonitor-select
+
 # multi-monitor stuff
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left move workspace to output left
@@ -20,6 +22,7 @@ set $mod Mod4
 set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
+set $SCRIPT ~/myfiles/scripts/
 
 # switch to greeter
 # bindsym $mod+Escape exec --no-startup-id dm-tool switch-to-greeter
@@ -33,11 +36,15 @@ for_window [class="flameshot"] floating enable
 # google meet widget
 for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
 
+# for gnome-pomodoro
+for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
+
 #### Assign workspaces
 for_window [class=".*whatsapp.*"] move to workspace $ws9
 
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
+bindsym $mod+Shift+F1 exec --no-startup-id pcmanfm "`xcwd`"
 
 # switch to urgent window
 bindsym $mod+g [urgent=latest] focus
@@ -50,13 +57,21 @@ bindsym $mod+Tab workspace back_and_forth
 # focus on next window
 bindsym $mod+a focus left
 
+# ocr script
+bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> ~/file.log #&& notify-send "OCR script" "select text to be copied"
+
 ##### mpc controls #####
 # keybinding to play/pause mpd
 bindsym $mod+Shift+p exec --no-startup-id mpc toggle
 
+# playerctl pause/resume
+bindsym $mod+Ctrl+space exec --no-startup-id playerctl -a play-pause
+exec --no-startup-id playerctld daemon
+
 # change songs n/p
-bindsym $mod+F2 exec --no-startup-id mpc prev
-bindsym $mod+F3 exec --no-startup-id mpc next
+bindsym $mod+F2 exec --no-startup-id mpc prev && exec ~/myfiles/scripts/mpdnotify
+bindsym $mod+F3 exec --no-startup-id mpc next && exec $SCRIPT/mpdnotify
+bindsym $mod+Shift+F11 exec --no-startup-id $termalt --title cava-f -e cava
 
 # move a window to scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -65,16 +80,23 @@ bindsym $mod+o exec --no-startup-id rofi -show window
 
 # dmoji script
 bindsym $mod+period exec --no-startup-id ~/myfiles/scripts/dmoji
+
+# drecord script
+bindsym $mod+F7 exec --no-startup-id ~/myfiles/scripts/drecord
 # open nnn terminal
-bindsym $mod+backslash exec --no-startup-id $term -e nnn -rcC
+bindsym $mod+backslash exec --no-startup-id $term -e bash -lc "nnn -rcC"
 # youtubeplaypause
 bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
 # run dpomo
-bindsym $mod+p exec --no-startup-id ~/myfiles/scripts/dpomo
+# bindsym $mod+p exec --no-startup-id ~/myfiles/scripts/dpomo
+# bindsym $mod+p exec --no-startup-id gnome-pomodoro
+bindsym $mod+p [class="Gnome-pomodoro"] scratchpad show
+bindsym $mod+Ctrl+p exec --no-startup-id $SCRIPT/gpomo
+
 # run udiskie tray
 bindsym $mod+Shift+u exec --no-startup-id udiskie -t
 # run transmission-daemon
-bindsym $mod+t exec --no-startup-id transmission-daemon # to-do: write a better script
+bindsym $mod+t exec --no-startup-id transmission-daemon && notify-send "transmission-daemon" "has been started"# to-do: write a better script
 # toggle imwheel
 bindsym $mod+Shift+m exec --no-startup-id ~/myfiles/scripts/toggle-imwheel.sh
 # toggle picom
@@ -119,44 +141,58 @@ bindsym XF86MonBrightnessUp exec --no-startup-id sudo xbacklight -inc 5 # increa
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo xbacklight -dec 5 # decrease screen brightness
 
 # force floating on some windows
-for_window[class="Matplotlib" instance="matplotlib"] floating enable
+for_window [class="Matplotlib" instance="matplotlib"] floating enable
 
 # for qbrowser window
 for_window [class="qutebrowser" instance="qutebrowser"] floating enable
 for_window [class="qutebrowser" instance="qutebrowser"] resize set 1025 850
-for_window [class="qutebrowser" instance="qutebrowser"] move absolute position center
+for_window [class="qutebrowser" instance="qutebrowser"] move position center
 
-for_window[class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move absolute position center
+# for floating cava
+for_window [title="cava-f"] floating enable, sticky enable, resize set 500 200, move right 825px move down 550px
+
+# for pymol window
+for_window [class="PyMOL"] floating enable
+for_window [class="PyMOL"] resize set 1800 1000
+for_window [class="PyMOL"] move position center
+
+for_window[class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
 
 # for weather term
 for_window [title="weather-f"] floating enable
 for_window [title="weather-f"] resize set 1325 850
-for_window [title="weather-f"] move absolute position center
+for_window [title="weather-f"] move position center
+
+# for floating term
+bindsym $mod+Shift+t exec --no-startup-id alacritty --title term-f -e tmux
+for_window [title="term-f"] floating enable, move right 500px move up 150px
 
 # for gotop term
 for_window [title="cpu-f"] floating enable
 for_window [title="cpu-f"] resize set 1025 750
-for_window [title="cpu-f"] move absolute position center
+for_window [title="cpu-f"] move position center
 
 # for clock term
 for_window [title="clock-f"] floating enable
 for_window [title="clock-f"] resize set 1025 650
-for_window [title="clock-f"] move absolute position center
+for_window [title="clock-f"] move position center
 
 # setup for scratchpad - from luke's video
 exec --no-startup-id $termalt --title dropdown-f -e tmux
 #exec --no-startup-id $term --title math --config-file ~/.config/alacritty/bigfont.yml -e bc -q -l
-exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=18" -e bc -q -l
+exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=18" -e qalc
 
 for_window [title="dropdown-f"] floating enable, move scratchpad
 for_window [title="dropdown-f"] resize set 925 650
 for_window [title="dropdown-f"] border pixel 6
 
+for_window [class="kdeconnect.app"] floating enable, move position center
+
 # load arandr in floating mode
 for_window [class="Arandr"] floating enable
 for_window [class="Arandr"] resize set 925 650
 for_window [class="Arandr"] border pixel 6
-for_window [class="Arandr"] move absolute position center
+for_window [class="Arandr"] move position center
 
 bindsym $mod+u		[title="dropdown-f"] scratchpad show; [title="dropdown-f"] move position center
 

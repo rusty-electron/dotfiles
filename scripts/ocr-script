@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+choice=$(printf "remove\nkeep" | dmenu -sb '#7ae070' -sf '#000' -i -p "dOCR - newline?: ")
+case "$choice" in
+	keep) convert x: -modulate 100,0 -resize 400% -set density 300 png:- | tesseract stdin stdout -l eng --psm 3 | sed 's/'$(printf '%b' '\014')'//g;s/|/I/g' | xclip -i -selection clipboard ;;
+	remove) convert x: -modulate 100,0 -resize 400% -set density 300 png:- | tesseract stdin stdout -l eng --psm 3 | sed 's/'$(printf '%b' '\014')'//g;s/|/I/g' | tr '\n' ' ' | xclip -i -selection clipboard ;;
+esac

@@ -307,7 +307,8 @@
     icon = ~/.config/dunst/info.png
 
 [urgency_critical]
-    background = "#900000"
+    background = "#1d1a31"
+    # background = "#900000"
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0

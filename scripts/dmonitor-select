@@ -1,0 +1,18 @@
+#!/bin/sh
+
+choice=$(printf "single\nhome-monitor\nduplicate\narandr" | dmenu -i -p "Select display mode: ")
+
+homemode(){
+	xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output HDMI1 --off --output HDMI2 --mode 1440x900_60.00 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
+}
+
+singlemode(){
+	xrandr --output HDMI2 --off
+}
+
+case "$choice" in
+	single) singlemode ;;
+	home-monitor) homemode ;;
+
+	arandr) arandr ;;
+esac

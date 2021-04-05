@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [ -f "pomopid" ]; then
+	read -r notpid < ./pomopid
+fi
+
 # pomodoro timer script that uses '$pomopath'
 pomopath=~/.local/bin/pomo
 
@@ -28,14 +32,16 @@ ptime(){
 startpomo(){
 	$pomopath start
 	notify-send -c "pomo" "pomo" "Timer started\n$(ptime)"
-	if [ $(ps aux | grep "pomo notify" | wc -l) -le 1 ] 
-	then 
-		$pomopath notify &
+	if [ $(ps aux | grep "pomo notify" | wc -l) -le 1 ]
+	then
+		notpid=$($pomopath notify &)
+		echo $notpid
+		echo $notpid > ./pomopid
 	fi
 }
 
 # generate only 'start' option if not running previously
-if [[ $a =~ "start" && ! $raw =~ "B" ]]; then 
+if [[ $a =~ "start" && ! $raw =~ "B" ]]; then
 	choice=$(printf "$a" | dmenu -sb '#008891' -i -p "Pomodoro prompt: ")
 elif [[ $raw =~ "B" ]]; then
 	choice=$(printf "$a\n$b\nshow\nskip break" | dmenu -sb '#008891' -i -p "Pomodoro prompt: ")
@@ -50,6 +56,6 @@ case "$choice" in
  	pause) $pomopath pause && notify-send -c "pomo" "pomo" "Timer paused \n$(ptime)" ;;
 
 	show) notify-send -c "pomo" "pomo" "Timer status\n$(ptime)";;
-	stop) $pomopath stop && notify-send -c "pomo" "pomo" "Timer stopped \n$(ptime)" ;;
-	skip\ break) $pomopath stop; killall "pomo"; $pomopath start; notify-send -c "pomo" "pomo" "Break Skipped \n$(ptime)";;
-esac	
+	stop) $pomopath stop && kill $notpid; notify-send -c "pomo" "pomo" "Timer stopped \n$(ptime)"; rm ./pomopid ;;
+	skip\ break) $pomopath stop; kill $notpid;$pomopath start;$pomopath notify; notify-send -c "pomo" "pomo" "Break Skipped \n$(ptime)";;
+esac

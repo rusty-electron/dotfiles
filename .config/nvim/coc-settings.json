@@ -1,4 +1,3 @@
 {
-	"python.venvPath": "/home/pritom/minconda3/envs/",
-	"python.jediEnabled": false
+	"python.linting.pylintArgs" : ["--extension-pkg-whitelist=cv2"]
 }

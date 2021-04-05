@@ -24,6 +24,8 @@ alias tdwn="transmission-daemon"
 alias tdir="cd ~/myfiles/junk/testspace"
 alias jupy="coa pyimg;jupyter notebook"
 alias npc="ncmpcpp"
+alias playalert="mpv --really-quiet ~/.local/share/sounds/complete.ogg"
+alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio'"
 
 
 # for setting default scale as 4 in bc
@@ -45,7 +47,8 @@ alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
 alias passgh="pass -c github-pat"
 alias coa="conda activate"
-alias joplin="joplin-cli"
+# alias joplin="joplin-cli"
+alias mpvq="mpv --no-video"
 
 # quiet and interacture youtube audio player
 alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
@@ -63,7 +66,7 @@ export PATH="$HOME/.local/bin:$HOME/myfiles/scripts:$PATH"
 # nnn envars
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
 
-export NNN_PLUG='d:dragdrop;p:preview-tabbed;f:fzopen'
+export NNN_PLUG='d:dragdrop;p:preview-tabbed;f:fzopen;r:_devour okular $nnn*'
 alias nnn="nnn -rcC"
 alias n="nnn -rcC"
 alias nn="nnn -r"
