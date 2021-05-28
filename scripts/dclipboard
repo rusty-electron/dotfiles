@@ -1,0 +1,80 @@
+#!/bin/sh
+
+menu(){
+    printf "1. [URL] get a shortened url\n"
+    printf "2. [URL] download file in ~/D\n"
+    printf "3. [URL] open in incognito\n"
+    printf "4. [URL] play in mpv\n"
+    printf "5. [githubURL] open in nbviewer\n"
+    printf "6. [Image] save clipboard image\n"
+    printf "7. [Text] tgsend script\n"
+    printf "8. [Shell] run shell command\n"
+    printf "9. [Magnet] download torrent\n"
+    if [[ "$cbtext" == *"$scihub"* ]]; then
+	    printf "S. [URL] open in scihub\n"
+    fi
+}
+
+spell_failed(){
+    notify-send "Failed to cast spell"
+}
+
+cbtext=$(xclip -o -selection clipboard)
+preview="${cbtext:0:20}"
+choice=$(menu | dmenu -p "clipboard action: '$preview..'" -i -l 20 | cut -d. -f1)
+
+case $choice in
+    1)
+	output=$(curl -s -F"shorten=$cbtext" 0x0.st)
+	if [ "$output" = "Segmentation Fault" ]; then
+	    spell_failed
+	else
+	    echo "$output" | xclip -selection c
+	    notify-send "shortened link is in clipboard"
+	fi
+	break
+	;;
+    2)
+	wget -P ~/Downloads $cbtext &&
+	    notify-send "Downloading File" ||
+		spell_failed
+	break
+	;;
+    3)
+	brave --incognito $cbtext
+	break
+	;;
+
+    5)
+	modurl="https://nbviewer.jupyter.org/github/$(echo $cbtext | sed 's,https://github.com/,,')"
+	brave $modurl
+	break
+	;;
+    4)
+	mpv "$cbtext" || spell_failed
+	break
+	;;
+    6)
+	file=$(date +"%d-%m-%Y-%I-%M-%p")
+	xclip -selection clipboard -t image/png -o > $HOME/Downloads/screenshots/$file-clip.png ||
+	    spell_failed
+	break
+	;;
+    7)
+	user=$(echo "" | dmenu -p "Enter Username: ")
+	tgsend $user "$cbtext"
+	break
+	;;
+    8)
+	$cbtext || spell_failed
+	break
+	;;
+    9)
+	transadd $cbtext
+	break
+	;;
+    S)
+	brave "https://sci-hub.se/$cbtext"
+	break
+	;;
+esac

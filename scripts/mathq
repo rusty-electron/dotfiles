@@ -1,0 +1,52 @@
+#!/home/pritom/miniconda3/bin/python
+import numpy as np
+import signal
+
+# max subtractions
+max_sub = 1
+
+# list of common denominations
+denoms = [1000, 500, 200, 250, 100, 2000]
+
+one = np.random.choice(denoms, size=(5,))
+
+score = 0
+
+# for terminal colors
+CEND='\033[0m'
+CRED='\033[91m'
+CGRE='\033[92m'
+CSTART=CEND
+
+class Alarm(Exception):
+    pass
+
+def timeout_handler(signal, frame):
+    raise Alarm
+
+signal.signal(signal.SIGALRM, timeout_handler)
+
+try:
+    for i, num in enumerate(denoms):
+        signal.alarm(10)
+        cost = np.random.randint(low=10, high=num, size=max_sub)
+
+        print(CSTART + str(num) + " - " + str(cost[0]) + "= ?" + CEND)
+        result = num - cost[0]
+
+        try:
+            user_input = input(f"{CSTART}> {CEND}")
+        except Alarm:
+            user_input = -1
+            print("time out!")
+
+        # check input
+        if int(user_input) == result:
+            score += 1
+            CSTART = CGRE
+        else:
+            CSTART = CRED
+except KeyboardInterrupt:
+    print()
+
+print(f"score: {score}/{i+1}")

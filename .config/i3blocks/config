@@ -13,6 +13,7 @@ border_bottom=3
 ##### BLOCKS #####
 [gmeet]
 signal=19
+color=#d90436
 
 # [yearc]
 # full_text=lol
@@ -20,6 +21,9 @@ signal=19
 # align=left
 # min_width=850
 # interval=18000
+
+[covid]
+interval=10800
 
 [weather]
 interval=10800

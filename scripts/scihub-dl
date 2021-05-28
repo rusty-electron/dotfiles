@@ -1,0 +1,12 @@
+#!/bin/bash
+# Takes DOI strings as arguments for wget to first get SciHub info page, then extract pdf url, and then get that pdf!
+# usage:
+# Get a single pdf with: ./scihub 10.1145/1375761.1375762
+# USe as many DOIs as arguments as you'd like :)
+# to pass a list of DOI strings as arguments to this script you could use: "cat DOIS.txt | xargs ./scihub"
+# replace .tw in the sci-hub url with whatever tld is currently in operation....
+
+for DOI in "$@"
+do
+	wget https://sci-hub.se/$DOI -qO - | grep -Eom1 'https://[^ ]+\.pdf' | wget -i -
+done

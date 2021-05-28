@@ -1,3 +1,6 @@
+! monitor settings
+Xft.dpi: 96
+
 ! font settings
 URxvt.font: xft:Roboto Mono for Powerline:size=12
 URxvt.letterSpace: 0

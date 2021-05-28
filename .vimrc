@@ -3,6 +3,9 @@ let mapleader=" "
 set t_md=
 set number relativenumber
 syntax on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -15,8 +18,18 @@ Plug 'ap/vim-css-color'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
+Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips'
 call plug#end()
+
+" quickscope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+augroup qs_colors
+  autocmd!
+  autocmd ColorScheme * highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+  autocmd ColorScheme * highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+augroup END
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 autocmd BufWritePre * %s/\s\+$//e

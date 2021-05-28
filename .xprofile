@@ -1,9 +1,19 @@
-#sxhkd &
+# this should run when I login to lightdm
+#                        __ _ _
+#                       / _(_) |
+# __  ___ __  _ __ ___ | |_ _| | ___
+# \ \/ / '_ \| '__/ _ \|  _| | |/ _ \
+#  >  <| |_) | | | (_) | | | | |  __/
+# /_/\_\ .__/|_|  \___/|_| |_|_|\___|
+#      | |
+#      |_|
+
 feh --bg-fill --randomize ~/myfiles/wallpapers/*
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1
 # export WINIT_X11_SCALE_FACTOR=1
-export GDK_SCALE=.8
+export GDK_SCALE=1
 dunst &
 #imwheel -b 45 &
 sleep 1 && mpv --volume=40 ~/.local/share/sounds/system-ready.ogg &
+sxhkd &

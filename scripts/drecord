@@ -1,7 +1,7 @@
 #!/bin/sh
 
 videomic() {
-	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -f pulse -i default -preset ultrafast ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H
+	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -f pulse -i default  ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H
 -%M-%S'`.log
 }
 

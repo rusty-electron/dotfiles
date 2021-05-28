@@ -27,11 +27,19 @@ set $SCRIPT ~/myfiles/scripts/
 # switch to greeter
 # bindsym $mod+Escape exec --no-startup-id dm-tool switch-to-greeter
 
-# run sxhkd, will remove from this config later
+# run sxhkd, will remove from this config later [not working]
 # exec_always --no-startup-id sxhkd
+
 # special settings for some programs
 for_window [class="Dragon"] sticky enable
 for_window [class="flameshot"] floating enable
+for_window [class="if-Imagej"] floating enable
+for_window [class="JDownloader"] floating enable
+for_window [instance="Godot_Engine"] floating enable
+for_window [instance="ij-ImageJ"] floating enable
+for_window [class="Zotero"] floating enable
+for_window [class="SimpleScreenRecorder"] floating enable
+for_window [title="Bitwarden"] floating enable
 
 # google meet widget
 for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
@@ -58,7 +66,7 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+a focus left
 
 # ocr script
-bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> ~/file.log #&& notify-send "OCR script" "select text to be copied"
+bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> /tmp/ocr-file.log #&& notify-send "OCR script" "select text to be copied"
 
 ##### mpc controls #####
 # keybinding to play/pause mpd
@@ -67,6 +75,10 @@ bindsym $mod+Shift+p exec --no-startup-id mpc toggle
 # playerctl pause/resume
 bindsym $mod+Ctrl+space exec --no-startup-id playerctl -a play-pause
 exec --no-startup-id playerctld daemon
+
+# start conky
+exec --no-startup-id conky
+exec --no-startup-id conky --config ~/.config/conky/conky-2.conf
 
 # change songs n/p
 bindsym $mod+F2 exec --no-startup-id mpc prev && exec ~/myfiles/scripts/mpdnotify
@@ -85,8 +97,11 @@ bindsym $mod+period exec --no-startup-id ~/myfiles/scripts/dmoji
 bindsym $mod+F7 exec --no-startup-id ~/myfiles/scripts/drecord
 # open nnn terminal
 bindsym $mod+backslash exec --no-startup-id $term -e bash -lc "nnn -rcC"
-# youtubeplaypause
-bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
+
+# youtubeplaypause [obsolete due to mpris]
+# bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
+bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/dclipboard
+
 # run dpomo
 # bindsym $mod+p exec --no-startup-id ~/myfiles/scripts/dpomo
 # bindsym $mod+p exec --no-startup-id gnome-pomodoro
@@ -96,7 +111,7 @@ bindsym $mod+Ctrl+p exec --no-startup-id $SCRIPT/gpomo
 # run udiskie tray
 bindsym $mod+Shift+u exec --no-startup-id udiskie -t
 # run transmission-daemon
-bindsym $mod+t exec --no-startup-id transmission-daemon && notify-send "transmission-daemon" "has been started"# to-do: write a better script
+bindsym $mod+t exec --no-startup-id transmission-daemon && notify-send "transmission-daemon" "has been started" # to-do: write a better script
 # toggle imwheel
 bindsym $mod+Shift+m exec --no-startup-id ~/myfiles/scripts/toggle-imwheel.sh
 # toggle picom
@@ -119,6 +134,7 @@ set $screenshot-folder ~/Downloads/screenshots
 
 # wm shortcut for the browser
 bindsym $mod+b exec --no-startup-id $MYBROWSER
+bindsym $mod+ctrl+b exec --no-startup-id $MYBROWSER --incognito
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_volume pkill -RTMIN+10 i3blocks
@@ -149,7 +165,10 @@ for_window [class="qutebrowser" instance="qutebrowser"] resize set 1025 850
 for_window [class="qutebrowser" instance="qutebrowser"] move position center
 
 # for floating cava
-for_window [title="cava-f"] floating enable, sticky enable, resize set 500 200, move right 825px move down 550px
+for_window [title="cava-f"] floating enable, sticky enable, resize set 25 ppt 20 ppt, move right 42 ppt move down 46 ppt
+
+# for floating mpv
+for_window [instance="mpv-mini"] floating enable, sticky enable, resize set 25 ppt 35 ppt, move right 55 ppt move down 53 ppt
 
 # for pymol window
 for_window [class="PyMOL"] floating enable
@@ -158,14 +177,16 @@ for_window [class="PyMOL"] move position center
 
 for_window[class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
 
+for_window[class="realvnc-vncviewer"] floating enable, resize set 1024 768, move position center
+
 # for weather term
 for_window [title="weather-f"] floating enable
 for_window [title="weather-f"] resize set 1325 850
 for_window [title="weather-f"] move position center
 
 # for floating term
-bindsym $mod+Shift+t exec --no-startup-id alacritty --title term-f -e tmux
-for_window [title="term-f"] floating enable, move right 500px move up 150px
+bindsym $mod+Shift+t exec --no-startup-id alacritty --title term-f
+for_window [title="term-f"] floating enable, move right 20ppt move up 10ppt
 
 # for gotop term
 for_window [title="cpu-f"] floating enable

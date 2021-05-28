@@ -11,4 +11,3 @@ xdotool key --window "$windowid" "alt+d" "ctrl+c"
 sleep 0.1
 
 brave --incognito "$(xclip -o)"
-

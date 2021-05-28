@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while :
+do
+	echo "Changing wallpapers, press [CTRL+C] to stop.."
+	feh --bg-fill --randomize ~/myfiles/wallpapers/*
+	sleep 4
+done

@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+from datetime import date as D
+aged = (D.today() - D(1997, 11, 26)).days
+
+globlexp = 72.6 * 365
+
+print("{0:.1f}".format((aged/globlexp)*100))

@@ -3,6 +3,13 @@
 " ####################
 
 let mapleader=" "
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
+autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\n\+\%$//e
 
 " muh plugins
 call plug#begin('~/.local/share/nvim/plugged')
@@ -17,7 +24,18 @@ Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'yggdroot/indentline'
 Plug 'mhinz/vim-startify', {'branch': 'center'}
+Plug 'unblevable/quick-scope'
+Plug 'airblade/vim-rooter'
 call plug#end()
+
+" quickscope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+augroup qs_colors
+    autocmd!
+    autocmd ColorScheme * highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+    autocmd ColorScheme * highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+augroup END
 
 " fzf-vim
 set rtp+=/bin/
@@ -42,7 +60,7 @@ noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 " floaterm for python console
 " set splitbelow
 " autocmd FileType python map <buffer> <F10> :w<CR> :split term://python %<CR>i
-autocmd FileType python map <buffer> <F10> :w<CR> :cd %:p:h <CR> :FloatermNew python %<CR>
+" autocmd FileType python map <buffer> <F10> :w<CR> :cd %:p:h <CR> :FloatermNew python %<CR>
 
 " config for buffers
 nmap <leader>t :enew
@@ -52,8 +70,8 @@ nmap <C-q> :bp <BAR> bd #<CR>
 nmap <leader>bl :buffers<cr>:b<space>
 
 " run python scripts
-autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR
+" autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+" autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR
 
 " Basic Settings
 colorscheme codedark
@@ -86,19 +104,19 @@ autocmd BufWritePre * %s/\n\+\%$//e
 " floaterm configs
 let g:floaterm_winblend = 8
 
-nnoremap   <silent>   <leader>T    :FloatermNew<CR>
-tnoremap   <silent>   <leader>T    <C-\><C-n>:FloatermNew<CR>
-nnoremap   <silent>   <leader>E    :FloatermNew nnn<CR>
-tnoremap   <silent>   <leader>E    <C-\><C-n>:FloatermNew nnn<CR>
-nnoremap   <silent>   <leader>n    :FloatermNext<CR>
-tnoremap   <silent>   <leader>n   <C-\><C-n>:FloatermNext<CR>
-nnoremap   <silent>   <leader>tt   :FloatermToggle<CR>
-tnoremap   <silent>   <leader>tt   <C-\><C-n>:FloatermToggle<CR>
-tnoremap   <silent>   <leader>tk   <C-\><C-n>:FloatermKill<CR>
+nnoremap   <silent>   <F7>   :FloatermNew<CR>
+tnoremap   <silent>   <F7>   <C-\><C-n>:FloatermNew<CR>
+nnoremap   <silent>   <F8>   :FloatermNew nnn<CR>
+tnoremap   <silent>   <F8>   <C-\><C-n>:FloatermNew nnn<CR>
+nnoremap   <silent>   <F9>   :FloatermNext<CR>
+tnoremap   <silent>   <F9>  <C-\><C-n>:FloatermNext<CR>
+nnoremap   <silent>   <F10>   :FloatermToggle<CR>
+tnoremap   <silent>   <F10>   <C-\><C-n>:FloatermToggle<CR>
+tnoremap   <silent>   <S-F11>   <C-\><C-n>:FloatermKill<CR>
 
 " hexokinase configs
 set termguicolors
-nnoremap <F11> :HexokinaseToggle<CR>
+nnoremap <F12> :HexokinaseToggle<CR>
 
 let g:Hexokinase_highlighters = [ 'backgroundfull' ]
 let g:Hexokinase_refreshEvents = ['InsertLeave']

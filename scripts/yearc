@@ -1,0 +1,25 @@
+#!/usr/bin/python
+
+def checkYear(year):
+    if (year % 4) == 0:
+        if (year % 100) == 0:
+            if (year % 400) == 0:
+                return True
+            else:
+                return False
+        else:
+             return True
+    else:
+        return False
+
+from datetime import date as D
+today_var = D.today()
+left = (D(today_var.year+1, 1, 1) - today_var).days
+
+if checkYear(today_var.year):
+	total = 366
+else:
+	total = 365
+
+print("{0:.1f}".format(((total - left)/total)*100))
+

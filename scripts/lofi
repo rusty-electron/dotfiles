@@ -1,0 +1,8 @@
+#!/bin/bash
+
+PATH=~/Downloads/videos/lofi/
+
+# kill existing session
+/usr/bin/pkill -f mpv-mini
+
+/usr/bin/mpv --x11-name=mpv-mini --volume=50 "$( /usr/bin/find ${PATH} -regex '.*\.\(mkv\|mp4\|webm\)' | /usr/bin/shuf -n 1 )"

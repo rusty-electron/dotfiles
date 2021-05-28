@@ -11,6 +11,9 @@ inode/directory=pcmanfm.desktop
 application/x-yaml=vim.desktop
 text/plain=vim.desktop
 text/markdown=vim.desktop
+x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-02JK20.desktop
+application/xhtml+xml=brave-browser.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -18,3 +21,7 @@ application/octet-stream=mpv.desktop;
 application/epub+zip=mpv.desktop;
 application/x-yaml=vim.desktop;
 text/markdown=vim.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-02JK20.desktop;
+application/x-partial-download=mpv.desktop;
+application/xhtml+xml=brave-browser.desktop;
+application/pdf=libreoffice-writer.desktop;

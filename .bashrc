@@ -12,8 +12,11 @@ PS1='\[\e[0;1;91m\][\[\e[0;1;94m\]\u\[\e[0m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;3m
 # custom aliases
 alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
+
+# editing configs
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
 alias cfi="vim ~/.config/i3/config"
+alias cfii="vim ~/.config/i3blocks/config"
 alias cff="vim ~/.config/fontconfig/fonts.conf"
 alias cfv="vim ~/.vimrc"
 alias cfvv="vim ~/.config/nvim/init.vim"
@@ -25,7 +28,9 @@ alias tdir="cd ~/myfiles/junk/testspace"
 alias jupy="coa pyimg;jupyter notebook"
 alias npc="ncmpcpp"
 alias playalert="mpv --really-quiet ~/.local/share/sounds/complete.ogg"
-alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio'"
+alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(title)s.%(ext)s'"
+alias ytdlp="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(playlist_index)s-%(title)s.%(ext)s'"
+alias ctodo="vim ~/myfiles/todo.md"
 
 
 # for setting default scale as 4 in bc
@@ -45,7 +50,7 @@ alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
-alias passgh="pass -c github-pat"
+alias passgh="pass github-pat | xclip -i -sel clip"
 alias coa="conda activate"
 # alias joplin="joplin-cli"
 alias mpvq="mpv --no-video"
@@ -66,13 +71,13 @@ export PATH="$HOME/.local/bin:$HOME/myfiles/scripts:$PATH"
 # nnn envars
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
 
-export NNN_PLUG='d:dragdrop;p:preview-tabbed;f:fzopen;r:_devour okular $nnn*'
+export NNN_PLUG='d:dragdrop;p:preview-tabbed;f:fzopen;r:_devour okular $nnn*;n:_nvim $nnn*'
 alias nnn="nnn -rcC"
 alias n="nnn -rcC"
 alias nn="nnn -r"
 alias nnp="nnn -r -P p"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='y:~/myfiles/projects/pyimg/pyimgbook;g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
+export NNN_BMS='b:~/myfiles/blog;y:~/myfiles/projects/pyimg/pyimgbook;g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 
 # aliases for blog sync
@@ -138,3 +143,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# ruby gems
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"

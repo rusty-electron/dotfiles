@@ -72,4 +72,3 @@ else
         "$dnd" "$1" &
     fi
 fi
-
