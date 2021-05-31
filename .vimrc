@@ -7,6 +7,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" for vim wiki
+set nocompatible
+filetype plugin on
+
+let g:vimwiki_list = [{'path': '~/myfiles/vimwiki/', 'path_html': '~/myfiles/vimwiki/public_html/'}]
+
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
@@ -18,6 +24,7 @@ Plug 'ap/vim-css-color'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
+Plug 'vimwiki/vimwiki'
 Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips'
 call plug#end()

@@ -98,7 +98,7 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     # family: Ubuntu Mono Derivative Powerline
-    family: Roboto Mono for Powerline
+    family: JetBrains Mono
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -137,7 +137,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -221,85 +221,6 @@ font:
   #    background: CellForeground
   #    foreground: CellBackground
 
-# Colors (Iceberg Dark)
-colors:
-  # Default colors
-  primary:
-    background: '#161821'
-    foreground: '#d2d4de'
-
-  # Normal colors
-  normal:
-    black:   '#161821'
-    red:     '#e27878'
-    green:   '#b4be82'
-    yellow:  '#e2a478'
-    blue:    '#84a0c6'
-    magenta: '#a093c7'
-    cyan:    '#89b8c2'
-    white:   '#c6c8d1'
-
-  # Bright colors
-  bright:
-    black:   '#6b7089'
-    red:     '#e98989'
-    green:   '#c0ca8e'
-    yellow:  '#e9b189'
-    blue:    '#91acd1'
-    magenta: '#ada0d3'
-    cyan:    '#95c4ce'
-    white:   '#d2d4de'
-
-#colors:
-#  # Default colors
-#  primary:
-#    background: '0x1c2023'
-#    foreground: '0xc7ccd1'
-#
-#  # Normal colors
-#  normal:
-#    black:   '0x1c2023'
-#    red:     '0xc7ae95'
-#    green:   '0x95c7ae'
-#    yellow:  '0xaec795'
-#    blue:    '0xae95c7'
-#    magenta: '0xc795ae'
-#    cyan:    '0x95aec7'
-#    white:   '0xc7ccd1'
-#
-#  # Bright colors
-#  bright:
-#    black:   '0x747c84'
-#    red:     '0xc7ae95'
-#    green:   '0x95c7ae'
-#    yellow:  '0xaec795'
-#    blue:    '0xae95c7'
-#    magenta: '0xc795ae'
-#    cyan:    '0x95aec7'
-#    white:   '0xf3f4f5'
-
-  # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
-
-  # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
-
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
@@ -375,7 +296,7 @@ selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: true
+  save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
@@ -755,3 +676,384 @@ selection:
 
   # Print all received window events.
   #print_events: false
+
+schemes:
+  blood_moon: &blood_moon
+    primary:
+      background: '#10100E'
+      foreground: '#C6C6C4'
+
+    # Normal colors
+    normal:
+      black:   '#10100E'
+      red:     '#C40233'
+      green:   '#009F6B'
+      yellow:  '#FFD700'
+      blue:    '#0087BD'
+      magenta: '#9A4EAE'
+      cyan:    '#20B2AA'
+      white:   '#C6C6C4'
+
+    # Bright colors
+    bright:
+      black:   '#696969'
+      red:     '#FF2400'
+      green:   '#03C03C'
+      yellow:  '#FDFF00'
+      blue:    '#007FFF'
+      magenta: '#FF1493'
+      cyan:    '#00CCCC'
+      white:   '#FFFAFA'
+
+  schuam_solarized_dark: &schuam_solarized_dark
+    primary:
+      background: '#002b36'
+      foreground: '#839496'
+    normal:
+      black:   '#083f4d'
+      red:     '#dc322f'
+      green:   '#169921'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#da54da'
+      cyan:    '#26958c'
+      white:   '#839496'
+    bright:
+      black:   '#0c677e'
+      red:     '#df5017'
+      green:   '#1aba27'
+      yellow:  '#daa400'
+      blue:    '#2a9dea'
+      magenta: '#fe61fe'
+      cyan:    '#2db0a5'
+      white:   '#b9d2d3'
+
+  schuam_solarized_light: &schuam_solarized_light
+    primary:
+      background: '#e5dfce'
+      foreground: '#717171'
+    normal:
+      black:   '#d4cfbf'
+      red:     '#cc0000'
+      green:   '#007f00'
+      yellow:  '#939a15'
+      blue:    '#0039d6'
+      magenta: '#b000b0'
+      cyan:    '#00958b'
+      white:   '#717171'
+    bright:
+      black:   '#b3afa2'
+      red:     '#ff0000'
+      green:   '#00a800'
+      yellow:  '#ffff00'
+      blue:    '#0033ff'
+      magenta: '#ff00ff'
+      cyan:    '#00c3c3'
+      white:   '#2c2c2c'
+
+  schuam_dark: &schuam_dark
+    primary:
+      background: '#000000'
+      foreground: '#aaaaaa'
+    normal:
+      black:   '#262626'
+      red:     '#cc0000'
+      green:   '#00a100'
+      yellow:  '#a6a600'
+      blue:    '#006cd8'
+      magenta: '#ff00ff'
+      cyan:    '#00a1a1'
+      white:   '#aaaaaa'
+    bright:
+      black:   '#626262'
+      red:     '#ff4400'
+      green:   '#00ff00'
+      yellow:  '#ffff00'
+      blue:    '#0080ff'
+      magenta: '#ff55ff'
+      cyan:    '#00eaea'
+      white:   '#dedede'
+
+  # Colors (Monokai Pro)
+monokai_pro: &monokai_pro
+  # Default colors
+  primary:
+    background: '#2D2A2E'
+    foreground: '#FCFCFA'
+
+  # Normal colors
+  normal:
+    black:   '#403E41'
+    red:     '#FF6188'
+    green:   '#A9DC76'
+    yellow:  '#FFD866'
+    blue:    '#FC9867'
+    magenta: '#AB9DF2'
+    cyan:    '#78DCE8'
+    white:   '#FCFCFA'
+
+  # Bright colors
+  bright:
+    black:   '#727072'
+    red:     '#FF6188'
+    green:   '#A9DC76'
+    yellow:  '#FFD866'
+    blue:    '#FC9867'
+    magenta: '#AB9DF2'
+    cyan:    '#78DCE8'
+    white:   '#FCFCFA'
+
+  pop_os: &pop_os
+    # Default colors
+    primary:
+      background: '#333333'
+      foreground: '#F2F2F2'
+
+    # Normal colors
+    normal:
+      black:   '#333333'
+      red:     '#CC0000'
+      green:   '#4E9A06'
+      yellow:  '#C4A000'
+      blue:    '#3465A4'
+      magenta: '#75507B'
+      cyan:    '#06989A'
+      white:   '#D3D7CF'
+
+    # Bright colors
+    bright:
+      black:   '#88807C'
+      red:     '#F15D22'
+      green:   '#73C48F'
+      yellow:  '#FFCE51'
+      blue:    '#48B9C7'
+      magenta: '#AD7FA8'
+      cyan:    '#34E2E2'
+      white:   '#EEEEEC'
+
+nord: &nord
+   # Default colors
+   primary:
+     background: '#2E3440'
+     foreground: '#D8DEE9'
+
+   # Normal colors
+   normal:
+     black:   '#3B4252'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#88C0D0'
+     white:   '#E5E9F0'
+
+   # Bright colors
+   bright:
+     black:   '#4C566A'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#8FBCBB'
+     white:   '#ECEFF4'
+
+# Colors (Night Owl)
+night_owl: &night_owl
+   # Default colors
+  primary:
+    background: '#011627'
+    foreground: '#d6deeb'
+
+  cursor:
+    text: '#011627'
+    cursor: '#d6deeb'
+
+  selection:
+    background: '#1b90dd'
+
+   # Normal colors
+  normal:
+    black:   '#011627'
+    red:     '#ef5350'
+    green:   '#22da6e'
+    yellow:  '#c5e478'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#21c7a8'
+    white:   '#ffffff'
+
+   # Bright colors
+  bright:
+    black:   '#575656'
+    red:     '#ef5350'
+    green:   '#22da6e'
+    yellow:  '#ffeb95'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#7fdbca'
+    white:   '#ffffff'
+
+# Colors (Monokai Soda)
+monokai_soda: &monokai_soda
+  # Default colors
+  primary:
+    background: '#1a1a1a'
+    foreground: '#c4c5b5'
+
+  # Normal colors
+  normal:
+    black:   '#1a1a1a'
+    red:     '#f4005f'
+    green:   '#98e024'
+    yellow:  '#fa8419'
+    blue:    '#9d65ff'
+    magenta: '#f4005f'
+    cyan:    '#58d1eb'
+    white:   '#c4c5b5'
+
+  # Bright colors
+  bright:
+    black:   '#625e4c'
+    red:     '#f4005f'
+    green:   '#98e024'
+    yellow:  '#e0d561'
+    blue:    '#9d65ff'
+    magenta: '#f4005f'
+    cyan:    '#58d1eb'
+    white:   '#f6f6ef'
+
+# Colors (Nightfly)
+nightfly: &nightfly
+   # Default colors
+  primary:
+     background: '#011627'
+     foreground: '#acb4c2'
+
+  cursor:
+    text: '#fafafa'
+    cursor: '#9ca1aa'
+
+  selection:
+    text: '#080808'
+    background: '#b2ceee'
+
+   # Normal colors
+  normal:
+    black:   '#1d3b53'
+    red:     '#fc514e'
+    green:   '#a1cd5e'
+    yellow:  '#e3d18a'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#7fdbca'
+    white:   '#a1aab8'
+
+   # Bright colors
+  bright:
+    black:   '#7c8f8f'
+    red:     '#ff5874'
+    green:   '#21c7a8'
+    yellow:  '#ecc48d'
+    blue:    '#82aaff'
+    magenta: '#ae81ff'
+    cyan:    '#7fdbca'
+    white:   '#d6deeb'
+
+# Colors (Taerminal)
+taerminal: &taerminal
+  # Default colors
+  primary:
+    background: '#26282a'
+    foreground: '#f0f0f0'
+  cursor:
+    background: '#f0f0f0'
+    foreground: '#26282a'
+
+  # Normal colors
+  normal:
+    black:   '#26282a'
+    red:     '#ff8878'
+    green:   '#b4fb73'
+    yellow:  '#fffcb7'
+    blue:    '#8bbce5'
+    magenta: '#ffb2fe'
+    cyan:    '#a2e1f8'
+    white:   '#f1f1f1'
+
+  # Bright colors
+  bright:
+    black:   '#6f6f6f'
+    red:     '#fe978b'
+    green:   '#d6fcba'
+    yellow:  '#fffed5'
+    blue:    '#c2e3ff'
+    magenta: '#ffc6ff'
+    cyan:    '#c0e9f8'
+    white:   '#ffffff'
+
+# Colors (Tomorrow Night)
+tom_night: &tom_night
+  # Default colors
+  primary:
+    background: '#1d1f21'
+    foreground: '#c5c8c6'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#1d1f21'
+    cursor: '#ffffff'
+
+  # Normal colors
+  normal:
+    black:   '#1d1f21'
+    red:     '#cc6666'
+    green:   '#b5bd68'
+    yellow:  '#e6c547'
+    blue:    '#81a2be'
+    magenta: '#b294bb'
+    cyan:    '#70c0ba'
+    white:   '#373b41'
+
+  # Bright colors
+  bright:
+    black:   '#666666'
+    red:     '#ff3334'
+    green:   '#9ec400'
+    yellow:  '#f0c674'
+    blue:    '#81a2be'
+    magenta: '#b77ee0'
+    cyan:    '#54ced6'
+    white:   '#282a2e'
+
+# Colors (Iceberg Dark)
+iceberg_dark: &iceberg_dark
+  # Default colors
+  primary:
+    background: '#161821'
+    foreground: '#d2d4de'
+
+  # Normal colors
+  normal:
+    black:   '#161821'
+    red:     '#e27878'
+    green:   '#b4be82'
+    yellow:  '#e2a478'
+    blue:    '#84a0c6'
+    magenta: '#a093c7'
+    cyan:    '#89b8c2'
+    white:   '#c6c8d1'
+
+  # Bright colors
+  bright:
+    black:   '#6b7089'
+    red:     '#e98989'
+    green:   '#c0ca8e'
+    yellow:  '#e9b189'
+    blue:    '#91acd1'
+    magenta: '#ada0d3'
+    cyan:    '#95c4ce'
+    white:   '#d2d4de'
+
+colors: *iceberg_dark

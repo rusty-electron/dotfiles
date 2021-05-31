@@ -13,7 +13,8 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1
 # export WINIT_X11_SCALE_FACTOR=1
 export GDK_SCALE=1
-dunst &
+xset -b # prevent beeps
+dunst & # notification daemon
 #imwheel -b 45 &
 sleep 1 && mpv --volume=40 ~/.local/share/sounds/system-ready.ogg &
 sxhkd &

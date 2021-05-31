@@ -31,7 +31,7 @@ alias playalert="mpv --really-quiet ~/.local/share/sounds/complete.ogg"
 alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(title)s.%(ext)s'"
 alias ytdlp="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(playlist_index)s-%(title)s.%(ext)s'"
 alias ctodo="vim ~/myfiles/todo.md"
-
+alias vwki="vim -c ':VimwikiIndex'"
 
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"
@@ -52,7 +52,6 @@ alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
 alias passgh="pass github-pat | xclip -i -sel clip"
 alias coa="conda activate"
-# alias joplin="joplin-cli"
 alias mpvq="mpv --no-video"
 
 # quiet and interacture youtube audio player
@@ -80,13 +79,16 @@ export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_BMS='b:~/myfiles/blog;y:~/myfiles/projects/pyimg/pyimgbook;g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 
-# aliases for blog sync
-alias downblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ubuntu@54.160.105.137:/var/www/html/rustyelectron.live/public_html/ ~/myfiles/blog/"
-alias upblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ~/myfiles/blog/ ubuntu@54.160.105.137:/var/www/html/rustyelectron.live/public_html/"
+# aliases for blog sync [DEPRECATED]
+# alias downblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ubuntu@54.160.105.137:/var/www/html/rustyelectron.live/public_html/ ~/myfiles/blog/"
+# alias upblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ~/myfiles/blog/ ubuntu@54.160.105.137:/var/www/html/rustyelectron.live/public_html/"
 
 # aliases for fzf
-alias c='file=$(find ~/ -type f | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd $file'
+export FZF_DEFAULT_COMMAND="rg --files --hidden"
+alias cpcmd="history | cut -c 8- | fzf | xclip -i -sel -r clipboard"
+alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd $file'
 alias f='vfz'
+alias fzfo='devour xdg-open $(rg --files | fzf)'
 
 # spring cleaning
 # ---------------

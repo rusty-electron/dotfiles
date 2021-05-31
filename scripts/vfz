@@ -1,5 +1,6 @@
 #!/bin/sh
 
-file=$(find ~/ -type f | fzf)
-[[ "$file" == "" ]] && exit
-vim $file
+# update: replaced `find` with `ripgrep`
+
+file=$(rg --files --hidden | fzf)
+[[ "$file" == "" ]] && exit || vim $file
