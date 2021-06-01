@@ -1,3 +1,4 @@
+" set leader key
 let mapleader=" "
 
 set t_md=
@@ -10,24 +11,43 @@ set expandtab
 " for vim wiki
 set nocompatible
 filetype plugin on
+let g:vimwiki_global_ext = 0
+let g:vimwiki_table_mappings = 0
 
 let g:vimwiki_list = [{'path': '~/myfiles/vimwiki/', 'path_html': '~/myfiles/vimwiki/public_html/'}]
 
+" indent
+nnoremap > v>
+nnoremap < v<
+vnoremap > >gv
+vnoremap < <gv
+
+" dict stuff??
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
-" set clipboard=unnamedplus
+" map vim +clipboard to system clipboard
+set clipboard=unnamedplus
 
 call plug#begin('~/.vim/plugged')
 " Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'ap/vim-css-color'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'cocopon/iceberg.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips'
 call plug#end()
+
+" theming
+colorscheme onedark
+set background=dark
+
+" transparency while theming
+hi Normal guibg=NONE ctermbg=NONE
 
 " quickscope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -42,6 +62,7 @@ augroup END
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufWritePre * %s/\n\+\%$//e
 
+" view any url in current buffer
 command Vurl :!urlview %
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -49,11 +70,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
+" commenting in yaml files
 autocmd FileType yaml setlocal commentstring=#\ %s
 
 " external copy/paste
-noremap <leader>p :-1r !xclip -o -sel primary<CR>
-noremap <leader>y :'<,'>w !xclip -selection primary<CR><CR>
+noremap <leader>p :-1r !xclip -o -sel clipboard<CR>
+noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 
 " compiling suckless utilities
 au BufWritePost config.def.h !rm -f config.h && sudo make install

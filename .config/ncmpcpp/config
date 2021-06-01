@@ -81,7 +81,7 @@ visualizer_in_stereo = yes
 ##
 visualizer_type = spectrum
 #
-visualizer_look = ●▮
+visualizer_look = "◆▋"
 #
 #visualizer_color = blue, cyan, green, yellow, magenta, red
 #
@@ -184,6 +184,7 @@ visualizer_look = ●▮
 #song_list_format = {%a - }{%t}|{$8%f$9}$R{$3(%l)$9}
 #
 #song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
+song_status_format = {%a - %t}|{%f}
 #
 #song_library_format = {%n - }{%t}|{%f}
 #
@@ -201,9 +202,8 @@ current_item_inactive_column_prefix = $(magenta)$r
 #
 #current_item_inactive_column_suffix = $/r$(end)
 #
-#now_playing_prefix = $b
-#
-#now_playing_suffix = $/b
+now_playing_prefix = "$b$2▶ "
+now_playing_suffix = "$8$/b"
 #
 #browser_playlist_prefix = "$2playlist$9 "
 #
@@ -319,6 +319,7 @@ execute_on_song_change = mpdnotify
 ## part of progressbar.
 ##
 #progressbar_look = =>
+progressbar_look = "▃▃▃"
 #
 ## Available values: database, playlist.
 ##
@@ -342,7 +343,7 @@ execute_on_song_change = mpdnotify
 #
 #default_tag_editor_pattern = %n - %t
 #
-#header_visibility = yes
+header_visibility = no
 #
 #statusbar_visibility = yes
 #
@@ -511,38 +512,25 @@ external_editor = vim
 ## are used there is a possibility that you'll be able to use only colors with
 ## transparent background.
 #
-#colors_enabled = yes
-#
-#empty_tag_color = cyan
-#
-#header_window_color = default
-#
-#volume_color = default
-#
-#state_line_color = default
-#
-#state_flags_color = default:b
-#
-#main_window_color = yellow
-#main_window_color = white
-#
-#color1 = white
-#
-#color2 = green
-#
+colors_enabled = yes
+empty_tag_color = red
+header_window_color = black
+volume_color = magenta
+state_line_color = red
+state_flags_color = cyan
+main_window_color = cyan
+color1 = blue
+color2 = blue
 #progressbar_color = black:b
-#
-#progressbar_elapsed_color = green:b
-#
-#statusbar_color = default
-#
+progressbar_elapsed_color = cyan:b
+statusbar_color = red
 #statusbar_time_color = default:b
 #
 #player_state_color = default:b
 #
 #alternative_ui_separator_color = black:b
 #
-#window_border_color = green
+window_border_color = blue
 #
-#active_window_border = red
+active_window_border = cyan
 #

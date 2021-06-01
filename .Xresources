@@ -13,12 +13,12 @@ URxvt.urlLauncher: /usr/bin/brave
 Sxiv.font: xft:Hack:size=11
 
 ! perl extensions
-URxvt.perl-ext-common: clipboard,resize-font
+URxvt.perl-ext-common: selection-to-clipboard,resize-font
 
 ! using clipboard functionalities
 URxvt.clipboard.autocopy: true
-URxvt.keysym.C-c:clipboard:copy
-URxvt.keysym.C-v:clipboard:paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
 ! terminal colours
 ! special

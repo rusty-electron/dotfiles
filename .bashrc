@@ -32,6 +32,7 @@ alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(title)s.%(ext
 alias ytdlp="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(playlist_index)s-%(title)s.%(ext)s'"
 alias ctodo="vim ~/myfiles/todo.md"
 alias vwki="vim -c ':VimwikiIndex'"
+alias vimwiki="vim -c ':VimwikiIndex'"
 
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"
@@ -50,7 +51,7 @@ alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
-alias passgh="pass github-pat | xclip -i -sel clip"
+alias passgh="pass github-pat | xclip -i -r -sel clipboard"
 alias coa="conda activate"
 alias mpvq="mpv --no-video"
 
@@ -85,10 +86,11 @@ export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 
 # aliases for fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
-alias cpcmd="history | cut -c 8- | fzf | xclip -i -sel -r clipboard"
+alias cpcmd="history | cut -c 8- | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd $file'
 alias f='vfz'
 alias fzfo='devour xdg-open $(rg --files | fzf)'
+alias op='devour zathura $(rg --files -t pdf | fzf)'
 
 # spring cleaning
 # ---------------
