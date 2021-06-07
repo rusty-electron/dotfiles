@@ -33,6 +33,6 @@ I now maintain two linux installations, one on my thinkpad and the other on my d
 
 ### rice images
 
-![term-windows](./img/first.png)
+![term-windows](./img/first.jpg)
 
 ![neovim](./img/second.png)
