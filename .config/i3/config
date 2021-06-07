@@ -40,6 +40,7 @@ for_window [instance="ij-ImageJ"] floating enable
 for_window [class="Zotero"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [title="Bitwarden"] floating enable
+for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
 
 # google meet widget
 for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
@@ -53,6 +54,7 @@ for_window [class=".*whatsapp.*"] move to workspace $ws9
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
 bindsym $mod+Shift+F1 exec --no-startup-id pcmanfm "`xcwd`"
+bindsym $mod+Shift+F exec --no-startup-id $SCRIPT/dpcmanfm
 
 # switch to urgent window
 bindsym $mod+g [urgent=latest] focus

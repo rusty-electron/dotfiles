@@ -73,12 +73,28 @@ autocmd BufWritePre * %s/\s\+$//e
 " commenting in yaml files
 autocmd FileType yaml setlocal commentstring=#\ %s
 
+" twiddle case
+function! TwiddleCase(str)
+  if a:str ==# toupper(a:str)
+    let result = tolower(a:str)
+  elseif a:str ==# tolower(a:str)
+    let result = substitute(a:str,'\(\<\w\+\>\)', '\u\1', 'g')
+  else
+    let result = toupper(a:str)
+  endif
+  return result
+endfunction
+vnoremap ~ y:call setreg('', TwiddleCase(@"), getregtype(''))<CR>gv""Pgv
+
 " external copy/paste
 noremap <leader>p :-1r !xclip -o -sel clipboard<CR>
 noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 
 " compiling suckless utilities
 au BufWritePost config.def.h !rm -f config.h && sudo make install
+
+" jemdoc compile?
+au BufWritePost *.jemdoc !jemdoc %
 
 " run xrdb on .Xresources file edit
 autocmd BufWritePost *Xresources,*Xdefaults !xrdb %

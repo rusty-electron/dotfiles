@@ -12,6 +12,7 @@ PS1='\[\e[0;1;91m\][\[\e[0;1;94m\]\u\[\e[0m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;3m
 # custom aliases
 alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
+alias rm='echo "are you sure about that?"'
 
 # editing configs
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
@@ -31,7 +32,7 @@ alias playalert="mpv --really-quiet ~/.local/share/sounds/complete.ogg"
 alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(title)s.%(ext)s'"
 alias ytdlp="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(playlist_index)s-%(title)s.%(ext)s'"
 alias ctodo="vim ~/myfiles/todo.md"
-alias vwki="vim -c ':VimwikiIndex'"
+alias vki="vim -c ':VimwikiIndex'"
 alias vimwiki="vim -c ':VimwikiIndex'"
 
 # for setting default scale as 4 in bc
@@ -48,6 +49,7 @@ alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
+alias clock="betterlockscreen -u ~/myfiles/wallpapers/2021-summer/ -r 1920x1080"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
