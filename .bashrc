@@ -49,7 +49,7 @@ alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
-alias clock="betterlockscreen -u ~/myfiles/wallpapers/2021-summer/ -r 1920x1080"
+alias nlock="betterlockscreen -u ~/myfiles/wallpapers/2021-summer/ -r 1920x1080"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
@@ -91,9 +91,9 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias cpcmd="history | cut -c 8- | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd $file'
 alias f='vfz'
-alias fzfo='devour xdg-open $(rg --files | fzf)'
+alias fzfo='devour xdg-open "$(rg --files | fzf)"'
 alias op='devour zathura $(rg --files -t pdf | fzf)'
-
+alias rgf='$(rg --files | fzf)'
 # spring cleaning
 # ---------------
 # XDG
