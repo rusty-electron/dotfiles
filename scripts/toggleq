@@ -1,0 +1,6 @@
+#!/bin/sh
+# useful for toggling programs that don't bind to the shell
+# after executing them
+PROG=$1
+pgrep -fx $PROG || notify-send "toggleq" "$PROG started"
+killall $PROG &> /dev/null || $PROG

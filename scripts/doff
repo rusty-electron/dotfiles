@@ -2,10 +2,25 @@
 
 # this script can be used to shutdown, reboot, hibernate or suspend a computer
 
+check_hibernate() {
+    used_ram=`(free | awk 'FNR==2 {print $3}')`
+    avail_swap=`(free | awk 'FNR==3 {print $2}')`
+
+    if [[ $used_ram -lt $avail_swap ]]
+    then
+        echo "hibernate now"
+        systemctl hibernate
+    else
+        echo $used_ram $avail_swap
+        notify-send "doff" "free some RAM to hibernate"
+    fi
+    # systemctl hibernate;;
+}
+
 choice=$(printf "shutdown\nreboot\nhibernate\nsuspend" | dmenu -sb '#990000' -i -p "Choice: ")
 case "$choice" in
 	shutdown) poweroff;;
 	reboot) reboot;;
-	hibernate) systemctl hibernate;;
+	hibernate) check_hibernate ;;
 	suspend) systemctl suspend;;
-esac	
+esac

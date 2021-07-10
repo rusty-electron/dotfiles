@@ -22,6 +22,9 @@ color=#d90436
 # min_width=850
 # interval=18000
 
+# [traffic]
+# signal=26
+
 [covid]
 interval=10800
 

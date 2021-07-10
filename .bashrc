@@ -69,6 +69,7 @@ export EDITOR=vim
 export BROWSER=brave
 export browser=brave
 export PATH="$HOME/.local/bin:$HOME/myfiles/scripts:$PATH"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 
 # nnn envars
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
@@ -89,10 +90,10 @@ export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 # aliases for fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias cpcmd="history | cut -c 8- | fzf | xclip -i -r -sel clipboard"
-alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd $file'
+alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd "$file"'
 alias f='vfz'
-alias fzfo='devour xdg-open "$(rg --files | fzf)"'
-alias op='devour zathura $(rg --files -t pdf | fzf)'
+alias fzfo='devour xdg-open "$(rg --files | fzf)" &> /dev/null'
+alias op='devour zathura "$(rg --files -t pdf | fzf)"'
 alias rgf='$(rg --files | fzf)'
 # spring cleaning
 # ---------------
@@ -109,10 +110,12 @@ export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 
 # adb
-export ANDROID_SDK_HOME="$XDG_CONFIG_HOME"/android
-export ANDROID_AVD_HOME="$XDG_DATA_HOME"/android/
-export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME"/android/
-export ADB_VENDOR_KEY="$XDG_CONFIG_HOME"/android
+export ANDROID_HOME="$HOME/drive/android/"
+export ANDROID_SDK_ROOT="$HOME/drive/android/"
+export ANDROID_SDK_HOME="$ANDROID_HOME/.android"
+export ANDROID_AVD_HOME="$ANDROID_HOME"
+export ANDROID_EMULATOR_HOME="$ANDROID_HOME"
+# export ADB_VENDOR_KEY="$XDG_CONFIG_HOME"/android
 
 # less
 export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
@@ -153,3 +156,10 @@ unset __conda_setup
 # ruby gems
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+
+# flutter
+export PATH="$PATH:$HOME/drive/flutter/bin"
+# android sdk
+export PATH="$PATH:$ANDROID_HOME/tools/bin/"
+export PATH="$PATH:$ANDROID_HOME/platform-tools/"
+export PATH="$PATH:$ANDROID_HOME/emulator/"

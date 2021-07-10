@@ -37,13 +37,17 @@ for_window [class="if-Imagej"] floating enable
 for_window [class="JDownloader"] floating enable
 for_window [instance="Godot_Engine"] floating enable
 for_window [instance="ij-ImageJ"] floating enable
+for_window [title="Android Emulator"] floating enable
+for_window [title="VirtualBox Manager"] floating enable
 for_window [class="Zotero"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [title="Bitwarden"] floating enable
+for_window [class="Qemu-system-x86_64"] floating enable
 for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
 
 # google meet widget
 for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
+bindsym $mod+z exec --no-startup-id pkill -RTMIN+26 i3blocks
 
 # for gnome-pomodoro
 for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
@@ -113,7 +117,7 @@ bindsym $mod+Ctrl+p exec --no-startup-id $SCRIPT/gpomo
 # run udiskie tray
 bindsym $mod+Shift+u exec --no-startup-id udiskie -t
 # run transmission-daemon
-bindsym $mod+t exec --no-startup-id transmission-daemon && notify-send "transmission-daemon" "has been started" # to-do: write a better script
+bindsym $mod+t exec --no-startup-id $SCRIPT/toggleq transmission-daemon
 # toggle imwheel
 bindsym $mod+Shift+m exec --no-startup-id ~/myfiles/scripts/toggle-imwheel.sh
 # toggle picom
@@ -342,7 +346,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty #i3-sensible-terminal
-bindsym $mod+Mod1+Return exec --no-startup-id $termalt
+bindsym Ctrl+$mod+Return exec --no-startup-id $termalt
 # start terminal according to the open directory
 bindsym $mod+Shift+Return exec --no-startup-id alacritty --working-directory $(xcwd)
 

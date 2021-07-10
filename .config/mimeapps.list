@@ -5,7 +5,7 @@ image/jpg=sxiv.desktop
 x-scheme-handler/magnet=torrent.desktop
 application/x-bittorrent=torrent.desktop
 /* application/pdf=org.pwmt.zathura-pdf-mupdf.desktop */
-application/pdf=okularApplication_pdf.desktop
+application/pdf=org.kde.okular.desktop
 application/epub+zip=zathura.desktop
 x-scheme-handler/msteams=teams.desktop
 inode/directory=pcmanfm.desktop
@@ -15,6 +15,7 @@ text/markdown=vim.desktop
 x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-02JK20.desktop
 application/xhtml+xml=brave-browser.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -25,4 +26,5 @@ text/markdown=vim.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-02JK20.desktop;
 application/x-partial-download=mpv.desktop;
 application/xhtml+xml=brave-browser.desktop;
-application/pdf=libreoffice-writer.desktop;
+application/pdf=org.kde.okular.desktop;org.pwmt.zathura.desktop;libreoffice-writer.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;

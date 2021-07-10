@@ -2,7 +2,7 @@
 Xft.dpi: 96
 
 ! font settings
-URxvt.font: xft:JetBrains Mono:size=12
+URxvt.font: xft:Iosevka:size=13
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
 

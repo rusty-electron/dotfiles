@@ -95,10 +95,6 @@ map <leader>s :setlocal spell! spelllang=en_us<CR>
 map <leader>i :setlocal autoindent<CR>
 map <leader>I :setlocal noautoindent<CR>
 
-" Automatically deletes all trailing whitespace and newlines at end of file on save.
-autocmd BufWritePre * %s/\s\+$//e
-autocmd BufWritePre * %s/\n\+\%$//e
-
 """ For Plugins
 
 " floaterm configs
@@ -106,12 +102,12 @@ let g:floaterm_winblend = 8
 
 nnoremap   <silent>   <F7>   :FloatermNew<CR>
 tnoremap   <silent>   <F7>   <C-\><C-n>:FloatermNew<CR>
-nnoremap   <silent>   <F8>   :FloatermNew nnn<CR>
-tnoremap   <silent>   <F8>   <C-\><C-n>:FloatermNew nnn<CR>
+nnoremap   <silent>   <S-F7>   :FloatermNew nnn<CR>
+tnoremap   <silent>   <S-F7>   <C-\><C-n>:FloatermNew nnn<CR>
 nnoremap   <silent>   <F9>   :FloatermNext<CR>
 tnoremap   <silent>   <F9>  <C-\><C-n>:FloatermNext<CR>
-nnoremap   <silent>   <F10>   :FloatermToggle<CR>
-tnoremap   <silent>   <F10>   <C-\><C-n>:FloatermToggle<CR>
+nnoremap   <silent>   <F8>   :FloatermToggle<CR>
+tnoremap   <silent>   <F8>   <C-\><C-n>:FloatermToggle<CR>
 tnoremap   <silent>   <S-F11>   <C-\><C-n>:FloatermKill<CR>
 
 " hexokinase configs

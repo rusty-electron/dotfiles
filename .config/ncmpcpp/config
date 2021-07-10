@@ -343,11 +343,11 @@ progressbar_look = "▃▃▃"
 #
 #default_tag_editor_pattern = %n - %t
 #
-header_visibility = no
+header_visibility = yes
 #
 #statusbar_visibility = yes
 #
-#titles_visibility = yes
+titles_visibility = no
 #
 #header_text_scrolling = yes
 #
