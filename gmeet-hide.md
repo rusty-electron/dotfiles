@@ -1,6 +1,6 @@
 # Hiding Google Meet sharing window
 
-Explainer: <yt video here>
+watch [Explainer video](https://youtu.be/SvYOEU_yYEU)
 
 > The given steps are for i3wm but it maybe possible to to do the same on other twms, provided they have functionality similar to scratchpad present in i3wm.
   
