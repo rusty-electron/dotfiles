@@ -4,7 +4,11 @@ Explainer: <yt video here>
 
 > The given steps are for i3wm but it maybe possible to to do the same on other twms, provided they have functionality similar to scratchpad present in i3wm.
   
-## Steps:
+## scripts
+  * `gms` - [here](master/scripts/gms)
+  * `gmeet` - [here](scripts/statusbar/gmeet)
+  
+## steps:
   
   * add the following rule to `i3 config`
   
