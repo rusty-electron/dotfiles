@@ -6,6 +6,7 @@ let mapleader=" "
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set hidden
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 autocmd BufWritePre * %s/\s\+$//e
@@ -15,7 +16,6 @@ autocmd BufWritePre * %s/\n\+\%$//e
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'tomasiser/vim-code-dark'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -26,6 +26,8 @@ Plug 'yggdroot/indentline'
 Plug 'mhinz/vim-startify', {'branch': 'center'}
 Plug 'unblevable/quick-scope'
 Plug 'airblade/vim-rooter'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 call plug#end()
 
 " quickscope
@@ -138,11 +140,10 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Goyo
 noremap <leader>g :Goyo<CR>
 
-" lsp
-
-" luafile ~/.config/nvim/compe-config.lua
-" luafile ~/.config/nvim/pyright.lua
-source ~/.config/nvim/coc-configs.vim
+" external config files
+luafile ~/.config/nvim/lsp.lua
+luafile ~/.config/nvim/compe-config.lua
+" source ~/.config/nvim/coc-configs.vim
 
 " nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -153,3 +154,10 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
+" compe mappings
+inoremap <silent><expr> <C-Space> compe#complete()
+" inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
+inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })

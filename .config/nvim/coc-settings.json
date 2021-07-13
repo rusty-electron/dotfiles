@@ -1,6 +1,0 @@
-{
-	"python.linting.pylintArgs" : ["--extension-pkg-whitelist=cv2"],
-    "python.linting.pylintEnabled": true,
-    "python.venvPath": "~/miniconda3/envs",
-    "python.analysis.stubPath": "typings"
-}

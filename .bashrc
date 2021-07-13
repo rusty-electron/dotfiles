@@ -163,3 +163,9 @@ export PATH="$PATH:$HOME/drive/flutter/bin"
 export PATH="$PATH:$ANDROID_HOME/tools/bin/"
 export PATH="$PATH:$ANDROID_HOME/platform-tools/"
 export PATH="$PATH:$ANDROID_HOME/emulator/"
+
+# doom emacs
+export PATH="$PATH:$HOME/.emacs.d/bin/"
+
+# npm
+export npm_config_prefix="$HOME/.local"
