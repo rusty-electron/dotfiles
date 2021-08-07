@@ -7,11 +7,12 @@
 
 alias ls='ls --color=auto'
 oldPS1='[\u@\h \W]\$ '
-PS1='\[\e[0;1;91m\][\[\e[0;1;94m\]\u\[\e[0m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;3m\]\W\[\e[0;1;91m\]]\[\e[0m\]\$\[\e[m\] \[\e0'
+PS1='\[\e[0;1;91m\][\[\e[0;1;94m\]\u\[\e[0m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;3m\]\W\[\e[0;1;91m\]]\[\e[0m\]\$\[\e[m\] '
 
 # custom aliases
 alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
+# this is to prevent accidental deletion of files with rm, use \rm to actually remove, TODO: start using trash-cli
 alias rm='echo "are you sure about that?"'
 
 # editing configs
@@ -24,7 +25,7 @@ alias cfvv="vim ~/.config/nvim/init.vim"
 alias cfp="vim ~/.config/picom.conf"
 
 alias clc="calcurse"
-alias tdwn="transmission-daemon"
+alias tdwn="transmission-daemon" # or mod+t to toggle it
 alias tdir="cd ~/myfiles/junk/testspace"
 alias jupy="coa pyimg;jupyter notebook"
 alias npc="ncmpcpp"
@@ -44,12 +45,12 @@ alias vv="nvim"
 alias nv="nvim"
 alias nf="neofetch"
 
-# alias qn="export QNDATE=$(date +%d-%m-%4Y); vim ~/myfiles/junk/qnotes/$QNDATE"
+# a quick hack to store quicknotes, now replaced by vimwiki
 alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
-alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*"
-alias nlock="betterlockscreen -u ~/myfiles/wallpapers/2021-summer/ -r 1920x1080"
+alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*;clear"
+alias chlock="betterlockscreen -u ~/myfiles/wallpapers/2021-summer/ -r 1920x1080"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
 alias lm="ls -tlh"
@@ -91,10 +92,16 @@ export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias cpcmd="history | cut -c 8- | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd "$file"'
+alias cf='cd $(fd . -H -t d ~ | fzf)'
 alias f='vfz'
 alias fzfo='devour xdg-open "$(rg --files | fzf)" &> /dev/null'
 alias op='devour zathura "$(rg --files -t pdf | fzf)"'
 alias rgf='$(rg --files | fzf)'
+
+# fzf superpower
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
+
 # spring cleaning
 # ---------------
 # XDG

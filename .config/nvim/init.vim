@@ -15,7 +15,7 @@ autocmd BufWritePre * %s/\n\+\%$//e
 " muh plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
-Plug 'tomasiser/vim-code-dark'
+Plug 'sainnhe/sonokai'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -28,6 +28,10 @@ Plug 'unblevable/quick-scope'
 Plug 'airblade/vim-rooter'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 " quickscope
@@ -41,7 +45,7 @@ augroup END
 
 " fzf-vim
 set rtp+=/bin/
-noremap <leader>ff :FZF<cr>
+noremap <leader>fz :FZF<cr>
 
 " Replace all is aliased to S.
 nnoremap S :%s//g<Left><Left>
@@ -75,8 +79,11 @@ nmap <leader>bl :buffers<cr>:b<space>
 " autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 " autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR
 
+" sonokai colors
+let g:sonokai_style = "maia"
+
 " Basic Settings
-colorscheme codedark
+colorscheme sonokai
 set noshowmode
 set number relativenumber
 
@@ -133,7 +140,7 @@ let g:Hexokinase_optInPatterns = [
 " let g:Hexokinase_ftEnabled = ['css', 'html', 'javascript']
 
 " vim airline
-let g:airline_theme = 'codedark'
+let g:airline_theme = 'sonokai'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -161,3 +168,9 @@ inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
+
+" nvim-telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>

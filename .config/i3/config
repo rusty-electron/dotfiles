@@ -43,6 +43,7 @@ for_window [class="Zotero"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
 for_window [title="Bitwarden"] floating enable
 for_window [class="Qemu-system-x86_64"] floating enable
+for_window [class="imagewriter"] floating enable
 for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
 
 # google meet widget
@@ -53,7 +54,8 @@ bindsym $mod+z exec --no-startup-id pkill -RTMIN+26 i3blocks
 for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
 
 #### Assign workspaces
-for_window [class=".*whatsapp.*"] move to workspace $ws9
+# for_window [class=".*whatsapp.*"] move to workspace $ws9
+for_window [class="Ferdi"] move to workspace $ws9
 
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
@@ -127,6 +129,7 @@ bindsym $mod+Shift+b exec --no-startup-id blueman-applet
 
 # keybinding to lockscreen
 bindsym $mod+x exec --no-startup-id betterlockscreen -l
+# bindsym $mod+x exec --no-startup-id $SCRIPT/lockscreen
 
 # keybinding for doff script
 bindsym $mod+Shift+x exec --no-startup-id ~/myfiles/scripts/doff
@@ -307,7 +310,7 @@ exec_always --no-startup-id autotiling
 exec --no-startup-id mpd
 
 # i3-battery-popup for notifications
-exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-error.ogg
+exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-error.ogg -v 50
 
 # make use of settings specified in Xresources file
 exec --no-startup-id xrdb -merge ~/.Xresources

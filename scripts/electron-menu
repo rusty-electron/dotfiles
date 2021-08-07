@@ -1,11 +1,13 @@
 #!/bin/sh
 
 # this script can be used to generate a menu for nativefier apps
+# i have started using ferdi because it is much convenient and i have to keep on wrestling with chrome version fixes for whatsapp, the name of this script is now not suitable as it no longer launches any electron apps but rather a multitude of different programs so in the future, i 'm going to rename it to app-menu
 
-choice=$(printf "whatsapp\nnotion\ndeemix\nkdenlive\nlofi\nrelaunch-ddterm" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
+choice=$(printf "ferdi\ndeemix\nkdenlive\nlofi\nrelaunch-ddterm" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
 case "$choice" in
-	whatsapp) ~/myfiles/nativefier-apps/whatsapp-linux-x64/whatsapp;;
-	notion) ~/myfiles/nativefier-apps/notion-linux-x64/notion;;
+	# whatsapp) ~/myfiles/nativefier-apps/whatsapp-linux-x64/whatsapp;;
+	# notion) ~/myfiles/nativefier-apps/notion-linux-x64/notion;;
+    ferdi) /usr/bin/ferdi ;;
 	deemix) ~/myfiles/music/deezer/deemix.appimage ;;
 	kdenlive) ~/myfiles/appimages/kdenlive.appimage ;;
 	lofi) ~/myfiles/scripts/lofi ;;

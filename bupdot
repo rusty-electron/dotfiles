@@ -1,7 +1,11 @@
 #!/bin/sh
 
+LOC=${1:-.}
 # .config folder dotfiles
-rsync -avr --exclude-from=./excludelist --files-from=filelist /home/$USER/ $1
+rsync -avr --exclude-from=./excludelist --files-from=filelist /home/$USER/ $LOC
 
 # scripts folder
-rsync -avz ~/myfiles/scripts $1
+rsync -avz ~/myfiles/scripts $LOC
+
+echo "copied files to"
+echo $LOC

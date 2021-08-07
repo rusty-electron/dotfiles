@@ -1,0 +1,4 @@
+#!/bin/sh
+pkill -USR1 dunst
+betterlockscreen -l &
+pkill -USR2 dunst
