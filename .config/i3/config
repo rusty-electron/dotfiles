@@ -41,10 +41,16 @@ for_window [title="Android Emulator"] floating enable
 for_window [title="VirtualBox Manager"] floating enable
 for_window [class="Zotero"] floating enable
 for_window [class="SimpleScreenRecorder"] floating enable
-for_window [title="Bitwarden"] floating enable
+for_window [title="Bitwarden"] floating enable, sticky enable
 for_window [class="Qemu-system-x86_64"] floating enable
 for_window [class="imagewriter"] floating enable
 for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
+
+# for zoom
+for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
+for_window [class="zoom"] [title="Participants.*"] floating enable, resize set 400 600
+for_window [class="zoom"] [title="Zoom Cloud Meetings"] floating enable
+for_window [class="zoom"] [title="zoom"] floating enable
 
 # google meet widget
 for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
@@ -56,6 +62,7 @@ for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
 #### Assign workspaces
 # for_window [class=".*whatsapp.*"] move to workspace $ws9
 for_window [class="Ferdi"] move to workspace $ws9
+for_window [class="discord"] move to workspace $ws9
 
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm

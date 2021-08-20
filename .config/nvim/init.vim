@@ -8,6 +8,8 @@ set shiftwidth=4
 set expandtab
 set hidden
 
+set clipboard=unnamedplus
+
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufWritePre * %s/\n\+\%$//e
@@ -24,7 +26,6 @@ Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'yggdroot/indentline'
 Plug 'mhinz/vim-startify', {'branch': 'center'}
-Plug 'unblevable/quick-scope'
 Plug 'airblade/vim-rooter'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
@@ -32,6 +33,9 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'phaazon/hop.nvim'
+Plug 'akinsho/nvim-toggleterm.lua'
 call plug#end()
 
 " quickscope
@@ -48,7 +52,7 @@ set rtp+=/bin/
 noremap <leader>fz :FZF<cr>
 
 " Replace all is aliased to S.
-nnoremap S :%s//g<Left><Left>
+nnoremap S :%s//gc<Left><Left>
 
 " Open corresponding .pdf/.html or preview
 map <leader>0 :!opout <c-r>%<CR>
@@ -69,7 +73,7 @@ noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 " autocmd FileType python map <buffer> <F10> :w<CR> :cd %:p:h <CR> :FloatermNew python %<CR>
 
 " config for buffers
-nmap <leader>t :enew
+" nmap <leader>t :enew " i don't think i need this
 nmap <leader>l :bn<CR>
 nmap <leader>h :bp<CR>
 nmap <C-q> :bp <BAR> bd #<CR>
@@ -109,15 +113,13 @@ map <leader>I :setlocal noautoindent<CR>
 " floaterm configs
 let g:floaterm_winblend = 8
 
-nnoremap   <silent>   <F7>   :FloatermNew<CR>
-tnoremap   <silent>   <F7>   <C-\><C-n>:FloatermNew<CR>
-nnoremap   <silent>   <S-F7>   :FloatermNew nnn<CR>
-tnoremap   <silent>   <S-F7>   <C-\><C-n>:FloatermNew nnn<CR>
+nnoremap   <silent>   <F8>   :FloatermNew<CR>
+tnoremap   <silent>   <F8>   <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <F9>   :FloatermNext<CR>
 tnoremap   <silent>   <F9>  <C-\><C-n>:FloatermNext<CR>
-nnoremap   <silent>   <F8>   :FloatermToggle<CR>
-tnoremap   <silent>   <F8>   <C-\><C-n>:FloatermToggle<CR>
-tnoremap   <silent>   <S-F11>   <C-\><C-n>:FloatermKill<CR>
+nnoremap   <silent>   <F10>   :FloatermToggle<CR>
+tnoremap   <silent>   <F10>   <C-\><C-n>:FloatermToggle<CR>
+tnoremap   <silent>   <F11>   <C-\><C-n>:FloatermKill<CR>
 
 " hexokinase configs
 set termguicolors
@@ -150,7 +152,7 @@ noremap <leader>g :Goyo<CR>
 " external config files
 luafile ~/.config/nvim/lsp.lua
 luafile ~/.config/nvim/compe-config.lua
-" source ~/.config/nvim/coc-configs.vim
+luafile ~/.config/nvim/plugins.lua
 
 " nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>

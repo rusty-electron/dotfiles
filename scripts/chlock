@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# a simple script to set betterlockscreen wallpaper (I had to make this after the major update
+# of Aug 2021
+
+wall_file=`ls -d ~/myfiles/wallpapers/2021-summer/* | shuf -n 1`
+# added DISPLAY env var to make it work in crontab
+DISPLAY=:0 /usr/bin/betterlockscreen -u "$wall_file"

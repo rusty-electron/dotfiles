@@ -25,8 +25,8 @@ color=#d90436
 # [traffic]
 # signal=26
 
-[covid]
-interval=10800
+# [covid]
+# interval=10800
 
 [weather]
 interval=10800

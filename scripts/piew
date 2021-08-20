@@ -1,10 +1,13 @@
 #!/bin/bash
 # created by @Parveshdhull
 
-NAME=`echo "$1" | rev | cut -d "/" -f 1 | rev`
+# open the first file in the directory if argument is not set
+FIRST=`ls -1 | head -n1`
+FILE=${1:-$FIRST}
+NAME=`echo "$FILE" | rev | cut -d "/" -f 1 | rev`
 
 # Checking if file is provided with just name or full path
-LOC=`dirname "$1"`
+LOC=`dirname "$FILE"`
 if [[ $LOC = *"/home/"* ]]; then
 	cd "$LOC"
 fi

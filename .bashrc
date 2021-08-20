@@ -14,6 +14,7 @@ alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
 # this is to prevent accidental deletion of files with rm, use \rm to actually remove, TODO: start using trash-cli
 alias rm='echo "are you sure about that?"'
+alias yay='yay -a'
 
 # editing configs
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
@@ -49,10 +50,9 @@ alias nf="neofetch"
 alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
-alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*;clear"
-alias chlock="betterlockscreen -u ~/myfiles/wallpapers/2021-summer/ -r 1920x1080"
 alias update="sudo pacman -Syyu"
 alias myip="curl ipinfo.io/ip"
+alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*;clear"
 alias lm="ls -tlh"
 alias passgh="pass github-pat | xclip -i -r -sel clipboard"
 alias coa="conda activate"
@@ -96,11 +96,30 @@ alias cf='cd $(fd . -H -t d ~ | fzf)'
 alias f='vfz'
 alias fzfo='devour xdg-open "$(rg --files | fzf)" &> /dev/null'
 alias op='devour zathura "$(rg --files -t pdf | fzf)"'
+alias oko='devour okular "$(rg --files -t pdf | fzf)" &> /dev/null'
 alias rgf='$(rg --files | fzf)'
 
 # fzf superpower
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
+
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  fd --hidden --follow . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow . "$1"
+}
+
+# open piew in current dir
+alias piewd='piew $(ls -1 | head -n1)'
 
 # spring cleaning
 # ---------------

@@ -1,11 +1,11 @@
 [Default Applications]
 image/png=org.nomacs.ImageLounge.desktop
-image/jpeg=sxiv.desktop
+image/jpeg=org.nomacs.ImageLounge.desktop
 image/jpg=sxiv.desktop
 x-scheme-handler/magnet=torrent.desktop
 application/x-bittorrent=torrent.desktop
 /* application/pdf=org.pwmt.zathura-pdf-mupdf.desktop */
-application/pdf=org.kde.okular.desktop
+application/pdf=org.pwmt.zathura.desktop
 application/epub+zip=zathura.desktop
 x-scheme-handler/msteams=teams.desktop
 inode/directory=pcmanfm.desktop
@@ -19,6 +19,9 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoff
 text/x-c++src=vim.desktop
 text/x-chdr=vim.desktop
 x-scheme-handler/ferdi=ferdi.desktop
+text/x-makefile=vim.desktop
+application/x-shellscript=vim.desktop
+image/x-eps=gimp.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -35,3 +38,7 @@ text/x-c++src=vim.desktop;
 text/x-chdr=vim.desktop;
 application/zip=org.kde.ark.desktop;
 image/png=org.nomacs.ImageLounge.desktop;gimp.desktop;
+text/x-makefile=vim.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;
+application/x-shellscript=vim.desktop;
+image/x-eps=org.nomacs.ImageLounge.desktop;gimp.desktop;
