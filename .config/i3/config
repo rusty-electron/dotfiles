@@ -88,7 +88,7 @@ bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> /tmp/o
 bindsym $mod+Shift+p exec --no-startup-id mpc toggle
 
 # playerctl pause/resume
-bindsym $mod+Ctrl+space exec --no-startup-id playerctl -a play-pause
+bindsym $mod+Ctrl+space exec --no-startup-id "playerctl --player=mpv,chromium play-pause"
 exec --no-startup-id playerctld daemon
 
 # start conky
@@ -133,6 +133,8 @@ bindsym $mod+Shift+m exec --no-startup-id ~/myfiles/scripts/toggle-imwheel.sh
 bindsym $mod+c exec --no-startup-id ~/myfiles/scripts/toggle-picom.sh
 # run blueman-applet
 bindsym $mod+Shift+b exec --no-startup-id blueman-applet
+# run emacs
+bindsym $mod+Shift+e exec --no-startup-id emacs
 
 # keybinding to lockscreen
 bindsym $mod+x exec --no-startup-id betterlockscreen -l
@@ -462,7 +464,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Ctrl+k exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

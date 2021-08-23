@@ -1,5 +1,5 @@
 #!/bin/bash
-# created by @Parveshdhull
+# original script created by @Parveshdhull
 
 # open the first file in the directory if argument is not set
 FIRST=`ls -1 | head -n1`

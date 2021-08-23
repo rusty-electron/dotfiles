@@ -22,3 +22,5 @@
 .config/sxhkd
 .config/zathura
 .config/youtube-viewer/youtube-viewer.conf
+.emacs.d/config.org
+.emacs.d/init.el

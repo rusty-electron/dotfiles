@@ -42,3 +42,6 @@ text/x-makefile=vim.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
 application/x-shellscript=vim.desktop;
 image/x-eps=org.nomacs.ImageLounge.desktop;gimp.desktop;
+
+[Removed Associations]
+image/jpeg=userapp-piew-NCCU80.desktop;
