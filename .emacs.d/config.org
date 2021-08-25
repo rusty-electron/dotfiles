@@ -1,3 +1,22 @@
+* Minor setting
+** subword
+#+begin_src emacs-lisp
+  (global-subword-mode 1)
+#+end_src
+** electric pairs
+#+begin_src emacs-lisp
+  (setq electric-pair-pairs '(
+                              (?\( . ?\))
+                              (?\[ . ?\])
+                              ))
+
+  (electric-pair-mode t)
+#+end_src
+** show lines and columns
+#+begin_src emacs-lisp
+  (line-number-mode 1)
+  (column-number-mode 1)
+#+end_src
 * Terminal
 ** Setting default shell to bash
 #+begin_src emacs-lisp
@@ -6,8 +25,11 @@
     (interactive (list my-term-shell)))
   (ad-activate 'ansi-term)
 #+end_src
-
 * Org
+** basic config
+#+begin_src emacs-lisp
+  (setq org-src-window-setup 'current-window)
+#+end_src
 ** Org Bullets
 #+begin_src emacs-lisp
   (use-package org-bullets
@@ -15,7 +37,18 @@
     :config
     (add-hook 'org-mode-hook (lambda () (org-bullets-mode))))
 #+end_src
-
+* hungry-delete
+#+begin_src emacs-lisp
+  (use-package hungry-delete
+    :ensure t
+    :config (global-hungry-delete-mode))
+#+end_src
+* sudo edit
+#+begin_src emacs-lisp
+  (use-package sudo-edit
+    :ensure t
+    :bind ("C-c s" . sudo-edit))
+#+end_src
 * IDO
 ** enable IDO mode
 #+begin_src emacs-lisp
@@ -45,15 +78,51 @@
   (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
 #+end_src
 * buffers
+** enable ibuffer
 #+begin_src emacs-lisp
   (global-set-key (kbd "C-x b") 'ibuffer)
 #+end_src
+** always kill
+#+begin_src emacs-lisp
+  (defun kill-curr-buffer ()
+    (interactive)
+    (kill-buffer (current-buffer)))
+  (global-set-key (kbd "C-x k") 'kill-curr-buffer)
+#+end_src
+** kill all buffers
+   #+begin_src emacs-lisp
+     (defun kill-all-buffers ()
+       (interactive)
+       (mapc 'kill-buffer (buffer-list)))
+     (global-set-key (kbd "C-M-k") 'kill-all-buffers)
+   #+end_src
 * avy
 #+begin_src emacs-lisp
   (use-package avy
     :ensure t
     :bind 
     ("M-s" . avy-goto-char))
+#+end_src
+* convenient function
+** kill-whole-word
+#+begin_src emacs-lisp
+  (defun kill-whole-word ()
+    (interactive)
+    (backward-word)
+    (kill-word 1))
+  (global-set-key (kbd "C-c w w") 'kill-whole-word)
+#+end_src
+** copy whole line
+#+begin_src emacs-lisp
+  (defun copy-whole-line ()
+    (interactive)
+    (save-excursion
+      (kill-new
+       (buffer-substring
+        (point-at-bol)
+        (point-at-eol)))))
+
+  (global-set-key (kbd "C-c w l") 'copy-whole-line)
 #+end_src
 * auto-indent
 enable auto-indent

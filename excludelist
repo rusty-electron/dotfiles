@@ -1,3 +1,4 @@
 .config/nvim/init.bak
 .config/nvim/.netrwhist
 .config/nvim/lua-stuff
+.config/fontconfig/conf.d/78-Reject.conf
