@@ -1,4 +1,23 @@
 * Minor setting
+** general
+#+begin_src emacs-lisp
+  (defalias 'yes-or-no-p 'y-or-n-p)
+
+  (setq scroll-conservatively 100)
+  (setq ring-bell-function 'ignore)
+  (when window-system (global-hl-line-mode t))
+  (when window-system (global-prettify-symbols-mode t))
+
+  (tool-bar-mode -1)
+  (menu-bar-mode -1)
+  (scroll-bar-mode -1)
+
+  (setq inhibit-startup-message t)
+#+end_src
+** ask before quitting
+#+begin_src emacs-lisp
+  (setq confirm-kill-emacs 'y-or-n-p)
+#+end_src
 ** subword
 #+begin_src emacs-lisp
   (global-subword-mode 1)
@@ -17,6 +36,10 @@
   (line-number-mode 1)
   (column-number-mode 1)
 #+end_src
+** clock
+#+begin_src emacs-lisp
+  (display-time-mode 1)
+#+end_src
 * Terminal
 ** Setting default shell to bash
 #+begin_src emacs-lisp
@@ -24,6 +47,27 @@
   (defadvice ansi-term (before force-bash)
     (interactive (list my-term-shell)))
   (ad-activate 'ansi-term)
+#+end_src
+* LSP
+** install lsp-mode
+#+begin_src emacs-lisp
+  (use-package lsp-mode
+    :init
+    (setq lsp-keymap-prefix "C-c l")
+    :hook (
+           (python-mode . lsp)
+    ;; which key integration
+           (lsp-mode . lsp-enable-which-key-integration))
+    :commands lsp)
+#+end_src
+** lsp-pyright [python]
+#+begin_src emacs-lisp
+  (use-package lsp-pyright
+    :ensure t
+    :hook (python-mode . (lambda ()
+                            (require 'lsp-pyright)
+                            (lsp))))  ; or lsp-deferred
+  (setq lsp-pyright-venv-path "~/miniconda3/envs")
 #+end_src
 * Org
 ** basic config
@@ -37,6 +81,16 @@
     :config
     (add-hook 'org-mode-hook (lambda () (org-bullets-mode))))
 #+end_src
+** enable org-indent in org-mode
+#+begin_src emacs-lisp
+  (setq org-startup-indented t)
+#+end_src
+** org snippets
+#+begin_src emacs-lisp
+  (add-to-list 'org-structure-template-alist
+               '("el" . "src emacs-lisp\n"))
+#+end_src
+
 * hungry-delete
 #+begin_src emacs-lisp
   (use-package hungry-delete
@@ -48,6 +102,18 @@
   (use-package sudo-edit
     :ensure t
     :bind ("C-c s" . sudo-edit))
+#+end_src
+* dashboard
+** enable dashboard
+#+begin_src emacs-lisp
+    (use-package dashboard
+      :ensure t
+      :config
+      (dashboard-setup-startup-hook)
+      (setq dashboard-items '((recents . 5) (projects . 5)))
+      (setq dashboard-startup-banner 'logo)
+      (setq dashboard-banner-logo-title "Hello Pritom!"))
+
 #+end_src
 * IDO
 ** enable IDO mode
@@ -100,8 +166,16 @@
 #+begin_src emacs-lisp
   (use-package avy
     :ensure t
-    :bind 
+    :bind
     ("M-s" . avy-goto-char))
+#+end_src
+* beacon
+** install and enable [disabled]
+#+begin_src emacs-lisp
+  ;;(use-package beacon
+  ;;  :ensure t
+  ;;  :init
+  ;;  (beacon-mode 1))
 #+end_src
 * convenient function
 ** kill-whole-word
@@ -129,6 +203,13 @@ enable auto-indent
 #+begin_src emacs-lisp
   (electric-indent-mode 1)
 #+end_src
+* which-key
+#+begin_src emacs-lisp
+  (use-package which-key
+    :ensure t
+    :init
+    (which-key-mode))
+#+end_src
 * config edit/reload
 ** edit
 #+begin_src emacs-lisp
@@ -151,6 +232,13 @@ enable auto-indent
     :ensure t
     :init (rainbow-mode 1))
 #+end_src
+** bracket delimiter
+#+begin_src emacs-lisp
+  (use-package rainbow-delimiters
+    :ensure t
+    :init
+    (rainbow-delimiters-mode 1))
+#+end_src
 * switch-window
 #+begin_src emacs-lisp
   (use-package switch-window
@@ -166,6 +254,7 @@ enable auto-indent
     ([remap other-window] . switch-window))
 #+end_src
 * window splitting function
+** vanilla emacs
 #+begin_src emacs-lisp
   (defun split-and-follow-horizontally ()
     (interactive)
@@ -180,4 +269,113 @@ enable auto-indent
     (balance-windows)
     (other-window 1))
   (global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
+#+end_src
+* auto completion
+** company-mode
+#+begin_src emacs-lisp
+  (use-package company
+    :ensure t
+    :init
+    (add-hook 'after-init-hook 'global-company-mode))
+#+end_src
+* modeline
+** spaceline
+#+begin_src emacs-lisp
+  (use-package spaceline
+    :ensure t
+    :config
+    (require 'spaceline-config)
+    (setq powerline-default-separator (quote arrow))
+    (spaceline-spacemacs-theme))
+#+end_src
+** diminish modes
+#+begin_src emacs-lisp
+  (use-package diminish
+    :ensure t
+    :init
+    (diminish 'hungry-delete-mode)
+    (diminish 'rainbow-mode)
+    (diminish 'which-key-mode))
+#+end_src
+* symon
+#+begin_src emacs-lisp
+  (use-package symon
+    :ensure t)
+#+end_src
+* evil-mode
+** enable evil-mode
+#+begin_src emacs-lisp
+  ;; enable evil-mode
+  (require 'evil)
+  (evil-mode 1)
+#+end_src
+** set up <C-r> - redo
+#+begin_src emacs-lisp
+  (use-package undo-fu
+    :ensure t)
+  ;; (global-undo-tree-mode)
+  (evil-set-undo-system 'undo-fu)
+#+end_src
+** leader key
+#+begin_src emacs-lisp
+  ;; set leader key
+  (evil-set-leader 'normal (kbd "SPC"))
+#+end_src
+** leader bindings
+#+begin_src emacs-lisp
+  (evil-define-key 'normal 'global (kbd "<leader> of") 'dired)
+  (evil-define-key 'normal 'global (kbd "<leader> bl") 'ido-switch-buffer)
+  (evil-define-key 'normal 'global (kbd "<leader> qq") 'keyboard-quit)
+  (evil-define-key 'normal 'global (kbd "<leader> bk") 'kill-curr-buffer)
+#+end_src
+** better evil split
+#+begin_src emacs-lisp
+  (evil-ex-define-cmd "xsplit" 'split-and-follow-horizontally)
+  (evil-ex-define-cmd "ysplit" 'split-and-follow-vertically)
+#+end_src
+** evil-keys in ibuffer
+#+begin_src emacs-lisp
+  (evil-set-initial-state 'ibuffer-mode 'normal)
+#+end_src
+* fzf file serach
+** install fzf
+#+begin_src emacs-lisp
+  (use-package fzf
+    :ensure t)
+#+end_src
+** open file from ~/
+#+begin_src emacs-lisp
+  ;; set default fzf command
+  (setenv "FZF_DEFAULT_COMMAND" "rg --files --hidden")
+  (defun home-fzf-file ()
+    (interactive)
+    (fzf-find-file "~/"))
+  (evil-define-key 'normal 'global (kbd "<leader> fz") 'home-fzf-file)
+  ;; (evil-define-key 'normal 'global (kbd "<leader> fd") 'fzf-directory "~/")
+#+end_src
+* markdown
+** install markdown-mode
+#+begin_src emacs-lisp
+  (use-package markdown-mode
+    :ensure t
+    :commands (markdown-mode gfm-mode)
+    :mode (("README\\.md\\'" . gfm-mode)
+           ("\\.md\\'" . markdown-mode)
+           ("\\.markdown\\'" . markdown-mode))
+    :init (setq markdown-command "multimarkdown"))
+#+end_src
+
+* projectile
+** install projectile
+#+begin_src emacs-lisp
+  (use-package projectile
+    :ensure t
+    :init
+    (projectile-mode +1)
+    :bind (:map projectile-mode-map
+                ("C-c p" . projectile-command-map)))
+#+end_src
+** project search paths
+#+begin_src emacs-lisp
+  (setq projectile-project-search-path '("~/myfiles/projects/github/"))
 #+end_src

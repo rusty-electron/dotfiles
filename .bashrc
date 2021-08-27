@@ -45,6 +45,7 @@ alias v="vim"
 alias vv="nvim"
 alias nv="nvim"
 alias nf="neofetch"
+alias pf="pfetch"
 
 # a quick hack to store quicknotes, now replaced by vimwiki
 alias qnl="vim ~/myfiles/junk/qnotes"
@@ -100,7 +101,7 @@ alias oko='devour okular "$(rg --files -t pdf | fzf)" &> /dev/null'
 alias rgf='$(rg --files | fzf)'
 
 # fzf superpower
-# source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/key-bindings.bash
 # source /usr/share/fzf/completion.bash
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
