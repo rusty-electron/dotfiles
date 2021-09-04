@@ -1,18 +1,16 @@
 #!/bin/sh
 
 videomic() {
-	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -f pulse -i default  ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H
--%M-%S'`.log
+	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -f pulse -i default  ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H-%M-%S'`.log
 }
 
 videodesktop() {
-	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -f pulse -i 4 -preset ultrafast ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S'`.mp4 &> ~/myfiles/screencasts/logs/`date '+
-%Y-%m-%d_%H-%M-%S'`.log
+    AUD=$(pacmd list-sources | tr -d \* | awk '/index:/ {print $2}' | dmenu -i -p "Audio sink: ")
+	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -f pulse -i $AUD -c:v libx264 -crf 0 -preset ultrafast ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H-%M-%S'`.log
 }
 
 videoonly() {
-	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -preset fast  ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S-no-aud'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H-%M-%S-no-aud
-'`.log
+	ffmpeg -video_size 1920x1080 -framerate 30 -f x11grab -i :0.0 -preset fast  ~/myfiles/screencasts/`date '+%Y-%m-%d_%H-%M-%S-no-aud'`.mp4 &> ~/myfiles/screencasts/logs/`date '+%Y-%m-%d_%H-%M-%S-no-aud'`.log
 }
 
 selection=$(printf "videomic\nvideodesktop\nvideoonly" | dmenu -i -p "Record: ")

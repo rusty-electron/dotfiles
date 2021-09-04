@@ -45,6 +45,7 @@ for_window [title="Bitwarden"] floating enable, sticky enable
 for_window [class="Qemu-system-x86_64"] floating enable
 for_window [class="imagewriter"] floating enable
 for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
+for_window [class="Caffeine"] floating enable
 
 # for zoom
 for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900

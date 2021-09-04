@@ -40,6 +40,14 @@
 #+begin_src emacs-lisp
   (display-time-mode 1)
 #+end_src
+** tabsize
+#+begin_src emacs-lisp
+  (setq tab-width 8)
+#+end_src
+** visual line mode (wordwrap)
+#+begin_src emacs-lisp
+  (global-visual-line-mode t)
+#+end_src
 * Terminal
 ** Setting default shell to bash
 #+begin_src emacs-lisp
@@ -55,10 +63,10 @@
     :init
     (setq lsp-keymap-prefix "C-c l")
     :hook (
-           (python-mode . lsp)
+           (python-mode . lsp-deferred)
     ;; which key integration
            (lsp-mode . lsp-enable-which-key-integration))
-    :commands lsp)
+    :commands lsp lsp-deferred)
 #+end_src
 ** lsp-pyright [python]
 #+begin_src emacs-lisp
@@ -66,7 +74,7 @@
     :ensure t
     :hook (python-mode . (lambda ()
                             (require 'lsp-pyright)
-                            (lsp))))  ; or lsp-deferred
+                            (lsp-deferred))))  ; or lsp-deferred
   (setq lsp-pyright-venv-path "~/miniconda3/envs")
 #+end_src
 * Org
@@ -106,13 +114,14 @@
 * dashboard
 ** enable dashboard
 #+begin_src emacs-lisp
-    (use-package dashboard
-      :ensure t
-      :config
-      (dashboard-setup-startup-hook)
-      (setq dashboard-items '((recents . 5) (projects . 5)))
-      (setq dashboard-startup-banner 'logo)
-      (setq dashboard-banner-logo-title "Hello Pritom!"))
+  (use-package dashboard
+    :ensure t
+    :config
+    (dashboard-setup-startup-hook)
+    (setq dashboard-projects-backend 'projectile)
+    (setq dashboard-items '((recents . 5) (projects . 5)))
+    (setq dashboard-startup-banner 'logo)
+    (setq dashboard-banner-logo-title "Hello Pritom!"))
 
 #+end_src
 * IDO
@@ -201,7 +210,7 @@
 * auto-indent
 enable auto-indent
 #+begin_src emacs-lisp
-  (electric-indent-mode 1)
+  (electric-indent-mode 0)
 #+end_src
 * which-key
 #+begin_src emacs-lisp
@@ -235,9 +244,10 @@ enable auto-indent
 ** bracket delimiter
 #+begin_src emacs-lisp
   (use-package rainbow-delimiters
-    :ensure t
-    :init
-    (rainbow-delimiters-mode 1))
+    :ensure t)
+  ;; enable in org-mode and prog-mode
+  (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+  (add-hook 'org-mode-hook #'rainbow-delimiters-mode)
 #+end_src
 * switch-window
 #+begin_src emacs-lisp
@@ -303,6 +313,10 @@ enable auto-indent
     :ensure t)
 #+end_src
 * evil-mode
+** evil indent
+#+begin_src emacs-lisp
+  (setq-default evil-auto-indent nil)
+#+end_src
 ** enable evil-mode
 #+begin_src emacs-lisp
   ;; enable evil-mode
@@ -318,8 +332,11 @@ enable auto-indent
 #+end_src
 ** leader key
 #+begin_src emacs-lisp
+  ;; to make leader key work in dired mode
+  (require 'dired)
+  (define-key dired-mode-map (kbd "SPC") nil)
   ;; set leader key
-  (evil-set-leader 'normal (kbd "SPC"))
+  (evil-set-leader 'motion (kbd "SPC"))
 #+end_src
 ** leader bindings
 #+begin_src emacs-lisp
@@ -337,7 +354,11 @@ enable auto-indent
 #+begin_src emacs-lisp
   (evil-set-initial-state 'ibuffer-mode 'normal)
 #+end_src
-* fzf file serach
+** avy-evil
+#+begin_src emacs-lisp
+  (evil-define-key 'normal 'global (kbd "<leader> j") 'avy-goto-char)
+#+end_src
+* fzf file search
 ** install fzf
 #+begin_src emacs-lisp
   (use-package fzf
@@ -346,12 +367,20 @@ enable auto-indent
 ** open file from ~/
 #+begin_src emacs-lisp
   ;; set default fzf command
-  (setenv "FZF_DEFAULT_COMMAND" "rg --files --hidden")
   (defun home-fzf-file ()
     (interactive)
+    (setenv "FZF_DEFAULT_COMMAND" "rg --files --hidden")
     (fzf-find-file "~/"))
   (evil-define-key 'normal 'global (kbd "<leader> fz") 'home-fzf-file)
   ;; (evil-define-key 'normal 'global (kbd "<leader> fd") 'fzf-directory "~/")
+#+end_src
+** open dired from ~/
+#+begin_src emacs-lisp
+  (defun home-fzf-dir()
+    (interactive)
+    (setenv "FZF_DEFAULT_COMMAND" "fd . -H -t d")
+    (fzf-find-file "~/"))
+  (evil-define-key 'normal 'global (kbd "<leader> od") 'home-fzf-dir)
 #+end_src
 * markdown
 ** install markdown-mode
@@ -378,4 +407,36 @@ enable auto-indent
 ** project search paths
 #+begin_src emacs-lisp
   (setq projectile-project-search-path '("~/myfiles/projects/github/"))
+#+end_src
+* killring
+** install and enable
+#+begin_src emacs-lisp
+  (use-package popup-kill-ring
+    :ensure t
+    :bind ("M-y" . popup-kill-ring))
+#+end_src
+
+* shell-pop
+** install and enable
+#+begin_src emacs-lisp
+  (use-package shell-pop
+    :ensure t
+    :bind (("C-c t" . shell-pop))
+    :config
+    (setq shell-pop-shell-type (quote ("ansi-term" "*ansi-term*" (lambda nil (ansi-term shell-pop-term-shell)))))
+    (setq shell-pop-term-shell "/bin/bash")
+    (setq shell-pop-window-size 30)
+    (setq shell-pop-full-span t)
+    (setq shell-pop-window-position "bottom")
+    (setq shell-pop-autocd-to-working-dir t)
+    (setq shell-pop-restore-window-configuration t)
+    (setq shell-pop-cleanup-buffer-at-process-exit t)
+    (shell-pop--set-shell-type 'shell-pop-shell-type shell-pop-shell-type)
+    (setq shell-pop-universal-key "C-c t"))
+#+end_src
+* line numbers
+** only prog mode
+#+begin_src emacs-lisp
+  (add-hook 'prog-mode-hook 'display-line-numbers-mode)
+  (setq display-line-numbers-type 'relative)
 #+end_src

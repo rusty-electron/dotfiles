@@ -40,6 +40,10 @@ alias vimwiki="vim -c ':VimwikiIndex'"
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"
 
+# xclip is hard!
+alias xclipp="xclip -i -selection primary"
+alias xclipc="xclip -i -selection clip"
+
 # code editor aliases
 alias v="vim"
 alias vv="nvim"
