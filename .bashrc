@@ -14,7 +14,7 @@ alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
 # this is to prevent accidental deletion of files with rm, use \rm to actually remove, TODO: start using trash-cli
 alias rm='echo "are you sure about that?"'
-alias yay='yay -a'
+# alias yay='yay -a'
 
 # editing configs
 alias cfb="vim ~/.bashrc && source ~/.bashrc"

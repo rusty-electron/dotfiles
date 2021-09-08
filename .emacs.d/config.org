@@ -210,7 +210,13 @@
 * auto-indent
 enable auto-indent
 #+begin_src emacs-lisp
-  (electric-indent-mode 0)
+  (electric-indent-mode t)
+
+  ;; may use it elsewhere
+  (defun remove-electric-indent-mode ()
+    (electric-indent-local-mode -1))
+
+  (add-hook 'org-mode-hook 'remove-electric-indent-mode)
 #+end_src
 * which-key
 #+begin_src emacs-lisp

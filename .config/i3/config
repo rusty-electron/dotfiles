@@ -96,6 +96,9 @@ exec --no-startup-id playerctld daemon
 exec --no-startup-id conky
 exec --no-startup-id conky --config ~/.config/conky/conky-2.conf
 
+# start caffeine-ng
+exec --no-startup-id caffeine
+
 # change songs n/p
 bindsym $mod+F2 exec --no-startup-id mpc prev && exec ~/myfiles/scripts/mpdnotify
 bindsym $mod+F3 exec --no-startup-id mpc next && exec $SCRIPT/mpdnotify
