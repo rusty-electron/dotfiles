@@ -318,6 +318,11 @@ enable auto-indent
   (use-package symon
     :ensure t)
 #+end_src
+* emacs-rotate
+#+begin_src emacs-lisp
+  (use-package rotate
+    :ensure t)
+#+end_src
 * evil-mode
 ** evil indent
 #+begin_src emacs-lisp
@@ -350,6 +355,12 @@ enable auto-indent
   (evil-define-key 'normal 'global (kbd "<leader> bl") 'ido-switch-buffer)
   (evil-define-key 'normal 'global (kbd "<leader> qq") 'keyboard-quit)
   (evil-define-key 'normal 'global (kbd "<leader> bk") 'kill-curr-buffer)
+#+end_src
+
+*** emacs-rotate specific
+#+begin_src emacs-lisp
+  (evil-define-key 'normal 'global (kbd "<leader> rw") 'rotate-window)
+  (evil-define-key 'normal 'global (kbd "<leader> rl") 'rotate-layout)
 #+end_src
 ** better evil split
 #+begin_src emacs-lisp
@@ -446,3 +457,4 @@ enable auto-indent
   (add-hook 'prog-mode-hook 'display-line-numbers-mode)
   (setq display-line-numbers-type 'relative)
 #+end_src
+

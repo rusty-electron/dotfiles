@@ -34,7 +34,7 @@ set $SCRIPT ~/myfiles/scripts/
 for_window [class="Dragon"] sticky enable
 for_window [class="flameshot"] floating enable
 for_window [class="if-Imagej"] floating enable
-for_window [class="JDownloader"] floating enable
+for_window [title="JDownloader 2"] floating enable
 for_window [instance="Godot_Engine"] floating enable
 for_window [instance="ij-ImageJ"] floating enable
 for_window [title="Android Emulator"] floating enable
