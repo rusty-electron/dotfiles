@@ -1,5 +1,119 @@
 # sxhkd stuff
 
+# dmonitor script
+XF86Display
+    ~/myfiles/scripts/dmonitor-select
+
+# main terminl in current folder
+super + shift + Return
+    alacritty --working-directory $(xcwd)
+
+# alternate terminal
+super + ctrl + Return
+    urxvt
+
+# brightness controls
+XF86MonBrightness{Up,Down}
+    sudo xbacklight {-inc,-dec} 5
+
+# does not work
 # runs the script that copies the url in current brave window and opens it in an incognito window
 super + bar
-	url2private
+	~/myfiles/scripts/url2private
+
+## mpc controls
+super + {F3, F2}
+    mpc {next,prev} && ~/myfiles/scripts/mpdnotify
+
+# shutdown
+super + shift + x
+    ~/myfiles/scripts/doff
+
+# reload sxhkd
+super + alt + r
+    pkill -USR1 sxhkd
+
+super + F1
+    pcmanfm
+
+super + shift + F1
+    pcmanfm "`xcwd`"
+
+super + q
+    ~/myfiles/scripts/qbrofi
+
+super + F12
+    ~/myfiles/scripts/electron-menu
+
+# ocr script
+super + shift + o
+    ~/myfiles/scripts/ocr-script &> /tmp/ocr-file.log
+
+# play/pause mpd using mpc
+super + shift + p
+    mpc toggle
+
+# pause player using mpris (mpv first, then chrome)
+super + ctrl + space
+    playerctl --player=mpv,chromium play-pause
+
+# launch cava TODO: set up size and position
+super + shift + F11
+    urxvt --title cava-f -e cava
+
+# TODO: launch rofi
+# if it needed in dwm
+
+# dmoji
+super + alt + period
+    ~/myfiles/scripts/dmoji
+
+# drecord
+super + F7
+    ~/myfiles/scripts/drecord
+
+# dclipboard
+super + y
+    ~/myfiles/scripts/dclipboard
+
+# gnome-pomodoro - in dwm config
+
+# toggle picom
+super + c
+    ~/myfiles/scripts/toggle-picom.sh
+
+# launch blueman-applet
+super + shift + b
+    blueman-applet
+
+# launch emacs
+super + shift + e
+    emacs
+
+# lock the screen
+super + x
+    betterlockscreen -l
+
+# incognito mode - browser
+super + ctrl + b
+    brave --incognito
+
+## volume controls
+XF86Audio{Raise,Lower}Volume
+    pamixer --allow-boost {-i,-d} 5
+
+XF86AudioMute
+    pamixer -t
+
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+## screenshots
+Print
+    flameshot gui
+
+shift + Print
+    flameshot gui -d 2000
+
+ctrl + Print
+    flameshot full -c -p ~/Downloads/screenshots

@@ -96,9 +96,6 @@ exec --no-startup-id playerctld daemon
 exec --no-startup-id conky
 exec --no-startup-id conky --config ~/.config/conky/conky-2.conf
 
-# start caffeine-ng
-exec --no-startup-id caffeine
-
 # change songs n/p
 bindsym $mod+F2 exec --no-startup-id mpc prev && exec ~/myfiles/scripts/mpdnotify
 bindsym $mod+F3 exec --no-startup-id mpc next && exec $SCRIPT/mpdnotify
@@ -428,16 +425,16 @@ bindsym $mod+space focus mode_toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 <span font='18'></span>"
-set $ws2 "2 <span font='17'></span>"
-set $ws3 "3 <span font='17'></span>"
-set $ws4 "4 <span font='17'></span>"
+set $ws1 "1  "
+set $ws2 "2  "
+set $ws3 "3  "
+set $ws4 "4  "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8 <span font='17'></span>"
-set $ws9 "9 <span font='17'></span>"
-set $ws10 "10 <span font='17'></span>"
+set $ws8 "8  "
+set $ws9 "9  "
+set $ws10 "10  "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -507,7 +504,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3blocks
-	font pango:Fantasque Sans Mono, Hurmit Nerd Font Mono 12.5
+	font pango:Fantasque Sans Mono, UbuntuMono Nerd Font 12.5
 	height 30
 	workspace_min_width 30
 	tray_output primary

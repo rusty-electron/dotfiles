@@ -26,7 +26,7 @@ image/x-eps=gimp.desktop
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
 application/octet-stream=mpv.desktop;
-application/epub+zip=mpv.desktop;
+application/epub+zip=calibre-gui.desktop;mpv.desktop;
 application/x-yaml=vim.desktop;
 text/markdown=vim.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-02JK20.desktop;
