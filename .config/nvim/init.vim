@@ -16,9 +16,8 @@ autocmd BufWritePre * %s/\n\+\%$//e
 
 " muh plugins
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'vim-airline/vim-airline'
-Plug 'sainnhe/sonokai'
-Plug 'junegunn/goyo.vim'
+Plug 'vim-airline/vim-airline' " the statusbar
+Plug 'sainnhe/sonokai' " theme
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'voldikss/vim-floaterm'
@@ -32,10 +31,13 @@ Plug 'hrsh7th/nvim-compe'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim' " fuzzy finder
 
 Plug 'phaazon/hop.nvim'
 Plug 'akinsho/nvim-toggleterm.lua'
+
+" brackets
+Plug 'windwp/nvim-autopairs'
 call plug#end()
 
 " quickscope
@@ -155,6 +157,7 @@ luafile ~/.config/nvim/compe-config.lua
 luafile ~/.config/nvim/plugins.lua
 
 " nerdtree
+let g:NERDTreeChDirMode = 2
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -170,6 +173,7 @@ inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
+imap <ESC>
 
 " nvim-telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

@@ -40,6 +40,7 @@ Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-capslock' " I can't stand toggling capslock key so often
 call plug#end()
 
 " theming
@@ -93,8 +94,8 @@ noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 " compiling suckless utilities
 au BufWritePost config.def.h !rm -f config.h && sudo make install
 
-" jemdoc compile?
-au BufWritePost *.jemdoc !jemdoc %
+" jemdoc make
+au BufWritePost *.jemdoc !make
 
 " run xrdb on .Xresources file edit
 autocmd BufWritePost *Xresources,*Xdefaults !xrdb %

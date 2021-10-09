@@ -1,0 +1,3 @@
+#!/bin/sh
+PID=$(pacmd list-sink-inputs | awk '/application.process.id/ {a=$3} END{print a}')
+xdotool search --pid $PID windowfocus

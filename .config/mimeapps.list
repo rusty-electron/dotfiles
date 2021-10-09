@@ -22,6 +22,7 @@ x-scheme-handler/ferdi=ferdi.desktop
 text/x-makefile=vim.desktop
 application/x-shellscript=vim.desktop
 image/x-eps=gimp.desktop
+image/gif=org.nomacs.ImageLounge.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -42,6 +43,7 @@ text/x-makefile=vim.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
 application/x-shellscript=vim.desktop;
 image/x-eps=org.nomacs.ImageLounge.desktop;gimp.desktop;
+image/gif=org.nomacs.ImageLounge.desktop;
 
 [Removed Associations]
 image/jpeg=userapp-piew-NCCU80.desktop;

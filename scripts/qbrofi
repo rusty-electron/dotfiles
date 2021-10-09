@@ -2,10 +2,6 @@
 
 # this script uses rofi's dmenu mode to launch qutebrowser with search keywords
 
-searchstr=$(echo -e "wk\ndck\nwd\nub\nox" | rofi -dmenu -i -p "qutebrowser-search")
+searchstr=$(echo -e "wk\ndck\nwd\nub\nox\nfast.com" | rofi -dmenu -i -p "qutebrowser-search")
 
 [ -z "$searchstr" ] || qutebrowser ":open $searchstr" &> /dev/null
-
-
-
-
