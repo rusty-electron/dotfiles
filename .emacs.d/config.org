@@ -457,4 +457,12 @@ enable auto-indent
   (add-hook 'prog-mode-hook 'display-line-numbers-mode)
   (setq display-line-numbers-type 'relative)
 #+end_src
+* indentation-guides
+** only prog-mode
+#+begin_src emacs-lisp
+  (use-package highlight-indent-guides
+    :ensure t)
+  (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+  (setq highlight-indent-guides-method 'character)
+#+end_src
 

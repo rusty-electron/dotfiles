@@ -3,7 +3,7 @@
 # this script can be used to generate a menu for nativefier apps
 # i have started using ferdi because it is much convenient and i have to keep on wrestling with chrome version fixes for whatsapp, the name of this script is now not suitable as it no longer launches any electron apps but rather a multitude of different programs so in the future, i 'm going to rename it to app-menu
 
-choice=$(printf "ferdi\ndiscord\ndeemix\nkdenlive\nESPlorer\nlofi\nrofi-beats\nrelaunch-ddterm" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
+choice=$(printf "ferdi\ndiscord\ndeemix\nkdenlive\nESPlorer\nlofi\nrofi-beats\nrun_vm\nrelaunch-ddterm" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
 
 case "$choice" in
 	# whatsapp) ~/myfiles/nativefier-apps/whatsapp-linux-x64/whatsapp;;
@@ -15,5 +15,6 @@ case "$choice" in
     ESPlorer) java -jar ~/drive/embedded/ESPlorer/ESPlorer.jar ;;
 	lofi) ~/myfiles/scripts/lofi ;;
 	rofi-beats) ~/myfiles/scripts/rofi-beats-linux ;;
+	run_vm) ~/myfiles/scripts/run_vm ;;
     relaunch-ddterm) urxvt --title dropdown-f -e tmux
 esac
