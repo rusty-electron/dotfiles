@@ -17,7 +17,7 @@ autocmd BufWritePre * %s/\n\+\%$//e
 " muh plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline' " the statusbar
-Plug 'sainnhe/sonokai' " theme
+Plug 'morhetz/gruvbox' " theme
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'voldikss/vim-floaterm'
@@ -85,11 +85,8 @@ nmap <leader>bl :buffers<cr>:b<space>
 " autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 " autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR
 
-" sonokai colors
-let g:sonokai_style = "maia"
-
 " Basic Settings
-colorscheme sonokai
+colorscheme gruvbox
 set noshowmode
 set number relativenumber
 
@@ -144,7 +141,7 @@ let g:Hexokinase_optInPatterns = [
 " let g:Hexokinase_ftEnabled = ['css', 'html', 'javascript']
 
 " vim airline
-let g:airline_theme = 'sonokai'
+let g:airline_theme = 'gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 

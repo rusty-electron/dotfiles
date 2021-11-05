@@ -100,7 +100,7 @@ alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == ""
 alias cf='cd $(fd . -H -t d ~ | fzf)'
 alias f='vfz'
 alias fzfo='devour xdg-open "$(rg --files | fzf)" &> /dev/null'
-alias op='echo "$(rg --files -t pdf | fzf)" | xargs -r devour zathura'
+alias op='echo "$(rg --files -t pdf | fzf)" | xargs -r -I{} devour zathura "{}"'
 alias oko='devour okular "$(rg --files -t pdf | fzf)" &> /dev/null'
 alias rgf='$(rg --files | fzf)'
 
