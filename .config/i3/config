@@ -68,6 +68,8 @@ for_window [class="discord"] move to workspace $ws9
 
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
+# plan to assign keybinding to launch a floating pcmanfm
+# bindsym $mod+Alt+F1 exec --no-startup-d pcmanfm
 bindsym $mod+Shift+F1 exec --no-startup-id pcmanfm "`xcwd`"
 bindsym $mod+Shift+F exec --no-startup-id $SCRIPT/dpcmanfm
 

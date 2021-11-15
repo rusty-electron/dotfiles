@@ -1,0 +1,16 @@
+#!/bin/sh
+BASEDIR="${HOME}/workspace/"
+LOGFILE="${BASEDIR}/junkfolders.log"
+
+if [ ! -d $BASEDIR ]; then
+    mkdir $BASEDIR
+fi
+
+cd $BASEDIR
+
+# cleanup remove empty folders for the format "dd-MON"
+find . -empty -regextype egrep -regex '\./[0-9]{2}\-[A-Z]{3}' -type d -delete
+
+# create folder for today
+FOLDERNAME=$(date '+%d-%b' | tr a-z A-Z)
+mkdir -p $FOLDERNAME
