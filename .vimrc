@@ -41,6 +41,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-capslock' " I can't stand toggling capslock key so often
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " theming
@@ -99,6 +100,15 @@ au BufWritePost *.jemdoc !make
 
 " run xrdb on .Xresources file edit
 autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
+
+" goyo-mode
+" fixes transparency bug: https://github.com/junegunn/goyo.vim/issues/224
+function! s:goyo_leave()
+         hi Normal guibg=NONE ctermbg=NONE
+endfunction
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+" add key binding
+noremap <leader>g :Goyo<CR>
 
 " toggle relative numbering
 noremap <F3> :set invnumber invrelativenumber<CR>

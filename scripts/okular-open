@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xdg-open "$(rg --files ~ | dmenu -l 15)"

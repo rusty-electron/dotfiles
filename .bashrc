@@ -95,7 +95,7 @@ export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 
 # aliases for fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
-alias cpcmd="history | cut -c 8- | fzf | xclip -i -r -sel clipboard"
+alias cpcmd="history | cut -c 8- | uniq | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd "$file"'
 alias cf='cd $(fd . -H -t d ~ | fzf)'
 alias f='vfz'

@@ -46,6 +46,8 @@ for_window [class="Qemu-system-x86_64"] floating enable
 for_window [class="imagewriter"] floating enable
 for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
 for_window [class="Caffeine"] floating enable
+for_window [class="matplotlib"] floating enable
+for_window [class="Tk"] floating enable
 for_window [class="Audacity"] floating enable, resize set 1000 800, move position center
 
 # for zoom
