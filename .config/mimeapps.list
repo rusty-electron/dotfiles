@@ -5,7 +5,7 @@ image/jpg=sxiv.desktop
 x-scheme-handler/magnet=torrent.desktop
 application/x-bittorrent=torrent.desktop
 /* application/pdf=org.pwmt.zathura-pdf-mupdf.desktop */
-application/pdf=org.kde.okular.desktop
+application/pdf=org.pwmt.zathura.desktop
 application/epub+zip=zathura.desktop
 x-scheme-handler/msteams=teams.desktop
 inode/directory=pcmanfm.desktop
@@ -23,6 +23,8 @@ text/x-makefile=vim.desktop
 application/x-shellscript=vim.desktop
 image/x-eps=gimp.desktop
 image/gif=org.nomacs.ImageLounge.desktop
+text/x-csrc=vim.desktop
+audio/mpeg=mpv.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -44,6 +46,8 @@ image/jpeg=org.nomacs.ImageLounge.desktop;
 application/x-shellscript=vim.desktop;
 image/x-eps=org.nomacs.ImageLounge.desktop;gimp.desktop;
 image/gif=org.nomacs.ImageLounge.desktop;
+text/x-csrc=vim.desktop;
+audio/mpeg=audacity.desktop;mpv.desktop;
 
 [Removed Associations]
 image/jpeg=userapp-piew-NCCU80.desktop;

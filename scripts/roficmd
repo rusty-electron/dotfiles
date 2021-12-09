@@ -1,0 +1,3 @@
+#!/bin/sh
+# does not work
+rofi -show drun -run-shell-command 'alacritty --title rofiterm -e bash -ic "{cmd} && read"'

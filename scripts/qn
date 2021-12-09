@@ -1,5 +1,5 @@
 #!/bin/sh
 # use this script for the 'qn' bash alias
+# deprecated, now I use vim wiki and junkfolds script
 
 vim ~/myfiles/junk/qnotes/$(date +%d-%m-%4Y).md
-

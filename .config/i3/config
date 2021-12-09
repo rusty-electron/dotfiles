@@ -48,7 +48,7 @@ for_window [class="Blueman-manager"] floating enable, resize set 500 800, move p
 for_window [class="Caffeine"] floating enable
 for_window [class="matplotlib"] floating enable
 for_window [class="Tk"] floating enable
-for_window [class="Audacity"] floating enable, resize set 1000 800, move position center
+for_window [title="rofiterm"] floating enable
 
 # for zoom
 for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
@@ -99,7 +99,7 @@ exec --no-startup-id playerctld daemon
 
 # start conky
 exec --no-startup-id conky
-exec --no-startup-id conky --config ~/.config/conky/conky-2.conf
+exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monitor
 
 # change songs n/p
 bindsym $mod+F2 exec --no-startup-id mpc prev && exec ~/myfiles/scripts/mpdnotify
@@ -110,6 +110,8 @@ bindsym $mod+Shift+F11 exec --no-startup-id $termalt --title cava-f -e cava
 bindsym $mod+Shift+minus move scratchpad
 # run rofi
 bindsym $mod+o exec --no-startup-id rofi -show window
+# run roficmd
+bindsym $mod+Mod1+o exec --no-startup-id $SCRIPT/roficmd
 
 # dmoji script
 bindsym $mod+period exec --no-startup-id ~/myfiles/scripts/dmoji

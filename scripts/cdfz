@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# deprecated: now I use the alias "cf" that uses `fd`
 file=$(find ~/ -type f | fzf | sed 's~/[^/]*$~/~')
 [[ "$file" == "" ]] && exit
 cd $file

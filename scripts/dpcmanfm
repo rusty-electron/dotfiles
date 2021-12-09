@@ -1,3 +1,4 @@
 #!/bin/sh
-DIR=$(/usr/bin/rg ~ --files --null 2> /dev/null | xargs -0 dirname | sort -u | dmenu -l 15)
-[ -z "$DIR" ] || /usr/bin/pcmanfm $DIR
+# DIR=$(fd . -H -t d ~ 2> /dev/null | dmenu -F -i -l 20) # using dmenu - deprecated
+DIR=$(fd . -H -t d ~ 2> /dev/null | rofi -dmenu -i -p "pcmanfm" -sort -matching 'fuzzy' -sorting-method 'fzf')
+[ -z "$DIR" ] || pcmanfm "$DIR"

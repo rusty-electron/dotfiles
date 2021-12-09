@@ -1,0 +1,5 @@
+#!/bin/sh
+FILE=$(rg --files ~ | rofi -dmenu -i -sort -sorting-method 'fzf' -matching fuzzy)
+
+# if FILE is set
+[ $FILE == "" ] || xdg-open "$FILE" > /tmp/xdgo.log
