@@ -29,7 +29,12 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "600x0-30+20"
+    # geometry = "600x0-30+20" # deprecated??
+    width = (200, 450)
+    height = 300
+    origin = top-right
+
+    offset = 10x60
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -41,7 +46,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 15
+    transparency = 5
 
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
@@ -61,7 +66,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 2
+    frame_width = 3
 
     # Defines color of the frame around the notification window.
     frame_color = "#aaaaaa"
@@ -86,7 +91,7 @@
 
     ### Text ###
 
-    font = "Ubuntu Mono 13"
+    font = "Inconsolata 13"
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -175,7 +180,7 @@
     max_icon_size = 40
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/gnome/32x32/status/:/usr/share/icons/gnome/32x32/devices/
 
     ### History ###
 
@@ -222,7 +227,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 8
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -297,23 +302,25 @@
     frame_color = "#03c4a1"
     timeout = 6
     # Icon for notifications with low urgency, uncomment to enable
+    # new_icon = /home/pritom/.config/dunst/info.png
 
 [urgency_normal]
     background = "#1d1a31"
     foreground = "#ffffff"
-    frame_color = "#E16036"
+    frame_color = "#526f9e"
     timeout = 8
     # Icon for notifications with normal urgency, uncomment to enable
-    icon = ~/.config/dunst/info.png
+    default_icon = $HOME/.config/dunst/info_custom.png
 
 [urgency_critical]
     background = "#1d1a31"
     # background = "#900000"
     foreground = "#ffffff"
-    frame_color = "#ff0000"
+    # frame_color = "#ff0000"
+    frame_color = "#EE964B"
     timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
-    icon = ~/.config/dunst/warning.png
+    # Icon for notificaTIOns with critical urgency, uncomment to enable
+    new_icon = ~/.config/dunst/warning.png
 
 [pomo]
     category = pomo

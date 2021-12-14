@@ -26,6 +26,7 @@ alias cfvv="vim ~/.config/nvim/init.vim"
 alias cfp="vim ~/.config/picom.conf"
 
 alias clc="calcurse"
+alias scim="sc-im"
 alias tdwn="transmission-daemon" # or mod+t to toggle it
 alias tdir="cd ~/myfiles/junk/testspace"
 alias jupy="coa pyimg;jupyter notebook"
@@ -73,6 +74,8 @@ alias mpvd="devour mpv"
 alias zathurd="devour zathura"
 
 export EDITOR=vim
+export TERMINAL="alacritty"
+export TERMALT="urxvt"
 export BROWSER=brave
 export browser=brave
 export PATH="$HOME/.local/bin:$HOME/myfiles/scripts:$PATH"
@@ -107,7 +110,7 @@ alias rgf='$(rg --files | fzf)'
 
 # fzf superpower
 source /usr/share/fzf/key-bindings.bash
-# source /usr/share/fzf/completion.bash
+source /usr/share/fzf/completion.bash
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 

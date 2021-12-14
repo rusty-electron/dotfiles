@@ -8,15 +8,29 @@
 #      | |
 #      |_|
 
+# set up dual monitor display (if at home)
+bash ~/.screenlayout/1440.sh
+
+# set wallpapers
 feh --bg-fill --randomize ~/myfiles/wallpapers/*
+xset -b # prevent beeps
+
+autostart="dunst caffeine dropbox mpd-mpris"
+for program in $autostart; do
+    pidof -s "$program" || setsid -f "$program"
+done >/dev/null 2>&1
+
+#imwheel -b 45 &
+sleep 1 && mpv --volume=40 ~/.local/share/sounds/desktop-login.oga &
+
+# run anacron
+anacron -t /home/pritom/.local/etc/anacrontab \
+-S /home/pritom/.local/etc/spool/
+
+# setup envars
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1
 # export WINIT_X11_SCALE_FACTOR=1
 export GDK_SCALE=1
-xset -b # prevent beeps
-dunst & # notification daemon
-#imwheel -b 45 &
-caffeine &
-sleep 1 && mpv --volume=40 ~/.local/share/sounds/system-ready.ogg &
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dsun.java2d.uiScale=1'
 export _JAVA_AWT_WM_NONREPARENTING=1

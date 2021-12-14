@@ -1,0 +1,9 @@
+#!/bin/sh
+PATH=/sys/class/power_supply/*
+for d in $PATH; do
+    if [ -f "$d/capacity" ]; then
+        CAP="$(/bin/cat $d/capacity)"
+        DEVICE="$(/bin/cat $d/model_name)"
+        echo "$DEVICE: $CAP"
+    fi
+done

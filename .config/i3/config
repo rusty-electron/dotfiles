@@ -49,6 +49,7 @@ for_window [class="Caffeine"] floating enable
 for_window [class="matplotlib"] floating enable
 for_window [class="Tk"] floating enable
 for_window [title="rofiterm"] floating enable
+for_window [title="Spotify"] floating enable, resize set 740 1070
 
 # for zoom
 for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
@@ -94,7 +95,7 @@ bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> /tmp/o
 bindsym $mod+Shift+p exec --no-startup-id mpc toggle
 
 # playerctl pause/resume
-bindsym $mod+Ctrl+space exec --no-startup-id "playerctl --player=mpv,chromium play-pause"
+bindsym $mod+Ctrl+space exec --no-startup-id "playerctl --player=spotify,mpv,chromium play-pause"
 exec --no-startup-id playerctld daemon
 
 # start conky
@@ -102,8 +103,10 @@ exec --no-startup-id conky
 exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monitor
 
 # change songs n/p
-bindsym $mod+F2 exec --no-startup-id mpc prev && exec ~/myfiles/scripts/mpdnotify
-bindsym $mod+F3 exec --no-startup-id mpc next && exec $SCRIPT/mpdnotify
+# bindsym $mod+F2 exec --no-startup-id mpc prev  && exec ~/myfiles/scripts/mpdnotify
+# bindsym $mod+F3 exec --no-startup-id mpc next  && exec $SCRIPT/mpdnotify
+bindsym $mod+F2 exec --no-startup-id "playerctl --player=mpd,spotify previous"
+bindsym $mod+F3 exec --no-startup-id "playerctl --player=mpd,spotify next"
 bindsym $mod+Shift+F11 exec --no-startup-id $termalt --title cava-f -e cava
 
 # move a window to scratchpad
@@ -162,11 +165,12 @@ set $screenshot-folder ~/Downloads/screenshots
 bindsym $mod+b exec --no-startup-id $MYBROWSER
 bindsym $mod+ctrl+b exec --no-startup-id $MYBROWSER --incognito
 
-# Use pactl to adjust volume in PulseAudio.
+# Use pamixer to adjust volume in PulseAudio.
 set $refresh_volume pkill -RTMIN+10 i3blocks
-bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --allow-boost -i 5 && $refresh_volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --allow-boost -d 5 && $refresh_volume
-bindsym XF86AudioMute exec --no-startup-id pamixer -t && $refresh_volume
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --allow-boost -i 5 && $SCRIPT/notify-progress audio && $refresh_volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --allow-boost -d 5 && $SCRIPT/notify-progress audio && $refresh_volume
+bindsym XF86AudioMute exec --no-startup-id pamixer -t && $refresh_volume && $SCRIPT/notify-progress muted
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_volume
 
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -179,8 +183,8 @@ bindsym Shift+Print exec --no-startup-id flameshot gui -d 2000
 bindsym Ctrl+Print exec --no-startup-id flameshot full -c -p $screenshot-folder
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id sudo xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id sudo xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo xbacklight -inc 5 && $SCRIPT/notify-progress brightness # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id sudo xbacklight -dec 5 && $SCRIPT/notify-progress brightness # decrease screen brightness
 
 # force floating on some windows
 for_window [class="Matplotlib" instance="matplotlib"] floating enable
