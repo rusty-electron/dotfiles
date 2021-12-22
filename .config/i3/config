@@ -50,6 +50,7 @@ for_window [class="matplotlib"] floating enable
 for_window [class="Tk"] floating enable
 for_window [title="rofiterm"] floating enable
 for_window [title="Spotify"] floating enable, resize set 740 1070
+for_window [title="^brave-browser$" window_role="^pop-up$"] floating enable
 
 # for zoom
 for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
@@ -105,8 +106,8 @@ exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monito
 # change songs n/p
 # bindsym $mod+F2 exec --no-startup-id mpc prev  && exec ~/myfiles/scripts/mpdnotify
 # bindsym $mod+F3 exec --no-startup-id mpc next  && exec $SCRIPT/mpdnotify
-bindsym $mod+F2 exec --no-startup-id "playerctl --player=mpd,spotify previous"
-bindsym $mod+F3 exec --no-startup-id "playerctl --player=mpd,spotify next"
+bindsym $mod+F2 exec --no-startup-id "playerctl --player=spotify,mpd previous"
+bindsym $mod+F3 exec --no-startup-id "playerctl --player=spotify,mpd next"
 bindsym $mod+Shift+F11 exec --no-startup-id $termalt --title cava-f -e cava
 
 # move a window to scratchpad

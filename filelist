@@ -21,6 +21,7 @@
 .config/sxiv
 .config/sxhkd
 .config/zathura
+.config/conky
 .config/youtube-viewer/youtube-viewer.conf
 .emacs.d/config.org
 .emacs.d/init.el

@@ -5,7 +5,7 @@
 
 case $BLOCK_BUTTON in
 	1) notify-send -u low "Battery status" "$(acpi | cut -d ' ' -f5-)" ;;
-	3) notify-send -u low "🔋 Battery module" "🔋: discharging
+	3) notify-send -u low -i none "🔋 Battery module" "🔋: discharging
 🛑: not charging
 ♻: stagnant charge
 🔌: charging
