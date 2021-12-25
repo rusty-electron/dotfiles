@@ -9,6 +9,7 @@ I now maintain two linux installations, one on my thinkpad and the other on my d
 * alacritty terminal config - `.config/alacritty/alacritty.yaml`
 * picom config - `.config/picom.conf`
 * minimal configs - `minimal` contains minimal configs for programs like vim, bash shell, etc., so that I can get a workable vim setup, bash aliases without installing plugins and whatnot.
+* dunst config - `.config/dunst/dunstr`, use it with a icon pack like [gnome-icon-theme](https://archlinux.org/packages/community/any/gnome-icon-theme/)
 
 ### cool scripts in `scripts`
 * i3blocks statusbar scripts - `statusbar/`
@@ -31,6 +32,7 @@ I now maintain two linux installations, one on my thinkpad and the other on my d
 * mathq - tool to help practice math so that your brain works the next time you stare at a store cashier.
 * ocr-script - use `imagemagick` to recognize text on screen and copy to clipboard. useful for preparing notes from slides or videos.
 * tuxil - pipes the output of `tuxi` to the `bat` for automatic paging.
+* showbat - loop through each folder(device) in `/sys/class/power_supply/` that has a `capacity` parameter(file) and cats it. Example output showing laptop and keyboard battery level: `5B10W138: 76% Keychron K2: 96%` 
 
 ### *cooler* scripts
 
@@ -57,6 +59,12 @@ prints how much of this year I have wasted
 * `chlock` or change lockscreen wallpaper
 
 I use [betterlockscreen] and I like to see random wallpapers on my screen everyday so I have added a `cronjob` to change the lockscreen wallpaper everyday at 18:00 IST. This script is a `crontab` friendly script to do the same. Works on shells too. Don't forget to change the path to your wallpaper directory.
+
+* `junkfolds`
+
+I usually have to temporarily download some files like media from whatsapp or a pdf from a random site so I had a "tmp" folder in my ~/ but after some time, this directory is filled with several old files and it becomes difficult to recover a recently downloaded file - yes I can sort by time but what if I need a file that I downloaded a week ago, yes :facepalm: I can use `fd` with a time filter but what if I don't know that I need the file from "that" particular day, enter `junkfolds`. You are supposed to run this file as a cron/anacron job. It creates a folder with the name format `DD-MMM` in ~/workspace (modifiable in script) everyday and deletes any older folders with this name format if they are empty (to prevent flooding that folder with such files).
+
+You can now easily retrieve temp files according to the date and manually inspect folder contents to prune them.
 
 ### rice images
 
