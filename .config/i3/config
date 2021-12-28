@@ -14,6 +14,7 @@ client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252
 bindsym XF86Display exec --no-startup-id $SCRIPT/dmonitor-select
 
 # multi-monitor stuff
+# moves the current workspace from one monitor to the next
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left move workspace to output left
 
@@ -23,72 +24,50 @@ set $term alacritty
 set $termalt urxvt
 set $MYBROWSER brave
 set $SCRIPT ~/myfiles/scripts/
+set $screenshot-folder ~/Downloads/screenshots
 
 # switch to greeter
 # bindsym $mod+Escape exec --no-startup-id dm-tool switch-to-greeter
 
+### program startups
+# for MPRIS control over media programs
+exec --no-startup-id playerctld daemon
+
+# start conky on both monitors
+exec --no-startup-id conky
+exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monitor
+
 # run sxhkd, will remove from this config later [not working]
 # exec_always --no-startup-id sxhkd
 
-# special settings for some programs
-for_window [class="Dragon"] sticky enable
-for_window [class="flameshot"] floating enable
-for_window [class="if-Imagej"] floating enable
-for_window [title="JDownloader 2"] floating enable
-for_window [instance="Godot_Engine"] floating enable
-for_window [instance="ij-ImageJ"] floating enable
-for_window [title="Android Emulator"] floating enable
-for_window [title="VirtualBox Manager"] floating enable
-for_window [class="Zotero"] floating enable
-for_window [class="SimpleScreenRecorder"] floating enable
-for_window [title="Bitwarden"] floating enable, sticky enable
-for_window [class="Qemu-system-x86_64"] floating enable
-for_window [class="imagewriter"] floating enable
-for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
-for_window [class="Caffeine"] floating enable
-for_window [class="matplotlib"] floating enable
-for_window [class="Tk"] floating enable
-for_window [title="rofiterm"] floating enable
-for_window [title="Spotify"] floating enable, resize set 740 1070
-for_window [title="^brave-browser$" window_role="^pop-up$"] floating enable
-
-# for zoom
-for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
-for_window [class="zoom"] [title="Participants.*"] floating enable, resize set 400 600
-for_window [class="zoom"] [title="Zoom Cloud Meetings"] floating enable
-for_window [class="zoom"] [title="zoom"] floating enable
-
-# google meet widget
-for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
-bindsym $mod+z exec --no-startup-id pkill -RTMIN+26 i3blocks
-
-# for gnome-pomodoro
-for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
-
 #### Assign workspaces
 # for_window [class=".*whatsapp.*"] move to workspace $ws9
+# move discord and ferdi (for notion and whatsapp) to workspace 9 on their launch
 for_window [class="Ferdi"] move to workspace $ws9
 for_window [class="discord"] move to workspace $ws9
 
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
-# plan to assign keybinding to launch a floating pcmanfm
-# bindsym $mod+Alt+F1 exec --no-startup-d pcmanfm
+# plan to assign keybinding to launch a floating pcmanfm [WIP]
+# i haven't been able to find a way to assign a custom window class or name to a pcmanfm instance
+
+# uses xcwd to run pcmanfm in current terminal directory
 bindsym $mod+Shift+F1 exec --no-startup-id pcmanfm "`xcwd`"
+# launches the dpcmanfm script
 bindsym $mod+Shift+F exec --no-startup-id $SCRIPT/dpcmanfm
 
 # switch to urgent window
 bindsym $mod+g [urgent=latest] focus
 # run rofi-powered qutebrowser search
-bindsym $mod+q exec --no-startup-id ~/myfiles/scripts/qbrofi
+bindsym $mod+q exec --no-startup-id $SCRIPT/qbrofi
 # run electron-apps
-bindsym $mod+F12 exec --no-startup-id ~/myfiles/scripts/electron-menu
-# workspace toggle
+bindsym $mod+F12 exec --no-startup-id $SCRIPT/electron-menu
+# toggle between recent two workspaces
 bindsym $mod+Tab workspace back_and_forth
 # focus on next window
 bindsym $mod+a focus left
 
-# ocr script
+# ocr script - allows to use OCR to copy text from the screen (results are not always perfect)
 bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> /tmp/ocr-file.log #&& notify-send "OCR script" "select text to be copied"
 
 ##### mpc controls #####
@@ -97,36 +76,36 @@ bindsym $mod+Shift+p exec --no-startup-id mpc toggle
 
 # playerctl pause/resume
 bindsym $mod+Ctrl+space exec --no-startup-id "playerctl --player=spotify,mpv,chromium play-pause"
-exec --no-startup-id playerctld daemon
-
-# start conky
-exec --no-startup-id conky
-exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monitor
 
 # change songs n/p
 # bindsym $mod+F2 exec --no-startup-id mpc prev  && exec ~/myfiles/scripts/mpdnotify
 # bindsym $mod+F3 exec --no-startup-id mpc next  && exec $SCRIPT/mpdnotify
 bindsym $mod+F2 exec --no-startup-id "playerctl --player=spotify,mpd previous"
 bindsym $mod+F3 exec --no-startup-id "playerctl --player=spotify,mpd next"
+# launch cava
 bindsym $mod+Shift+F11 exec --no-startup-id $termalt --title cava-f -e cava
 
 # move a window to scratchpad
 bindsym $mod+Shift+minus move scratchpad
-# run rofi
+# run rofi to (mainly) retrieve windows from scratchpad
 bindsym $mod+o exec --no-startup-id rofi -show window
-# run roficmd
+# run roficmd [WIP]
 bindsym $mod+Mod1+o exec --no-startup-id $SCRIPT/roficmd
 
-# dmoji script
+# run dmoji script
 bindsym $mod+period exec --no-startup-id ~/myfiles/scripts/dmoji
 
-# drecord script
+# drecord script - use ffmpeg to record screen
 bindsym $mod+F7 exec --no-startup-id ~/myfiles/scripts/drecord
-# open nnn terminal
+# open nnn terminal [WIP]
+# i have issues while trying to spawn terminals within the instance, I saw
+# a fix in nnn's wiki. Will try again.
 bindsym $mod+backslash exec --no-startup-id $term -e bash -lc "nnn -rcC"
 
 # youtubeplaypause [obsolete due to mpris]
 # bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
+
+# run the dclipboard script
 bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/dclipboard
 
 # run dpomo
@@ -135,9 +114,9 @@ bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/dclipboard
 bindsym $mod+p [class="Gnome-pomodoro"] scratchpad show
 bindsym $mod+Ctrl+p exec --no-startup-id $SCRIPT/gpomo
 
-# run udiskie tray
+# run udiskie tray applet
 bindsym $mod+Shift+u exec --no-startup-id udiskie -t
-# run transmission-daemon
+# run/kill transmission-daemon
 bindsym $mod+t exec --no-startup-id $SCRIPT/toggleq transmission-daemon
 # toggle imwheel
 bindsym $mod+Shift+m exec --no-startup-id ~/myfiles/scripts/toggle-imwheel.sh
@@ -148,105 +127,61 @@ bindsym $mod+Shift+b exec --no-startup-id blueman-applet
 # run emacs
 bindsym $mod+Shift+e exec --no-startup-id emacs
 
-# keybinding to lockscreen
+# keybinding to lock screen
 bindsym $mod+x exec --no-startup-id betterlockscreen -l
-# bindsym $mod+x exec --no-startup-id $SCRIPT/lockscreen
 
 # keybinding for doff script
 bindsym $mod+Shift+x exec --no-startup-id ~/myfiles/scripts/doff
 
-# start screencasting to file
-bindsym $mod+Print exec --no-startup-id ~/myfiles/scripts/ffmpeg-record.sh
+# stop ffmpeg screencasting [obsolete]
 bindsym $mod+Shift+Print exec killall --signal INT ffmpeg && exec notify-send -u normal -t 5000 "ffmpeg: Recording Stopped"
 
-# folder variables
-set $screenshot-folder ~/Downloads/screenshots
-
-# wm shortcut for the browser
+# keybindings for the browser
 bindsym $mod+b exec --no-startup-id $MYBROWSER
 bindsym $mod+ctrl+b exec --no-startup-id $MYBROWSER --incognito
 
-# Use pamixer to adjust volume in PulseAudio.
+# update signal i3blocks to refresh volume
 set $refresh_volume pkill -RTMIN+10 i3blocks
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --allow-boost -i 5 && $SCRIPT/notify-progress audio && $refresh_volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --allow-boost -d 5 && $SCRIPT/notify-progress audio && $refresh_volume
-bindsym XF86AudioMute exec --no-startup-id pamixer -t && $refresh_volume && $SCRIPT/notify-progress muted
+bindsym XF86AudioMute exec --no-startup-id pamixer -t && $SCRIPT/notify-progress muted && $refresh_volume
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_volume
-
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # screenshot utility
 bindsym Print exec --no-startup-id flameshot gui
 bindsym Shift+Print exec --no-startup-id flameshot gui -d 2000
 bindsym Ctrl+Print exec --no-startup-id flameshot full -c -p $screenshot-folder
 
-# Sreen brightness controls
+# screen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id sudo xbacklight -inc 5 && $SCRIPT/notify-progress brightness # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id sudo xbacklight -dec 5 && $SCRIPT/notify-progress brightness # decrease screen brightness
 
-# force floating on some windows
-for_window [class="Matplotlib" instance="matplotlib"] floating enable
-
-# for qbrowser window
-for_window [class="qutebrowser" instance="qutebrowser"] floating enable
-for_window [class="qutebrowser" instance="qutebrowser"] resize set 1025 850
-for_window [class="qutebrowser" instance="qutebrowser"] move position center
-
-# for floating cava
-for_window [title="cava-f"] floating enable, sticky enable, resize set 25 ppt 20 ppt, move right 42 ppt move down 46 ppt
-
-# for floating mpv
-for_window [instance="mpv-mini"] floating enable, sticky enable, resize set 25 ppt 35 ppt, move right 55 ppt move down 53 ppt
-
-# for pymol window
-for_window [class="PyMOL"] floating enable
-for_window [class="PyMOL"] resize set 1800 1000
-for_window [class="PyMOL"] move position center
-
-for_window[class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
-
-for_window[class="realvnc-vncviewer"] floating enable, resize set 1024 768, move position center
-
 # for weather term
-for_window [title="weather-f"] floating enable
-for_window [title="weather-f"] resize set 1325 850
-for_window [title="weather-f"] move position center
+for_window [title="weather-f"] floating enable, resize set 1325 850, move position center
 
-# for floating term
+# create a floating term
 bindsym $mod+Shift+t exec --no-startup-id alacritty --title term-f
 for_window [title="term-f"] floating enable, move right 20ppt move up 10ppt
 
 # for gotop term
-for_window [title="cpu-f"] floating enable
-for_window [title="cpu-f"] resize set 1025 750
-for_window [title="cpu-f"] move position center
+for_window [title="cpu-f"] floating enable, resize set 1025 750, move position center
 
 # for clock term
-for_window [title="clock-f"] floating enable
-for_window [title="clock-f"] resize set 1025 650
-for_window [title="clock-f"] move position center
+for_window [title="clock-f"] floating enable, resize set 1025 650, move position center
 
 # setup for scratchpad - from luke's video
 exec --no-startup-id $termalt --title dropdown-f -e tmux
-#exec --no-startup-id $term --title math --config-file ~/.config/alacritty/bigfont.yml -e bc -q -l
 exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=18" -e qalc
 
-for_window [title="dropdown-f"] floating enable, move scratchpad
-for_window [title="dropdown-f"] resize set 925 650
-for_window [title="dropdown-f"] border pixel 6
+for_window [title="dropdown-f"] floating enable, move scratchpad, resize set 925 650, border pixel 6
 
 for_window [class="kdeconnect.app"] floating enable, move position center
 
 # load arandr in floating mode
-for_window [class="Arandr"] floating enable
-for_window [class="Arandr"] resize set 925 650
-for_window [class="Arandr"] border pixel 6
-for_window [class="Arandr"] move position center
+for_window [class="Arandr"] floating enable, resize set 925 650, border pixel 6, move position center
 
-bindsym $mod+u		[title="dropdown-f"] scratchpad show; [title="dropdown-f"] move position center
+bindsym $mod+u [title="dropdown-f"] scratchpad show; [title="dropdown-f"] move position center
 
 # setup for arithmeticpad  - from luke's video
 for_window [title="math-f"] floating enable, move scratchpad
@@ -525,3 +460,59 @@ bar {
 		background #322f3d
 	}
 }
+
+### special settings for some programs
+# these are forced settings that I have applied for some programs
+for_window [class="Dragon"] sticky enable
+for_window [class="flameshot"] floating enable
+for_window [class="if-Imagej"] floating enable
+for_window [title="JDownloader 2"] floating enable
+for_window [instance="Godot_Engine"] floating enable
+for_window [instance="ij-ImageJ"] floating enable
+for_window [title="Android Emulator"] floating enable
+for_window [title="VirtualBox Manager"] floating enable
+for_window [class="Zotero"] floating enable
+for_window [class="SimpleScreenRecorder"] floating enable
+for_window [title="Bitwarden"] floating enable, sticky enable
+for_window [class="Qemu-system-x86_64"] floating enable
+for_window [class="imagewriter"] floating enable
+for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
+for_window [class="Caffeine"] floating enable
+for_window [class="matplotlib"] floating enable
+for_window [class="Tk"] floating enable
+for_window [title="rofiterm"] floating enable
+for_window [title="Spotify"] floating enable, resize set 740 1070
+for_window [title="^brave-browser$" window_role="^pop-up$"] floating enable
+for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
+
+# for zoom
+for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
+for_window [class="zoom"] [title="Participants.*"] floating enable, resize set 400 600
+for_window [class="zoom"] [title="Zoom Cloud Meetings"] floating enable
+for_window [class="zoom"] [title="zoom"] floating enable
+
+for_window [class="Matplotlib" instance="matplotlib"] floating enable
+
+# for qbrowser window
+for_window [class="qutebrowser" instance="qutebrowser"] floating enable
+for_window [class="qutebrowser" instance="qutebrowser"] resize set 1025 850
+for_window [class="qutebrowser" instance="qutebrowser"] move position center
+
+# for floating cava
+for_window [title="cava-f"] floating enable, sticky enable, resize set 25 ppt 20 ppt, move right 42 ppt move down 46 ppt
+
+# for floating mpv
+for_window [instance="mpv-mini"] floating enable, sticky enable, resize set 25 ppt 35 ppt, move right 55 ppt move down 53 ppt
+
+# for pymol window
+for_window [class="PyMOL"] floating enable
+for_window [class="PyMOL"] resize set 1800 1000
+for_window [class="PyMOL"] move position center
+
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
+
+for_window [class="realvnc-vncviewer"] floating enable, resize set 1024 768, move position center
+
+# google meet widget
+# to learn more: https://www.youtube.com/watch?v=SvYOEU_yYEU
+for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
