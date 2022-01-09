@@ -106,10 +106,20 @@ alias cpcmd="history | cut -c 8- | uniq | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]] || cd "$file"'
 alias cf='cd $(fd . -H -t d ~ | fzf --preview="ls {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden); [[ $(ls | wc -l) -le 60 && "$(pwd)" != $HOME ]] && (pwd; ls)'
 alias f='vfz'
-alias fzfo='devour xdg-open "$(rg --files | fzf)" &> /dev/null'
+alias fzfo='open_with_fzf'
 alias op='open_pdf_fzf'
-alias oko='devour okular "$(rg --files -t pdf | fzf)" &> /dev/null'
+alias oko='open_pdf_fzf_okular'
 alias rgf='$(rg --files | fzf)'
+
+open_pdf_fzf_okular() {
+    PDF_PATH=$(rg --files -t pdf | fzf --preview="pdfinfo {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden)
+    [[ -z $PDF_PATH ]] || (devour okular "$PDF_PATH" &> /dev/null)
+}
+
+open_with_fzf() {
+    FILE=$(rg --files | fzf --preview="xdg-prog {}" --bind="ctrl-space:toggle-preview" --preview-window=up,15%)
+    [[ -z "$FILE" ]] || (devour xdg-open "$FILE" &> /dev/null)
+}
 
 # fzf superpower
 source /usr/share/fzf/key-bindings.bash
