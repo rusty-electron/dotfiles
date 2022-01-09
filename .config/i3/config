@@ -29,7 +29,7 @@ set $screenshot-folder ~/Downloads/screenshots
 # switch to greeter
 # bindsym $mod+Escape exec --no-startup-id dm-tool switch-to-greeter
 
-### program startups
+###### startup programs ######
 # for MPRIS control over media programs
 exec --no-startup-id playerctld daemon
 
@@ -39,6 +39,23 @@ exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monito
 
 # run sxhkd, will remove from this config later [not working]
 # exec_always --no-startup-id sxhkd
+
+# run autotiling script for better tiling patterns
+exec_always --no-startup-id autotiling
+# run mpd
+exec --no-startup-id mpd
+
+# i3-battery-popup for notifications
+exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-error.ogg -v 50
+
+# make use of settings specified in Xresources file
+exec --no-startup-id xrdb -merge ~/.Xresources
+
+# run picom for transparency
+exec --no-startup-id picom -b
+
+# run redshift for bluelight filter
+exec --no-startup-id redshift -l 26.14:91.73
 
 #### Assign workspaces
 # for_window [class=".*whatsapp.*"] move to workspace $ws9
@@ -261,22 +278,6 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-###### startup programs ######
-exec_always --no-startup-id autotiling
-# run mpd
-exec --no-startup-id mpd
-
-# i3-battery-popup for notifications
-exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-error.ogg -v 50
-
-# make use of settings specified in Xresources file
-exec --no-startup-id xrdb -merge ~/.Xresources
-
-# run picom for transparency
-exec --no-startup-id picom -b
-
-# run redshift for bluelight filter
-exec --no-startup-id redshift -l 27.38:95.90
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -467,6 +468,7 @@ for_window [class="Dragon"] sticky enable
 for_window [class="flameshot"] floating enable
 for_window [class="if-Imagej"] floating enable
 for_window [title="JDownloader 2"] floating enable
+for_window [class="java-lang-Thread"] floating enable
 for_window [instance="Godot_Engine"] floating enable
 for_window [instance="ij-ImageJ"] floating enable
 for_window [title="Android Emulator"] floating enable
@@ -491,7 +493,8 @@ for_window [class="zoom"] [title="Participants.*"] floating enable, resize set 4
 for_window [class="zoom"] [title="Zoom Cloud Meetings"] floating enable
 for_window [class="zoom"] [title="zoom"] floating enable
 
-for_window [class="Matplotlib" instance="matplotlib"] floating enable
+for_window [class="Matplotlib" instance="matplotlib"] floating enable, move position center, resize set 1000 800
+for_window [class="matplotlib" instance="matplotlib"] floating enable, move position center, resize set 1000 800
 
 # for qbrowser window
 for_window [class="qutebrowser" instance="qutebrowser"] floating enable

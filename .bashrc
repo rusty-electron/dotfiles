@@ -65,7 +65,7 @@ alias passgh="pass github-pat | xclip -i -r -sel clipboard"
 alias coa="conda activate"
 alias mpvq="mpv --no-video"
 
-# quiet and interacture youtube audio player
+# quiet and non-interactive (at least minimal) youtube audio player
 alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
 
 # devour aliases
@@ -85,26 +85,29 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
 
 export NNN_PLUG='d:dragdrop;p:preview-tabbed;f:fzopen;r:_devour okular $nnn*;n:_nvim $nnn*'
-alias nnn="nnn -rcC"
-alias n="nnn -rcC"
+alias nnn="nnn -rc"
+alias n="nnn -rc"
 alias nn="nnn -r"
 alias nnp="nnn -r -P p"
 export NNN_FIFO="/tmp/nnn.fifo"
 export NNN_BMS='b:~/myfiles/blog;y:~/myfiles/projects/pyimg/pyimgbook;g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
+# nnn theme
+BLK="04" CHR="04" DIR="04" EXE="00" REG="00" HARDLINK="00" SYMLINK="06" MISSING="00" ORPHAN="01" FIFO="0F" SOCK="0F" OTHER="02"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
 
 # aliases for blog sync [DEPRECATED]
-# alias downblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ubuntu@54.160.105.137:/var/www/html/rustyelectron.live/public_html/ ~/myfiles/blog/"
-# alias upblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ~/myfiles/blog/ ubuntu@54.160.105.137:/var/www/html/rustyelectron.live/public_html/"
+# alias downblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ubuntu@host:/var/www/html/rustyelectron.live/public_html/ ~/myfiles/blog/"
+# alias upblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ~/myfiles/blog/ ubuntu@host:/var/www/html/rustyelectron.live/public_html/"
 
 # aliases for fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 alias cpcmd="history | cut -c 8- | uniq | fzf | xclip -i -r -sel clipboard"
-alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]]|| cd "$file"'
-alias cf='cd $(fd . -H -t d ~ | fzf)'
+alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]] || cd "$file"'
+alias cf='cd $(fd . -H -t d ~ | fzf --preview="ls {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden); [[ $(ls | wc -l) -le 60 && "$(pwd)" != $HOME ]] && (pwd; ls)'
 alias f='vfz'
 alias fzfo='devour xdg-open "$(rg --files | fzf)" &> /dev/null'
-alias op='echo "$(rg --files -t pdf | fzf)" | xargs -r -0 -I{} devour zathura "{}"'
+alias op='open_pdf_fzf'
 alias oko='devour okular "$(rg --files -t pdf | fzf)" &> /dev/null'
 alias rgf='$(rg --files | fzf)'
 

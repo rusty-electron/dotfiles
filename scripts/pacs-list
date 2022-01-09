@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pacman -Qq | fzf --preview 'pacman -Qi {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less),ctrl-r:execute(sudo pacman -Rns {})'

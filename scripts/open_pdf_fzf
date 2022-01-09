@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PDF_PATH=$(rg --files -t pdf | fzf --preview="pdfinfo {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden)
+
+[[ -z $PDF_PATH ]] || (devour zathura "$PDF_PATH" &> /dev/null)

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pacman -Ssq | fzf --preview 'pacman -Si {}' --layout=reverse --bind 'enter:execute(sudo pacman -Sy {})'
