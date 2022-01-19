@@ -42,7 +42,7 @@ alias vimwiki="vim -c ':VimwikiIndex'"
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"
 
-# xclip is hard!
+# xclip cmds are hard to remember!
 alias xclipp="xclip -i -selection primary"
 alias xclipc="xclip -i -selection clip"
 
@@ -54,7 +54,7 @@ alias nf="neofetch"
 alias pf="pfetch"
 
 # a quick hack to store quicknotes, now replaced by vimwiki
-alias qnl="vim ~/myfiles/junk/qnotes"
+# alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
 alias update="sudo pacman -Syyu"

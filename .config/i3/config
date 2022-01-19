@@ -493,6 +493,8 @@ for_window [class="zoom"] [title="Participants.*"] floating enable, resize set 4
 for_window [class="zoom"] [title="Zoom Cloud Meetings"] floating enable
 for_window [class="zoom"] [title="zoom"] floating enable
 
+for_window [class="Processing"] floating enable, move position center
+
 for_window [class="Matplotlib" instance="matplotlib"] floating enable, move position center, resize set 1000 800
 for_window [class="matplotlib" instance="matplotlib"] floating enable, move position center, resize set 1000 800
 
@@ -511,10 +513,12 @@ for_window [instance="mpv-mini"] floating enable, sticky enable, resize set 25 p
 for_window [class="PyMOL"] floating enable
 for_window [class="PyMOL"] resize set 1800 1000
 for_window [class="PyMOL"] move position center
+for_window [class="Gcolor3"] floating enable, move position center
 
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
 
 for_window [class="realvnc-vncviewer"] floating enable, resize set 1024 768, move position center
+for_window [class="GtkFileChooserDialog"] floating enable, resize set 1180 768, move position center
 
 # google meet widget
 # to learn more: https://www.youtube.com/watch?v=SvYOEU_yYEU

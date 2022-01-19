@@ -15,7 +15,7 @@ bash ~/.screenlayout/1440.sh
 feh --bg-fill --randomize ~/myfiles/wallpapers/*
 xset -b # prevent beeps
 
-autostart="dunst caffeine dropbox mpd-mpris mpd-notification"
+autostart="dunst caffeine dropbox mpd-mpris mpd-notification blueman-applet"
 for program in $autostart; do
     pidof -s "$program" || setsid -f "$program"
 done >/dev/null 2>&1
