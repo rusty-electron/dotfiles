@@ -92,7 +92,9 @@ bindsym --release $mod+Shift+o exec --no-startup-id $SCRIPT/ocr-script &> /tmp/o
 bindsym $mod+Shift+p exec --no-startup-id mpc toggle
 
 # playerctl pause/resume
-bindsym $mod+Ctrl+space exec --no-startup-id "playerctl --player=spotify,mpv,chromium play-pause"
+bindsym $mod+Ctrl+space exec --no-startup-id "playerctl --player=spotify,mpv play-pause"
+bindsym $mod+Shift+y exec --no-startup-id "playerctl --player=chromium play-pause"
+# only for chromium
 
 # change songs n/p
 # bindsym $mod+F2 exec --no-startup-id mpc prev  && exec ~/myfiles/scripts/mpdnotify
@@ -481,7 +483,7 @@ for_window [class="imagewriter"] floating enable
 for_window [class="Blueman-manager"] floating enable, resize set 500 800, move position center
 for_window [class="Caffeine"] floating enable
 for_window [class="matplotlib"] floating enable
-for_window [class="Tk"] floating enable
+for_window [class="Tk"] floating enable, move position center
 for_window [title="rofiterm"] floating enable
 for_window [title="Spotify"] floating enable, resize set 740 1070
 for_window [title="^brave-browser$" window_role="^pop-up$"] floating enable

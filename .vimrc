@@ -16,17 +16,16 @@ let g:vimwiki_table_mappings = 0
 
 let g:vimwiki_list = [{'path': '~/myfiles/vimwiki/', 'path_html': '~/myfiles/vimwiki/public_html/'}]
 
-" indent
-nnoremap > v>
-nnoremap < v<
-vnoremap > >gv
-vnoremap < <gv
+" netrw defaults
+let g:netrw_liststyle = 3 " make tree liststyle the default
+let g:netrw_keepdir = 0
 
-" dict stuff??
+" enable dictionary - british english
 set spelllang=en_gb
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " map vim +clipboard to system clipboard
+" I had to install gVim for to make this work
 set clipboard=unnamedplus
 
 call plug#begin('~/.vim/plugged')
@@ -48,10 +47,10 @@ call plug#end()
 colorscheme onedark
 set background=dark
 
-" transparency while theming
+" fix transparency when theme is active
 hi Normal guibg=NONE ctermbg=NONE
 
-" quickscope
+" quickscope keybindings
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 augroup qs_colors
@@ -76,6 +75,7 @@ autocmd BufWritePre * %s/\s\+$//e
 autocmd FileType yaml setlocal commentstring=#\ %s
 
 " twiddle case
+" use ~ to switch between lowercase, Titlecase and UPPERCASE
 function! TwiddleCase(str)
   if a:str ==# toupper(a:str)
     let result = tolower(a:str)
@@ -89,6 +89,8 @@ endfunction
 vnoremap ~ y:call setreg('', TwiddleCase(@"), getregtype(''))<CR>gv""Pgv
 
 " external copy/paste
+" now obsolete after enabling the system clipboard but might be
+" useful to keep it around for now
 noremap <leader>p :-1r !xclip -o -sel clipboard<CR>
 noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 

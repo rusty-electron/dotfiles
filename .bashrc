@@ -90,7 +90,7 @@ alias n="nnn -rc"
 alias nn="nnn -r"
 alias nnp="nnn -r -P p"
 export NNN_FIFO="/tmp/nnn.fifo"
-export NNN_BMS='b:~/myfiles/blog;y:~/myfiles/projects/pyimg/pyimgbook;g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
+export NNN_BMS='m:~/.config/nnn/mounts;b:~/myfiles/blog;y:~/myfiles/projects/pyimg/pyimgbook;g:~/myfiles/projects/github;w:~/myfiles/wallpapers;j:~/myfiles/junk;p:~/myfiles/projects;u:/run/media/pritom;d:~/Downloads/;b:~/myfiles/bluetooth;P:~/myfiles/pdfs;s:~/myfiles/scripts;'
 export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 # nnn theme
 BLK="04" CHR="04" DIR="04" EXE="00" REG="00" HARDLINK="00" SYMLINK="06" MISSING="00" ORPHAN="01" FIFO="0F" SOCK="0F" OTHER="02"
@@ -101,7 +101,7 @@ export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SO
 # alias upblog="rsync -e 'ssh -i ~/Downloads/pc-arch-sync/aws_educate.pem' -avz ~/myfiles/blog/ ubuntu@host:/var/www/html/rustyelectron.live/public_html/"
 
 # aliases for fzf
-export FZF_DEFAULT_COMMAND="rg --files --hidden"
+export FZF_DEFAULT_COMMAND="rg ~ --files --hidden"
 alias cpcmd="history | cut -c 8- | uniq | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]] || cd "$file"'
 alias cf='cd $(fd . -H -t d ~ | fzf --preview="ls {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden); [[ $(ls | wc -l) -le 60 && "$(pwd)" != $HOME ]] && (pwd; ls)'
@@ -219,3 +219,4 @@ export PATH="$PATH:$HOME/.emacs.d/bin/"
 
 # npm
 export npm_config_prefix="$HOME/.local"
+. "$HOME/.cargo/env"

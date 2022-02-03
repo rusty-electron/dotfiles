@@ -1,3 +1,6 @@
 #!/bin/sh
 
+# Enter -> view details
+# C-r -> remove package
+
 pacman -Qq | fzf --preview 'pacman -Qi {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less),ctrl-r:execute(sudo pacman -Rns {})'
