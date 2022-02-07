@@ -65,6 +65,20 @@ alias passgh="pass github-pat | xclip -i -r -sel clipboard"
 alias coa="conda activate"
 alias mpvq="mpv --no-video"
 
+function chst {
+    [ -z $1 ] && echo "no args provided!" || (curl -s cheat.sh/$1 | bat --style=plain)
+}
+
+mkcd() {
+    if [ "$#" -lt 1 ]; then
+        echo "no arguments provided!"
+        return
+    elif [ "$#" -gt 1 ]; then
+        echo "too many arguments! ignoring extra.."
+    fi
+    test -d "$1" || mkdir "$1" && cd "$1"
+}
+
 # quiet and non-interactive (at least minimal) youtube audio player
 alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
 

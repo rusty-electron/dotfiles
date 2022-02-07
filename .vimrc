@@ -7,6 +7,7 @@ syntax on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set cursorline
 
 " for vim wiki
 set nocompatible

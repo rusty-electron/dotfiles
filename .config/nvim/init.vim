@@ -9,6 +9,7 @@ set expandtab
 set hidden
 
 set clipboard=unnamedplus
+set cursorline
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
 autocmd BufWritePre * %s/\s\+$//e
@@ -45,6 +46,10 @@ Plug 'akinsho/nvim-toggleterm.lua'
 
 " brackets
 Plug 'windwp/nvim-autopairs'
+
+" bufferline
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+Plug 'akinsho/bufferline.nvim'
 call plug#end()
 
 augroup qs_colors
@@ -170,3 +175,5 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+nnoremap <silent> gb :BufferLinePick<CR>

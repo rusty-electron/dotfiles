@@ -486,7 +486,8 @@ for_window [class="matplotlib"] floating enable
 for_window [class="Tk"] floating enable, move position center
 for_window [title="rofiterm"] floating enable
 for_window [title="Spotify"] floating enable, resize set 740 1070
-for_window [title="^brave-browser$" window_role="^pop-up$"] floating enable
+# for_window [title="^Brave-browser$" window_role="^pop-up$"] floating enable
+for_window [window_role="^pop-up$"] floating enable
 for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
 
 # for zoom
