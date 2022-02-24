@@ -69,9 +69,6 @@ command Vurl :!urlview %
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Remove trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
-
 " commenting in yaml files
 autocmd FileType yaml setlocal commentstring=#\ %s
 
@@ -97,6 +94,9 @@ noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
 
 " compiling suckless utilities
 au BufWritePost config.def.h !rm -f config.h && sudo make install
+
+" refresh font cache after editing fonts.conf
+au BufWritePost fonts.conf !fc-cache -f -v<CR>
 
 " jemdoc make
 au BufWritePost *.jemdoc !make

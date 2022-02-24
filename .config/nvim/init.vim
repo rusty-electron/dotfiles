@@ -125,8 +125,8 @@ nnoremap   <silent>   <F8>   :FloatermNew<CR>
 tnoremap   <silent>   <F8>   <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <F9>   :FloatermNext<CR>
 tnoremap   <silent>   <F9>  <C-\><C-n>:FloatermNext<CR>
-nnoremap   <silent>   <F10>   :FloatermToggle<CR>
-tnoremap   <silent>   <F10>   <C-\><C-n>:FloatermToggle<CR>
+nnoremap   <silent>   <A-u>   :FloatermToggle<CR>
+tnoremap   <silent>   <A-u>   <C-\><C-n>:FloatermToggle<CR>
 tnoremap   <silent>   <F11>   <C-\><C-n>:FloatermKill<CR>
 
 " hexokinase configs

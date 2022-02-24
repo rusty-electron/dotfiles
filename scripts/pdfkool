@@ -1,0 +1,129 @@
+#!/bin/sh
+
+# a simple wrapper script to compress pdfs using
+# ghostscript
+
+# ** FEATURES **
+# [x] compress pdf
+# [ ] rotate pages
+
+# for reference: https://milan.kupcevic.net/ghostscript-ps-pdf/
+
+# step 1: a simple prototype
+
+SCRIPTNAME="pdfkool"
+VERSION="0.1.0"
+
+# Print usage
+usage() {
+  echo -n "${SCRIPTNAME} [OPTION]...
+
+A simple wrapper script to compress pdfs using ghostscript
+
+ Options:
+  -i, --input          Path to input pdf file
+  -o, --output         Path to output pdf file
+  -Q, --quality        Specify quality setting for output file (See QUALITY below)
+  -q, --quiet          Quiet (no output)
+  -p, --preserve-links Preserve hyperlinks
+  -l, --log            Print log to file
+  -h, --help           Display this help and exit
+  -v, --version        Output version information and exit
+
+ QUALITY:
+    screen   (screen-view-only quality, 72 dpi images)
+    ebook    (low quality, 150 dpi images)
+    printer  (high quality, 300 dpi images)
+    prepress (high quality, color preserving, 300 dpi imgs)
+    default  (compatible for various use case, large file usually)
+"
+}
+
+function print_msg {
+    [ "$QUIET" == 1 ] || echo $1
+}
+
+version() {
+    echo $SCRIPTNAME $VERSION
+}
+
+QUALITY_OPTS=(default prepress printer ebook screen)
+FILE_SUFFIX="_modified"
+
+PARSED_ARGUMENTS=$(getopt -n pdfkool -o i:o:Q:qphv --long input:,output:,quality:,quiet,preserve-links,help,version: -- "$@")
+VALID_ARGUMENTS=$?
+if [ "$VALID_ARGUMENTS" != "0" ]; then
+    usage
+fi
+
+eval set -- "$PARSED_ARGUMENTS"
+
+while :
+do
+    case "$1" in
+        -i | --input) INPUT=$2 ; shift 2 ;;
+        -o | --output) OUTPUT=$2 ; shift 2 ;;
+        -Q | --quality) QUALITY=$2 ; shift 2 ;;
+        -q | --quiet) QUIET=1 ; shift ;;
+        -p | --preserve-links) LINKS=1 ; shift ;;
+        -h | --help) usage ; shift ;;
+        -v | --version) version ; shift ;;
+        --) shift; break ;;
+        *) echo "ERROR: Unexpected option: $1 - this should not happen."
+            usage ;;
+    esac
+done
+
+
+if [ -z "$INPUT" ]; then
+    if [[ ! -z "$OUTPUT" || ! -z "$QUALITY" ]]; then
+        print_msg "WARNING: input file not provided so ignoring some options.."
+    fi
+    exit 0
+fi
+
+# check if input file exists
+if [ ! -f $INPUT ]; then
+    echo "ERROR: file $INPUT does not exist!"
+    exit 1
+fi
+
+# append file suffix if output filename is not provided
+if [ -z $OUTPUT ]; then
+    DNAME=$(dirname $INPUT)
+    FNAME=$(basename $INPUT)
+    NFNAME=${FNAME%.*}$FILE_SUFFIX'.pdf'
+    OUTPUT=$NFNAME
+    print_msg "INFO: output filename not provided, it will be saved as: $OUTPUT"
+fi
+
+# select quality settings
+DEFAULT_QUALITY="printer"
+if [ -z $QUALITY ]; then
+    print_msg "INFO: no quality specified, using quality setting - $DEFAULT_QUALITY"
+    QUALITY=$DEFAULT_QUALITY
+elif [[ ! ${QUALITY_OPTS[*]} =~ $QUALITY ]]; then
+    print_msg "WARNING: unknown quality setting specified, using quality setting - $DEFAULT_QUALITY"
+    QUALITY=$DEFAULT_QUALITY
+else
+    print_msg "INFO: using quality setting - $QUALITY"
+fi
+
+if [ "$LINKS" == 1 ]; then
+    OPTIONAL='-dPrinted=false'
+    # add more optional args later
+fi
+
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/$QUALITY -dNOPAUSE -dQUIET -dBATCH $OPTIONAL -sOutputFile=$OUTPUT $INPUT
+
+# compare sizes
+ISIZE=$(du -b $INPUT | awk '{ print $1 }')
+OSIZE=$(du -b $OUTPUT | awk '{ print $1 }')
+CR="scale=2;$OSIZE/$ISIZE"
+
+# print helpful info
+if [ ! "$QUIET" == 1 ]; then
+    test "$?" -eq 0 && echo "DONE" || (echo "FAILED"; exit 1)
+    echo -e "- input file size: $(numfmt --to=iec-i $ISIZE)\n- output file size $(numfmt --to=iec-i $OSIZE)"
+    echo "compression ratio: $(bc -l <<< $CR)"
+fi

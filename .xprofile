@@ -27,6 +27,9 @@ sleep 1 && mpv --volume=40 ~/.local/share/sounds/desktop-login.oga &
 anacron -t /home/pritom/.local/etc/anacrontab \
 -S /home/pritom/.local/etc/spool/
 
+# run a python httpserver that hosts the startpage
+python -m http.server 9999 --bind 127.0.0.1 --directory ~/myfiles/projects/github/startpage
+
 # setup envars
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1

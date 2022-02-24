@@ -89,7 +89,7 @@ alias zathurd="devour zathura"
 
 export EDITOR=vim
 export TERMINAL="alacritty"
-export TERMALT="urxvt"
+export TERMALT="st"
 export BROWSER=brave
 export browser=brave
 export PATH="$HOME/.local/bin:$HOME/myfiles/scripts:$PATH"
@@ -118,12 +118,32 @@ export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SO
 export FZF_DEFAULT_COMMAND="rg ~ --files --hidden"
 alias cpcmd="history | cut -c 8- | uniq | fzf | xclip -i -r -sel clipboard"
 alias c='file=$(rg --files --hidden | fzf | sed "s~/[^/]*$~/~");[[ "$file" == "" ]] || cd "$file"'
-alias cf='cd $(fd . -H -t d ~ | fzf --preview="ls {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden); [[ $(ls | wc -l) -le 60 && "$(pwd)" != $HOME ]] && (pwd; ls)'
+# alias cf='cd $(fd . -H -t d ~ | fzf --preview="ls {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden); [[ $(ls | wc -l) -le 60 && "$(pwd)" != $HOME ]] && (pwd; ls)'
+alias cf='change_folder'
 alias f='vfz'
 alias fzfo='open_with_fzf'
 alias op='open_pdf_fzf'
 alias oko='open_pdf_fzf_okular'
 alias rgf='$(rg --files | fzf)'
+
+change_folder() {
+    # if no argument is provided, search from ~ else use argument
+    [[ -z $1 ]] && DIR=~ || DIR=$1
+    # choose file using rg and fzf
+    CHOSEN=$(fd . -H -t d $DIR | fzf --preview="exa -s type --icons {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden)
+
+    # quit if no path is selected else cd into the path
+    if [[ -z $CHOSEN ]]; then
+        echo $CHOSEN
+        return 1
+    else
+        cd "$CHOSEN"
+    fi
+
+    # show ls output if dir has less than 61 files
+    [[ $(ls | wc -l) -le 60 ]] && (pwd; ls)
+    return 0
+}
 
 open_pdf_fzf_okular() {
     PDF_PATH=$(rg --files -t pdf | fzf --preview="pdfinfo {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden)
@@ -234,3 +254,6 @@ export PATH="$PATH:$HOME/.emacs.d/bin/"
 # npm
 export npm_config_prefix="$HOME/.local"
 . "$HOME/.cargo/env"
+
+# enable starship prompt
+eval "$(starship init bash)"

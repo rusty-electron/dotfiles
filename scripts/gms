@@ -6,4 +6,3 @@ do
 	sleep 30s
 	pkill -RTMIN+19 i3blocks
 done
-

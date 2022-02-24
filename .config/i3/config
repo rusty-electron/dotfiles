@@ -21,9 +21,10 @@ bindsym $mod+Ctrl+Left move workspace to output left
 # important envars
 set $mod Mod4
 set $term alacritty
-set $termalt urxvt
+set $termalt st
 set $MYBROWSER brave
 set $SCRIPT ~/myfiles/scripts/
+set $ROFI ~/.config/rofi/launchers
 set $screenshot-folder ~/Downloads/screenshots
 
 # switch to greeter
@@ -102,7 +103,7 @@ bindsym $mod+Shift+y exec --no-startup-id "playerctl --player=chromium play-paus
 bindsym $mod+F2 exec --no-startup-id "playerctl --player=spotify,mpd previous"
 bindsym $mod+F3 exec --no-startup-id "playerctl --player=spotify,mpd next"
 # launch cava
-bindsym $mod+Shift+F11 exec --no-startup-id $termalt --title cava-f -e cava
+bindsym $mod+Shift+F11 exec --no-startup-id $termalt -T cava-f -e cava
 
 # move a window to scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -190,8 +191,9 @@ for_window [title="cpu-f"] floating enable, resize set 1025 750, move position c
 for_window [title="clock-f"] floating enable, resize set 1025 650, move position center
 
 # setup for scratchpad - from luke's video
-exec --no-startup-id $termalt --title dropdown-f -e tmux
-exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=18" -e qalc
+exec --no-startup-id $termalt -T dropdown-f -e tmux
+# exec --no-startup-id $termalt --title math-f -fn "xft:Anonymice Powerline:size=18" -e qalc
+exec --no-startup-id $termalt -T math-f -f "Anonymice Powerline:size=18" -e qalc
 
 for_window [title="dropdown-f"] floating enable, move scratchpad, resize set 925 650, border pixel 6
 
@@ -318,6 +320,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+Shift+d exec --no-startup-id $ROFI/colorful/launcher.sh
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -518,6 +521,8 @@ for_window [class="PyMOL"] resize set 1800 1000
 for_window [class="PyMOL"] move position center
 for_window [class="Gcolor3"] floating enable, move position center
 
+for_window [class="gnuplot_qt"] floating enable
+
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
 
 for_window [class="realvnc-vncviewer"] floating enable, resize set 1024 768, move position center
@@ -525,4 +530,4 @@ for_window [class="GtkFileChooserDialog"] floating enable, resize set 1180 768, 
 
 # google meet widget
 # to learn more: https://www.youtube.com/watch?v=SvYOEU_yYEU
-for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id ~/myfiles/scripts/gms
+for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id $SCRIPT/gms, exec --no-start-up $SCRIPT/warn-ferdi-open

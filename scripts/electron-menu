@@ -18,5 +18,5 @@ case "$choice" in
 	rofi-beats) ~/myfiles/scripts/rofi-beats-linux ;;
 	run_vm) ~/myfiles/scripts/run_vm ;;
     okular-open) ~/myfiles/scripts/okular-open ;;
-    relaunch-ddterm) urxvt --title dropdown-f -e tmux;;
+    relaunch-ddterm) st -T dropdown-f -e tmux;;
 esac

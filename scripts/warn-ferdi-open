@@ -1,0 +1,6 @@
+#!/bin/sh
+
+searchstr="^Ferdi - Whatsapp"
+if [ ! -z $(xdotool search --name "$searchstr" getwindowpid) ]; then
+    notify-send -u "low" "attention!" "Social media app maybe open in Ferdi"
+fi
