@@ -79,7 +79,7 @@ bindsym $mod+g [urgent=latest] focus
 # run rofi-powered qutebrowser search
 bindsym $mod+q exec --no-startup-id $SCRIPT/qbrofi
 # run electron-apps
-bindsym $mod+F12 exec --no-startup-id $SCRIPT/electron-menu
+bindsym $mod+F12 exec --no-startup-id $SCRIPT/run-menu
 # toggle between recent two workspaces
 bindsym $mod+Tab workspace back_and_forth
 # focus on next window

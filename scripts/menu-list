@@ -1,0 +1,11 @@
+ferdi:/usr/bin/ferdi
+discord:/usr/bin/discord
+joplin:flatpak run net.cozic.joplin_desktop
+deemix:~/myfiles/music/deezer/deemix.appimage
+kdenlive:~/myfiles/appimages/kdenlive.appimage
+ESPlorer:java -jar ~/drive/embedded/ESPlorer/ESPlorer.jar
+lofi:~/myfiles/scripts/lofi
+rofi-beats:~/myfiles/scripts/rofi-beats-linux
+run_vm:~/myfiles/scripts/run_vm
+okular-open:~/myfiles/scripts/okular-open
+relaunch-ddterm:st -T dropdown-f -e tmux

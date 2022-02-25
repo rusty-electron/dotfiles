@@ -1,0 +1,31 @@
+#!/bin/sh
+
+LISTFILE=/home/$USER/myfiles/scripts/menu-list
+
+# create a global associative array
+declare -A lookup_array
+
+# read lines into a bash array
+readarray -t lines < "$LISTFILE"
+
+# populate the associative array with keys (options) and values (commands)
+for line in "${lines[@]}"; do
+   key=${line%%:*}
+   value=${line#*:}
+   lookup_array[$key]=$value  ## Or simply ary[${line%%=*}]=${line#*=}
+done
+
+APPS=$(echo ${!lookup_array[@]} | tr " " "\n")
+
+choice=$(printf "$APPS" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
+
+if [[ " ${choice} " =~ " ${!lookup_array[*]} " ]]; then
+    eval ${lookup_array[$choice]}
+    exit 0
+else
+    notify-send "run-menu" "invalid input option"
+    exit 1
+fi
+
+# articles that helped
+# * https://stackoverflow.com/questions/25251353/bash4-read-file-into-associative-array
