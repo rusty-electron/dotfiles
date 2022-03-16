@@ -8,4 +8,5 @@ lofi:~/myfiles/scripts/lofi
 rofi-beats:~/myfiles/scripts/rofi-beats-linux
 run_vm:~/myfiles/scripts/run_vm
 okular-open:~/myfiles/scripts/okular-open
+plots:~/miniconda3/envs/utils/bin/python -m plots
 relaunch-ddterm:st -T dropdown-f -e tmux

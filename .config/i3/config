@@ -64,13 +64,17 @@ exec --no-startup-id redshift -l 26.14:91.73
 for_window [class="Ferdi"] move to workspace $ws9
 for_window [class="discord"] move to workspace $ws9
 
+bindsym $mod+Shift+period exec --no-startup-id $SCRIPT/skip_q
+
 # open pcmanfm
 bindsym $mod+F1 exec --no-startup-id pcmanfm
 # plan to assign keybinding to launch a floating pcmanfm [WIP]
 # i haven't been able to find a way to assign a custom window class or name to a pcmanfm instance
 
 # uses xcwd to run pcmanfm in current terminal directory
-bindsym $mod+Shift+F1 exec --no-startup-id pcmanfm "`xcwd`"
+bindsym $mod+Shift+F10 exec --no-startup-id pcmanfm --name="floating-fman" "`xcwd`"
+# launch floating pcmanfm
+bindsym $mod+F10 exec --no-startup-id pcmanfm --name="floating-fman"
 # launches the dpcmanfm script
 bindsym $mod+Shift+F exec --no-startup-id $SCRIPT/dpcmanfm
 
@@ -522,11 +526,17 @@ for_window [class="PyMOL"] move position center
 for_window [class="Gcolor3"] floating enable, move position center
 
 for_window [class="gnuplot_qt"] floating enable
+for_window [class="Catfish"] floating enable
+for_window [title="^Plots$"] floating enable
+for_window [title="^Font-manager$"] floating enable
+for_window [class="^Qalculate-gtk$"] floating enable
 
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
 
 for_window [class="realvnc-vncviewer"] floating enable, resize set 1024 768, move position center
 for_window [class="GtkFileChooserDialog"] floating enable, resize set 1180 768, move position center
+for_window [class="^Gnome-manual-duplex$"] floating enable
+for_window [title="^floating-fman$"] floating enable, resize set 1080 728, move position center
 
 # google meet widget
 # to learn more: https://www.youtube.com/watch?v=SvYOEU_yYEU

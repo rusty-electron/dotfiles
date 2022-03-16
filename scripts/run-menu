@@ -19,7 +19,7 @@ APPS=$(echo ${!lookup_array[@]} | tr " " "\n")
 
 choice=$(printf "$APPS" | dmenu -sb '#eeeded' -sf '#222831' -i -p "Choice: ")
 
-if [[ " ${choice} " =~ " ${!lookup_array[*]} " ]]; then
+if [[ ${!lookup_array[@]} =~ $choice ]]; then
     eval ${lookup_array[$choice]}
     exit 0
 else

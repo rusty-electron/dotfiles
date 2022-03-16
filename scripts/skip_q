@@ -1,0 +1,7 @@
+#!/bin/sh
+
+xdotool mousemove 461 1013 click 1
+sleep .5
+xdotool mousemove 751 729 click 1
+sleep .5
+xdotool mousemove 1266 812 click 1
