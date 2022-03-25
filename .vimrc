@@ -51,6 +51,12 @@ set background=dark
 " fix transparency when theme is active
 hi Normal guibg=NONE ctermbg=NONE
 
+" Shortcutting split navigation
+map <A-h> <C-w>h
+map <A-j> <C-w>j
+map <A-k> <C-w>k
+map <A-l> <C-w>l
+
 " quickscope keybindings
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 

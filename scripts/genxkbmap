@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# get name of current keymap
+CURRENT=$(setxkbmap -query | grep layout | tr -s ' ' | cut -d ' ' -f2)
+FILE=$HOME/.local/kb-$CURRENT.jpg
+
+# generate and save keymap image
+xkbprint -color "${DISPLAY}" - | gs -sDEVICE=jpeg -dJPEGQ=100 -dNOPAUSE -dBATCH -dSAFER -r300 -sOutputFile=$FILE -
+mogrify -trim -rotate -90 $FILE
+
+notify-send "genxkbmap" "SAVED: $FILE"

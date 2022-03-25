@@ -1,6 +1,20 @@
 #!/bin/sh
 # useful for toggling programs that don't bind to the shell
 # after executing them
-PROG=$1
-pgrep -fx $PROG || notify-send "toggleq" "$PROG started"
-killall $PROG &> /dev/null || $PROG
+
+if [ -z $1 ]; then
+    echo "ERROR: no arg provided!"
+fi
+
+PROG="$1"
+
+if pgrep $PROG > /dev/null
+then
+	echo -e "$PROG is running!\nnow terminating.."
+	pkill $PROG
+	notify-send -t 2000 "toggleq" "$PROG terminated"
+else
+	echo -e "$PROG is not running!\nnow launching $PROG"
+	setsid $PROG & > /dev/null
+	notify-send -t 2000 "toggleq" "$PROG launched"
+fi

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+KEYMAPS=( "de" "us" )
+
+choice=$(echo ${KEYMAPS[@]} | tr " " "\n" | dmenu -i -p "select keymap: ")
+
+echo "SELECTED: $choice"
+
+setxkbmap $choice &> /tmp/dkbd.log
+
+if [ "$?" -ne "0" ]; then
+    notify-send "dkbd" "$(cat /tmp/dkbd.log)"
+fi

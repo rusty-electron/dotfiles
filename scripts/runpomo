@@ -1,0 +1,41 @@
+#!/bin/sh
+
+PROG="gnome-pomodoro"
+PROGXNAME="Pomodoro"
+
+VISIBLE=0
+SCRATCHPAD=0
+
+# check if gnome-pomodoro is running
+# if not running, launch it
+if ! pgrep $PROG > /dev/null
+then
+    notify-send "runpomo" "$PROG process is not running, now launching.."
+    setsid gnome-pomodoro &
+    exit 0
+fi
+
+# check if window is currently visible
+if [ ! -z $(xdotool search --onlyvisible --name "$PROGXNAME" getwindowpid) ]
+then
+    echo "window visible"
+    VISIBLE=1
+fi
+
+# search for the window in i3scratchpad
+# TODO: replace with a python-i3ipc script
+i3-msg -t get_tree | jq '.nodes[] | .nodes[] | .nodes[] | select(.name=="__i3_scratch") | .floating_nodes[] | .nodes[] | [.window,.name]' | sed '/^[][]*$/d' | sed '/,$/{N;s/\n//}' | tr -d "\"" | sed 's/,/ -/g' | sed 's/^[[:space:]]//g' | grep $PROGXNAME
+
+if [ $? -eq 0 ];
+then
+    echo "window in scatchpad"
+    SCRATCHPAD=1
+fi
+
+if [ "$VISIBLE" == "1" ] || [ "$SCRATCHPAD" == "1" ];
+then
+    echo "viewable window exists, do nothing!"
+else
+    echo "forced launch"
+    setsid gnome-pomodoro &
+fi

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+CURRENT=$(setxkbmap -query | grep layout | tr -s ' ' | cut -d ' ' -f2)
+
+sxiv -N "kbmap-float" $HOME/.local/kb-$CURRENT.jpg -s w

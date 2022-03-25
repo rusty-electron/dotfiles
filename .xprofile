@@ -15,17 +15,26 @@ bash ~/.screenlayout/1440.sh
 feh --bg-fill --randomize ~/myfiles/wallpapers/*
 xset -b # prevent beeps
 
-autostart="dunst caffeine dropbox mpd-mpris mpd-notification blueman-applet"
+autostart="dunst nm-applet mpd caffeine dropbox mpd-mpris mpd-notification blueman-applet"
 for program in $autostart; do
     pidof -s "$program" || setsid -f "$program"
 done >/dev/null 2>&1
 
 #imwheel -b 45 &
+redshift -l 26.14:91.73 &
 sleep 1 && mpv --volume=40 ~/.local/share/sounds/desktop-login.oga &
 
 # run anacron
-anacron -t /home/pritom/.local/etc/anacrontab \
--S /home/pritom/.local/etc/spool/
+anacron -t $HOME/.local/etc/anacrontab \
+-S $HOME/.local/etc/spool/
+
+playerctl daemon &
+picom -b &
+sxhkd &
+
+# if running awesomewm, autostart the following
+# if [[ "$(neofetch wm)" == *"awesome"* ]]; then
+# fi
 
 # run a python httpserver that hosts the startpage
 python -m http.server 9999 --bind 127.0.0.1 --directory ~/myfiles/projects/github/startpage &

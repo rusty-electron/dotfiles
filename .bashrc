@@ -20,6 +20,7 @@ alias rm='echo "are you sure about that?"'
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
 alias cfi="vim ~/.config/i3/config"
 alias cfii="vim ~/.config/i3blocks/config"
+alias cfaw="vim ~/.config/awesome/rc.lua"
 alias cff="vim ~/.config/fontconfig/fonts.conf"
 alias cfv="vim ~/.vimrc"
 alias cfvv="vim ~/.config/nvim/init.vim"
@@ -38,6 +39,7 @@ alias ytdlist="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(playlist_i
 alias ctodo="vim ~/myfiles/todo.md"
 alias vki="vim -c ':VimwikiIndex'"
 alias vimwiki="vim -c ':VimwikiIndex'"
+alias zth="zathura"
 
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"

@@ -31,8 +31,8 @@ set $screenshot-folder ~/Downloads/screenshots
 # bindsym $mod+Escape exec --no-startup-id dm-tool switch-to-greeter
 
 ###### startup programs ######
-# for MPRIS control over media programs
-exec --no-startup-id playerctld daemon
+# for MPRIS control over media programs # moved to xprofile
+# exec --no-startup-id playerctld daemon
 
 # start conky on both monitors
 exec --no-startup-id conky
@@ -44,7 +44,7 @@ exec --no-startup-id conky --config ~/.config/conky/conky-2.conf # second monito
 # run autotiling script for better tiling patterns
 exec_always --no-startup-id autotiling
 # run mpd
-exec --no-startup-id mpd
+# exec --no-startup-id mpd
 
 # i3-battery-popup for notifications
 exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-error.ogg -v 50
@@ -53,7 +53,7 @@ exec --no-startup-id i3-battery-popup -L 21 -n -s ~/.local/share/sounds/dialog-e
 exec --no-startup-id xrdb -merge ~/.Xresources
 
 # run picom for transparency
-exec --no-startup-id picom -b
+# exec --no-startup-id picom -b
 
 # run redshift for bluelight filter
 exec --no-startup-id redshift -l 26.14:91.73
@@ -76,7 +76,7 @@ bindsym $mod+Shift+F10 exec --no-startup-id pcmanfm --name="floating-fman" "`xcw
 # launch floating pcmanfm
 bindsym $mod+F10 exec --no-startup-id pcmanfm --name="floating-fman"
 # launches the dpcmanfm script
-bindsym $mod+Shift+F exec --no-startup-id $SCRIPT/dpcmanfm
+bindsym $mod+Shift+f exec --no-startup-id $SCRIPT/dpcmanfm
 
 # switch to urgent window
 bindsym $mod+g [urgent=latest] focus
@@ -108,6 +108,8 @@ bindsym $mod+F2 exec --no-startup-id "playerctl --player=spotify,mpd previous"
 bindsym $mod+F3 exec --no-startup-id "playerctl --player=spotify,mpd next"
 # launch cava
 bindsym $mod+Shift+F11 exec --no-startup-id $termalt -T cava-f -e cava
+# change keymap
+bindsym $mod+F11 exec --no-startup-id $SCRIPT/dkbd
 
 # move a window to scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -130,12 +132,12 @@ bindsym $mod+backslash exec --no-startup-id $term -e bash -lc "nnn -rcC"
 # bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/ytplaypause
 
 # run the dclipboard script
-bindsym $mod+y exec --no-startup-id ~/myfiles/scripts/dclipboard
+bindsym $mod+y exec --no-startup-id $SCRIPT/dclipboard
 
 # run dpomo
 # bindsym $mod+p exec --no-startup-id ~/myfiles/scripts/dpomo
 # bindsym $mod+p exec --no-startup-id gnome-pomodoro
-bindsym $mod+p [class="Gnome-pomodoro"] scratchpad show
+bindsym $mod+p exec --no-startup-id $SCRIPT/runpomo, [class="^Gnome-pomodoro$" title="^Pomodoro$"] scratchpad show
 bindsym $mod+Ctrl+p exec --no-startup-id $SCRIPT/gpomo
 
 # run udiskie tray applet
@@ -304,7 +306,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # make a horizontal split terminal
 # bindsym $mod+backslash split toggle, exec --no-startup-id alacritty, split toggle;
@@ -355,10 +357,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+semicolon split h ;; exec --no-startup-id $term
+# bindsym $mod+semicolon split h ;; exec --no-startup-id $term
 
 # split in vertical orientation
-bindsym $mod+v split v ;; exec --no-startup-id $term
+# bindsym $mod+v split v ;; exec --no-startup-id $term
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -495,7 +497,7 @@ for_window [title="rofiterm"] floating enable
 for_window [title="Spotify"] floating enable, resize set 740 1070
 # for_window [title="^Brave-browser$" window_role="^pop-up$"] floating enable
 for_window [window_role="^pop-up$"] floating enable
-for_window [class="Gnome-pomodoro"] floating enable, move scratchpad
+for_window [class="^Gnome-pomodoro$" title="^Pomodoro$"] floating enable, move scratchpad
 
 # for zoom
 for_window [class="zoom"] [title="Chat"] floating enable, resize set 400 900
@@ -530,6 +532,9 @@ for_window [class="Catfish"] floating enable
 for_window [title="^Plots$"] floating enable
 for_window [title="^Font-manager$"] floating enable
 for_window [class="^Qalculate-gtk$"] floating enable
+for_window [class="^GeoGebra$"] floating enable
+
+for_window [instance="^kbmap-float$"] floating enable, resize set 1200 728, move position center
 
 for_window [class="Pavucontrol" instance="pavucontrol"] floating enable, resize set 925 750, move position center
 

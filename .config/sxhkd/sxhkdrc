@@ -4,26 +4,31 @@
 XF86Display
     ~/myfiles/scripts/dmonitor-select
 
-# main terminl in current folder
+# main terminal in current folder
 super + shift + Return
     alacritty --working-directory $(xcwd)
 
 # alternate terminal
-super + ctrl + Return
-    urxvt
+# super + ctrl + Return
+#     st
+
+# run dmenu
+# NOTE: moved to wm bindings
+# super + d
+#     dmenu_run
+
+# launch rofi launcher
+super + shift + d
+    ~/.config/rofi/launchers/colorful/launcher.sh
 
 # brightness controls
 XF86MonBrightness{Up,Down}
-    sudo xbacklight {-inc,-dec} 5
+    sudo xbacklight {-inc,-dec} 5 && ~/myfiles/scripts/notify-progress brightness
 
 # does not work
 # runs the script that copies the url in current brave window and opens it in an incognito window
 super + bar
 	~/myfiles/scripts/url2private
-
-## mpc controls
-super + {F3, F2}
-    mpc {next,prev} && ~/myfiles/scripts/mpdnotify
 
 # shutdown
 super + shift + x
@@ -43,7 +48,7 @@ super + q
     ~/myfiles/scripts/qbrofi
 
 super + F12
-    ~/myfiles/scripts/electron-menu
+    ~/myfiles/scripts/run-menu
 
 # ocr script
 super + shift + o
@@ -53,13 +58,21 @@ super + shift + o
 super + shift + p
     mpc toggle
 
-# pause player using mpris (mpv first, then chrome)
+# play/pause media
 super + ctrl + space
-    playerctl --player=mpv,chromium play-pause
+    playerctl --player=spotify,mpv play-pause
+
+# toggle youtube playback
+super + shift + y
+    playerctl --player=chromium play-pause
+
+# next/prev song
+super + {F2,F3}
+    playerctl --player=spotify,mpd {previous,next}
 
 # launch cava TODO: set up size and position
 super + shift + F11
-    urxvt --title cava-f -e cava
+    st --title cava-f -e cava
 
 # TODO: launch rofi
 # if it needed in dwm
@@ -82,9 +95,9 @@ super + y
 super + c
     ~/myfiles/scripts/toggle-picom.sh
 
-# launch blueman-applet
-super + shift + b
-    blueman-applet
+# launch blueman-applet # replaced by toggleq script
+# super + shift + b
+#     blueman-applet
 
 # launch emacs
 super + shift + e
@@ -100,10 +113,10 @@ super + ctrl + b
 
 ## volume controls
 XF86Audio{Raise,Lower}Volume
-    pamixer --allow-boost {-i,-d} 5
+    pamixer --allow-boost {-i,-d} 5 && ~/myfiles/scripts/notify-progress audio
 
 XF86AudioMute
-    pamixer -t
+    pamixer -t && ~/myfiles/scripts/notify-progress muted
 
 XF86AudioMicMute
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
@@ -112,8 +125,34 @@ XF86AudioMicMute
 Print
     flameshot gui
 
+## delay and then take screenshot
 shift + Print
     flameshot gui -d 2000
 
+# full screenshot
 ctrl + Print
     flameshot full -c -p ~/Downloads/screenshots
+
+# check window list using rofi
+super + o
+    rofi -show window
+
+# pcmanfm in current dir
+super + shift + F10
+    pcmanfm "`xcwd`"
+
+# change keyboard layout
+super + F11
+    ~/myfiles/scripts/dkbd
+
+# skip hw question
+super + shift + period
+    ~/myfiles/scripts/skip_q
+
+# toggle bluetooth applet
+super + shift + b
+    ~/myfiles/scripts/toggleq blueman-applet
+
+# dpcmanfm script - select filepath using rofi and open in file manager
+super + shift + f
+    ~/myfiles/scripts/dpcmanfm

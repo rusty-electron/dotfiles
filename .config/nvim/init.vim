@@ -23,24 +23,29 @@ Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'voldikss/vim-floaterm'
 Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree'
-Plug 'yggdroot/indentline'
+Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify', {'branch': 'center'}
 Plug 'airblade/vim-rooter'
 Plug 'neovim/nvim-lspconfig'
+Plug 'kyazdani42/nvim-tree.lua'
+
+" nvim-cmp has a lot of dependencies
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
+" plugins for snippets
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
+" telescope plugin and its dependencies
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim' " fuzzy finder
 
+" toggleable terminal within neovim
 Plug 'phaazon/hop.nvim'
 Plug 'akinsho/nvim-toggleterm.lua'
 
@@ -50,6 +55,9 @@ Plug 'windwp/nvim-autopairs'
 " bufferline
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim'
+
+" session-manager
+Plug 'Shatur/neovim-session-manager'
 call plug#end()
 
 augroup qs_colors
@@ -159,13 +167,6 @@ luafile ~/.config/nvim/lsp.lua
 luafile ~/.config/nvim/plugins.lua
 luafile ~/.config/nvim/nvim-cmp.lua
 
-" nerdtree
-let g:NERDTreeChDirMode = 2
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
@@ -176,7 +177,17 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+" buffer pick
+nnoremap <leader>bb <cmd>BufferLinePick<cr>
+
 nnoremap <silent> gb :BufferLinePick<CR>
 
 " switch between header and src file in C++
 autocmd FileType c,h,cpp,hpp nnoremap <buffer> <silent> <leader>gh :ClangdSwitchSourceHeader<CR>
+
+" keybindings for nvimtree
+nnoremap <C-n> :NvimTreeToggle<CR>
+" nnoremap <leader>n :NvimTreeFindFile<CR> # to specific to have a keybinding for now
+
+" indentLine char
+let g:indentLine_char = '│'
