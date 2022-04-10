@@ -78,7 +78,7 @@ super + shift + F11
 # if it needed in dwm
 
 # dmoji
-super + alt + period
+super + period
     ~/myfiles/scripts/dmoji
 
 # drecord

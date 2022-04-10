@@ -66,6 +66,7 @@ alias lm="ls -tlh"
 alias passgh="pass github-pat | xclip -i -r -sel clipboard"
 alias coa="conda activate"
 alias mpvq="mpv --no-video"
+alias torrentt="toggleq transmission-daemon"
 
 # colorful man pages
 export LESS_TERMCAP_mb=$'\e[1;31m'

@@ -6,7 +6,17 @@
 # to pass a list of DOI strings as arguments to this script you could use: "cat DOIS.txt | xargs ./scihub"
 # replace .tw in the sci-hub url with whatever tld is currently in operation....
 
+# changes very often
+HOST='https://sci-hub.hkvisa.net'
+
+if [ $# -lt 1 ]; then
+    echo "no links provided"
+    exit 1
+fi
+
 for DOI in "$@"
 do
-	wget https://sci-hub.se/$DOI -qO - | grep -Eom1 'https://[^ ]+\.pdf' | wget -i -
+    PDFPATH=$(wget $HOST/$DOI -qO - | grep -Eom1 '//[^ ]+\.pdf')
+    # spoof useragent and download
+    wget --header="Accept: text/html" --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:21.0) Gecko/20100101 Firefox/21.0" --referer  $HOST 'https:'$PDFPATH
 done

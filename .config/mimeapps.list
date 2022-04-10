@@ -26,6 +26,7 @@ image/gif=org.nomacs.ImageLounge.desktop
 text/x-csrc=vim.desktop
 audio/mpeg=mpv.desktop
 audio/flac=mpv.desktop
+video/mpeg=mpv.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -50,6 +51,7 @@ image/gif=org.nomacs.ImageLounge.desktop;
 text/x-csrc=vim.desktop;
 audio/mpeg=audacity.desktop;mpv.desktop;
 audio/flac=mpv.desktop;
+video/mpeg=mpv.desktop;
 
 [Removed Associations]
 image/jpeg=userapp-piew-NCCU80.desktop;

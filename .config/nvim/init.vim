@@ -22,7 +22,6 @@ Plug 'morhetz/gruvbox' " theme
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'voldikss/vim-floaterm'
-Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify', {'branch': 'center'}
 Plug 'airblade/vim-rooter'
@@ -35,6 +34,7 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 
 " plugins for snippets
 Plug 'hrsh7th/cmp-vsnip'
@@ -45,8 +45,9 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim' " fuzzy finder
 
-" toggleable terminal within neovim
+" kinda like vim-easymotion
 Plug 'phaazon/hop.nvim'
+" toggleable terminal within neovim
 Plug 'akinsho/nvim-toggleterm.lua'
 
 " brackets
