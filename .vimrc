@@ -42,6 +42,9 @@ Plug 'unblevable/quick-scope'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-capslock' " I can't stand toggling capslock key so often
 Plug 'junegunn/goyo.vim'
+Plug 'jayli/vim-easycomplete'
+Plug 'ferrine/md-img-paste.vim'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 " theming
@@ -52,10 +55,10 @@ set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 
 " Shortcutting split navigation
-map <A-h> <C-w>h
-map <A-j> <C-w>j
-map <A-k> <C-w>k
-map <A-l> <C-w>l
+map <silent> <Esc>k :wincmd k<CR>
+map <silent> <Esc>j :wincmd j<CR>
+map <silent> <Esc>h :wincmd h<CR>
+map <silent> <Esc>l :wincmd l<CR>
 
 " quickscope keybindings
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -95,8 +98,11 @@ vnoremap ~ y:call setreg('', TwiddleCase(@"), getregtype(''))<CR>gv""Pgv
 " external copy/paste
 " now obsolete after enabling the system clipboard but might be
 " useful to keep it around for now
-noremap <leader>p :-1r !xclip -o -sel clipboard<CR>
-noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
+" noremap <leader>p :-1r !xclip -o -sel clipboard<CR>
+" noremap <leader>y :'<,'>w !xclip -selection clipboard<CR><CR>
+
+" md-img-paste.vim
+autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
 
 " compiling suckless utilities
 au BufWritePost config.def.h !rm -f config.h && sudo make install
@@ -140,7 +146,7 @@ map <leader>m :w! \| !compiler "<c-r>%"<CR><CR>
 " -------------------------------------------------
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsExpandTrigger = '<c-a>' " no sure if this is needed
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
