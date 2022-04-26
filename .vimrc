@@ -32,9 +32,6 @@ set clipboard=unnamedplus
 call plug#begin('~/.vim/plugged')
 " Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'ap/vim-css-color'
-Plug 'cocopon/iceberg.vim'
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
-Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
@@ -45,6 +42,14 @@ Plug 'junegunn/goyo.vim'
 Plug 'jayli/vim-easycomplete'
 Plug 'ferrine/md-img-paste.vim'
 Plug 'honza/vim-snippets'
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
+Plug 'vim-airline/vim-airline'
+
+" themes
+Plug 'cocopon/iceberg.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
 " theming
@@ -55,10 +60,10 @@ set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 
 " Shortcutting split navigation
-map <silent> <Esc>k :wincmd k<CR>
-map <silent> <Esc>j :wincmd j<CR>
-map <silent> <Esc>h :wincmd h<CR>
-map <silent> <Esc>l :wincmd l<CR>
+map <silent> <Esc>k :wincmd k<cr>
+map <silent> <Esc>j :wincmd j<cr>
+map <silent> <Esc>h :wincmd h<cr>
+map <silent> <Esc>l :wincmd l<cr>
 
 " quickscope keybindings
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -152,3 +157,15 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" fzf-vim mappings
+nnoremap <leader>ff <cmd>:Files <cr>
+nnoremap <leader>fg <cmd>:Rg<cr>
+nnoremap <leader>fb <cmd>:Buffers<cr>
+nnoremap <leader>fh <cmd>:HelpTags<cr>
+
+" vim-rooter settings
+let g:rooter_change_directory_for_non_project_files = 'current'
+
+" airline
+let g:airline#extensions#tabline#enabled = 1

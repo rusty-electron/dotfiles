@@ -2,7 +2,7 @@
 require'hop'.setup()
 vim.api.nvim_set_keymap('n', '<leader>j', "<cmd>lua require'hop'.hint_words()<cr>", {})
 -- right now I don't use the commmand below
--- vim.api.nvim_set_keymap('n', '<leader>jc', "<cmd>lua require'hop'.hint_char1()<cr>", { noremap=true, silent=true })
+vim.api.nvim_set_keymap('n', '<leader>fc', "<cmd>lua require'hop'.hint_char1()<cr>", { noremap=true, silent=true })
 
 -- {{ toggleterm
 -- keymappings within toggleterm buffer
