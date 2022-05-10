@@ -25,3 +25,4 @@
 .config/youtube-viewer/youtube-viewer.conf
 .emacs.d/config.org
 .emacs.d/init.el
+.config/awesome/rc.lua
