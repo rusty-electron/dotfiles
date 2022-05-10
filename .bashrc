@@ -37,6 +37,7 @@ alias ytdl="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(title)s.%(ext
 alias ytdl-mp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias ytdlist="youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(playlist_index)s-%(title)s.%(ext)s'"
 alias ytdl-fast="yt-dlp --compat-options youtube-dl -f 'bestvideo[height<=720]+bestaudio' -o '%(title)s.%(ext)s'"
+alias ytdl-fast-mp3="yt-dlp --compat-options youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias ctodo="vim ~/myfiles/todo.md"
 alias vki="vim -c ':VimwikiIndex'"
 alias vimwiki="vim -c ':VimwikiIndex'"

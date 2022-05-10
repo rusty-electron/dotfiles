@@ -192,3 +192,6 @@ nnoremap <C-n> :NvimTreeToggle<CR>
 
 " indentLine char
 let g:indentLine_char = '│'
+
+" limit at 80 char
+set colorcolumn=81

@@ -46,6 +46,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'vim-airline/vim-airline'
 
+" markdown tables
+Plug 'dhruvasagar/vim-table-mode'
+
 " themes
 Plug 'cocopon/iceberg.vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
@@ -60,6 +63,7 @@ set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 
 " Shortcutting split navigation
+" Note: does note work in terminal mode
 map <silent> <Esc>k :wincmd k<cr>
 map <silent> <Esc>j :wincmd j<cr>
 map <silent> <Esc>h :wincmd h<cr>
@@ -160,6 +164,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " fzf-vim mappings
 nnoremap <leader>ff <cmd>:Files <cr>
+nnoremap <leader>fz <cmd>:Files ~<cr>
 nnoremap <leader>fg <cmd>:Rg<cr>
 nnoremap <leader>fb <cmd>:Buffers<cr>
 nnoremap <leader>fh <cmd>:HelpTags<cr>

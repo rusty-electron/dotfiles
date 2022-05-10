@@ -143,7 +143,7 @@ super + shift + F10
 
 # change keyboard layout
 super + F11
-    ~/myfiles/scripts/dkbd
+    ~/myfiles/scripts/extra-symbols
 
 # skip hw question
 super + shift + period
@@ -156,3 +156,7 @@ super + shift + b
 # dpcmanfm script - select filepath using rofi and open in file manager
 super + shift + f
     ~/myfiles/scripts/dpcmanfm
+
+# toggle ulauncher
+super + i
+    ulauncher-toggle
