@@ -1,0 +1,9 @@
+#!/bin/sh
+
+DIR="/home/$USER/myfiles/scripts"
+
+PROGS=$(cat $DIR/lists/rofi-cmd-list)
+
+CHOSEN=$(echo "$PROGS" |  rofi -dmenu -i -p "chose script")
+
+[ -z "$CHOSEN" ] || $DIR/$(echo $CHOSEN | cut -d':' -f1)

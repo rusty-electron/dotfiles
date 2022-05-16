@@ -70,6 +70,10 @@ alias coa="conda activate"
 alias mpvq="mpv --no-video"
 alias torrentt="toggleq transmission-daemon"
 
+# translate-shell aliases
+alias define="trans -d -v --pager=bat"
+alias translate="trans -b"
+
 # colorful man pages
 export LESS_TERMCAP_mb=$'\e[1;31m'
 export LESS_TERMCAP_md=$'\e[1;31m'
@@ -144,7 +148,7 @@ change_folder() {
     # if no argument is provided, search from ~ else use argument
     [[ -z $1 ]] && DIR=~ || DIR=$1
     # choose file using rg and fzf
-    CHOSEN=$(fd . -H -t d $DIR | fzf --preview="exa -s type --icons {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden)
+    CHOSEN=$(fd --strip-cwd-prefix --full-path $DIR -H -t d | fzf --preview="exa -s type --icons {}" --bind="ctrl-space:toggle-preview" --preview-window=,30:hidden)
 
     # quit if no path is selected else cd into the path
     if [[ -z $CHOSEN ]]; then

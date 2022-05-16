@@ -1,0 +1,5 @@
+#!/bin/sh
+
+TERM=$(rofi -dmenu -i -p "enter search string")
+
+yay -Ss $TERM | sed -n 'p;n' | cut -d' ' -f1 | rofi -dmenu

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-LISTFILE=/home/$USER/myfiles/scripts/menu-list
+LISTFILE=/home/$USER/myfiles/scripts/lists/menu-list
 
 # create a global associative array
 declare -A lookup_array

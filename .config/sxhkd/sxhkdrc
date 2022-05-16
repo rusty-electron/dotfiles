@@ -157,6 +157,6 @@ super + shift + b
 super + shift + f
     ~/myfiles/scripts/dpcmanfm
 
-# toggle ulauncher
+# toggle rofi-menu
 super + i
-    ulauncher-toggle
+    ~/myfiles/scripts/rofi-menu

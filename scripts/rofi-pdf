@@ -1,0 +1,12 @@
+#!/bin/sh
+
+OPENER="zathura"
+
+if [[ ! -z "$1" ]]; then
+    OPENER=$1
+fi
+
+
+CHOSEN=$(rg --files -t pdf | rofi -dmenu -i -p "open pdf")
+
+[ -z "$CHOSEN" ] && notify-send "rofi-pdf" "no file selected" || $OPENER "$CHOSEN"

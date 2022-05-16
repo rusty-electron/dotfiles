@@ -9,6 +9,10 @@ set shiftwidth=4
 set expandtab
 set cursorline
 
+" Open new split panes to right and bottom, which feels more natural than Vim’s default:
+set splitbelow
+set splitright
+
 " for vim wiki
 set nocompatible
 filetype plugin on
@@ -174,3 +178,6 @@ let g:rooter_change_directory_for_non_project_files = 'current'
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+
+" create term
+nnoremap ,t <cmd>:term<cr>

@@ -1,0 +1,6 @@
+rofi-pdf: open pdf in zathura
+rofi-pdf okular: open pdf in okular (for annotations)
+rofi-pass: generate passwords using pwgen
+dpcmanfm: open a folder in pcmanfm
+list-packages: search and view repo+aur packages
+dinfolder: open selected path (in) folder

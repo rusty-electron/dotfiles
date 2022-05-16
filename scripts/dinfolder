@@ -1,0 +1,13 @@
+#!/bin/sh
+
+OPENER="pcmanfm"
+
+CHOSEN=$(fd --strip-cwd-prefix . -H | rofi -dmenu -i -p "open (in) folder" -sort -sroting-method "fzf")
+
+CHOSEN="$HOME/$CHOSEN"
+
+if [[ ! -d "$CHOSEN" ]]; then
+    $OPENER $(dirname "$CHOSEN")
+else
+    $OPENER "$CHOSEN"
+fi

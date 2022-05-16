@@ -1,0 +1,12 @@
+#!/bin/sh
+
+LEN=14
+NUM=10
+
+if [[ ! -z "$1" ]]; then
+    LEN=$1
+fi
+
+CHOSEN=$(pwgen -cny1 $LEN $NUM | rofi -dmenu -i -p "generated passwords ($LEN)")
+
+[ -z "$CHOSEN" ] || (echo $CHOSEN | xclip -i -r -sel clip && notify-send "pwgen" "copied to clipboard")

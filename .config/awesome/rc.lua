@@ -671,12 +671,14 @@ awful.rules.rules = {
           "JDownloader 2",
           "qutebrowser",
           -- "[Ss]potify", -- doesn't work
+          "Gnome-pomodoro",
       },
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
         -- and the name shown there might not match defined rules here.
         name = {
           "Event Tester",  -- xev.
+          "mpv-mini",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
@@ -776,7 +778,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 
 -- {{{ USER ADDED }}}
-local hide_title_list = { 'albert' }
+local hide_title_list = { 'quake-math' }
 
 local function has_value (tab, val)
     for index, value in ipairs(tab) do
