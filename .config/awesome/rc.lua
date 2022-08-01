@@ -676,9 +676,11 @@ awful.rules.rules = {
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
         -- and the name shown there might not match defined rules here.
-        name = {
+        name = { -- first value in xprop
           "Event Tester",  -- xev.
           "mpv-mini",
+          "flameshot",
+          "Picture in picture",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.

@@ -4,6 +4,10 @@ OPENER="pcmanfm"
 
 CHOSEN=$(fd --strip-cwd-prefix . -H | rofi -dmenu -i -p "open (in) folder" -sort -sroting-method "fzf")
 
+if [[ -z "$CHOSEN" ]]; then
+    exit 1
+fi
+
 CHOSEN="$HOME/$CHOSEN"
 
 if [[ ! -d "$CHOSEN" ]]; then

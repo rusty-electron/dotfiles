@@ -13,8 +13,9 @@ PS1='\[\e[0;1;91m\][\[\e[0;1;94m\]\u\[\e[0m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;3m
 alias l='ls -ahl --color=auto'
 alias ll='ls -hl --color=auto'
 # this is to prevent accidental deletion of files with rm, use \rm to actually remove, TODO: start using trash-cli
-alias rm='echo "are you sure about that?"'
-# alias yay='yay -a'
+alias rm='rm -I'
+alias yay='yay -a'
+alias trm='trash-put'
 
 # editing configs
 alias cfb="vim ~/.bashrc && source ~/.bashrc"
@@ -43,6 +44,8 @@ alias vki="vim -c ':VimwikiIndex'"
 alias vimwiki="vim -c ':VimwikiIndex'"
 alias zth="zathura"
 
+alias xdgo="xdg-open"
+
 # for setting default scale as 4 in bc
 #alias bc="BC_ENV_ARGS=<(echo "scale=4") \bc"
 
@@ -61,7 +64,7 @@ alias pf="pfetch"
 # alias qnl="vim ~/myfiles/junk/qnotes"
 
 # life improvements
-alias update="sudo pacman -Syyu"
+alias update="sudo pacman -Syu"
 alias myip="curl ipinfo.io/ip"
 alias cwall="feh --bg-fill --randomize ~/myfiles/wallpapers/*;clear"
 alias lm="ls -tlh"

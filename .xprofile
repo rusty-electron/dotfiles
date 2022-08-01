@@ -39,6 +39,9 @@ sxhkd &
 # run a python httpserver that hosts the startpage
 python -m http.server 9999 --bind 127.0.0.1 --directory ~/myfiles/projects/github/startpage &
 
+# run polkit (i am using gnome polkit)
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 # setup envars
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.1
