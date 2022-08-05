@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# read the entries in ./lists/rclone-remotes as associative array
+# separated by :
+declare -A remotes
+while read -r line; do
+    IFS=':' read -r -a array <<< "$line"
+    remotes[${array[0]}]=${array[1]}
+done < lists/rclone-remotes
+
+
+# loop through the associative array and check if any of the keys
+# appear when grepping in /proc/mounts
+# store key that are not found in a list
+declare -a notmounted
+for key in "${!remotes[@]}"; do
+    if ! grep -q "${remotes[$key]}" /proc/mounts; then
+        notmounted+=("$key")
+    fi
+done
+
+# show a dmenu prompt to select a remote to mount
+selected=$(echo "${notmounted[@]}" | dmenu -i -p "Mount")
+
+# if selected is not empty
+if [ -n "$selected" ]; then
+    # get mount location from the value of the remotes associative array
+    rclone mount "$selected":/ "${remotes[$selected]}" &
+    # check if the selected remote is mounted
+    # if not mount, notify that it was not mounted
+    # else notify that it was mounted
+    sleep 3
+    if grep -q "${remotes[$selected]}" /proc/mounts; then
+        notify-send "rclone-mount" "Mounted $selected"
+    else
+        notify-send "rclone-mount" "Could not mount $selected"
+    fi
+fi

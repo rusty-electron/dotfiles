@@ -56,7 +56,7 @@ super + shift + o
 
 # play/pause mpd using mpc
 super + shift + p
-    mpc toggle
+    ~/myfiles/scripts/mpdplaypause
 
 # play/pause media
 super + ctrl + space

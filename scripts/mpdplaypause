@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# i use this now instead of `mpc toggle` as this script makes sure that
+# i do not accidently play music at a place like a classroom or a library
+
+# check if mpd is playing
+if [ "$(mpc status | grep playing)" ]; then
+    mpc pause
+else
+    # show a dmenu prompt to make sure the user wants to play
+    # the song
+    if [ "$(echo -e "Yes\nNo" | dmenu -i -p "Play song?")" = "Yes" ]; then
+        mpc play
+    fi
+fi

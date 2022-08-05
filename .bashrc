@@ -109,7 +109,7 @@ alias mpvd="devour mpv"
 alias zathurd="devour zathura"
 
 export EDITOR=vim
-export TERMINAL="alacritty"
+export TERMINAL=alacritty
 export TERMALT="st"
 export BROWSER=brave
 export browser=brave

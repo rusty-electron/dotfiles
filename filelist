@@ -5,7 +5,6 @@
 .bashrc
 .bash_profile
 .tmux.conf
-.tmux
 
 .config/alacritty
 .config/betterlockscreenrc
