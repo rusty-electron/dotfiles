@@ -187,11 +187,14 @@ nnoremap <silent> gb :BufferLinePick<CR>
 autocmd FileType c,h,cpp,hpp nnoremap <buffer> <silent> <leader>gh :ClangdSwitchSourceHeader<CR>
 
 " keybindings for nvimtree
-nnoremap <C-n> :NvimTreeToggle<CR> " change this
+" nnoremap <C-n> :NvimTreeToggle<CR> " change this
 " nnoremap <leader>n :NvimTreeFindFile<CR> # to specific to have a keybinding for now
 
 " indentLine char
 let g:indentLine_char = '│'
+
+cnoremap <expr> <C-P> wildmenumode() ? "<C-P>" : "<Up>"
+cnoremap <expr> <C-N> wildmenumode() ? "<C-N>" : "<Down>"
 
 " limit at 80 char
 set colorcolumn=81

@@ -8,4 +8,5 @@ rofi-beats:~/myfiles/scripts/rofi-beats-linux
 run_vm:~/myfiles/scripts/run_vm
 okular-open:~/myfiles/scripts/okular-open
 relaunch-ddterm:st -T dropdown-f -e tmux
-mathpix:~/myfiles/Mathpix.appimage
+mathpix:~/myfiles/appimages/Mathpix.appimage
+stm32cubeide:~/drive/st/stm32cubeide/stm32cubeide

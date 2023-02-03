@@ -27,6 +27,10 @@ text/x-csrc=vim.desktop
 audio/mpeg=mpv.desktop
 audio/flac=mpv.desktop
 video/mpeg=mpv.desktop
+video/mp4=mpv.desktop
+video/webm=mpv.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_home_pritom_drive_st_stm32cubeide_.desktop
+x-scheme-handler/eclipse+mpc x-scheme-handler/eclipse+command=_home_pritom_drive_st_stm32cubeide_.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;vim.desktop;
@@ -52,6 +56,8 @@ text/x-csrc=vim.desktop;
 audio/mpeg=audacity.desktop;mpv.desktop;
 audio/flac=mpv.desktop;
 video/mpeg=mpv.desktop;
+video/mp4=losslesscut-bin.desktop;mpv.desktop;
+video/webm=losslesscut-bin.desktop;mpv.desktop;
 
 [Removed Associations]
 image/jpeg=userapp-piew-NCCU80.desktop;

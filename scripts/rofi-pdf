@@ -13,4 +13,8 @@ fi
 
 CHOSEN=$(rg --files -t pdf | rofi -dmenu -i -p "open pdf")
 
-[ -z "$CHOSEN" ] && notify-send "rofi-pdf" "no file selected" || $THEME $OPENER "$CHOSEN" --platformtheme qt5ct
+if [ $OPENER != "zathura" ]; then
+    FLAGS="--platformtheme qt5ct"
+fi
+
+[ -z "$CHOSEN" ] && notify-send "rofi-pdf" "no file selected" || $THEME $OPENER "$CHOSEN" $FLAGS

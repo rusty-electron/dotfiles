@@ -9,10 +9,12 @@
 #      |_|
 
 # set up dual monitor display (if at home)
-bash ~/.screenlayout/1440.sh
+# bash ~/.screenlayout/1440.sh
+bash ~/.screenlayout/stuttgart-monitor.sh
 
 # set wallpapers
-feh --bg-fill --randomize ~/myfiles/wallpapers/*
+# in awesomewm, this is already run by the config file
+# feh --bg-fill --randomize ~/myfiles/wallpapers/*
 xset -b # prevent beeps
 
 autostart="dunst nm-applet mpd caffeine dropbox mpd-mpris mpd-notification blueman-applet"
