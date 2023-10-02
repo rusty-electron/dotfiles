@@ -10,3 +10,7 @@ okular-open:~/myfiles/scripts/okular-open
 relaunch-ddterm:st -T dropdown-f -e tmux
 mathpix:~/myfiles/appimages/Mathpix.appimage
 stm32cubeide:~/drive/st/stm32cubeide/stm32cubeide
+pymol:~/drive/pymol/pymol
+uni-vpn:/opt/cisco/secureclient/bin/vpnui
+bwmenu:~/.local/bin/bwmenu -C --auto-lock 3600
+surfshark:/opt/Surfshark/surfshark

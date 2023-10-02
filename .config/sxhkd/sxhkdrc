@@ -79,7 +79,8 @@ super + shift + F11
 
 # dmoji
 super + period
-    ~/myfiles/scripts/dmoji
+    emoji-picker
+    # ~/myfiles/scripts/dmoji
 
 # drecord
 super + F7
@@ -110,6 +111,9 @@ super + x
 # incognito mode - browser
 super + ctrl + b
     brave --incognito
+
+super + alt + b
+    brave
 
 ## volume controls
 XF86Audio{Raise,Lower}Volume
