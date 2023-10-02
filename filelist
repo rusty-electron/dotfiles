@@ -27,3 +27,5 @@
 .emacs.d/config.org
 .emacs.d/init.el
 .config/awesome/rc.lua
+
+.local/share/file-manager/actions/dragon.desktop

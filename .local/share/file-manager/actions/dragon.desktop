@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Action
+Profiles=profile_id
+Name=Drag using Dragon
+Icon=text-editor
+# Example: Icon=text-editor
+
+[X-Action-Profile profile_id]
+# MimeTypes=MIME-types (semicolon separated)
+Exec=/home/pritom/.local/bin/dragon %F
+# Example: Exec=gedit %f
