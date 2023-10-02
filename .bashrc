@@ -24,7 +24,7 @@ alias cfii="vim ~/.config/i3blocks/config"
 alias cfaw="vim ~/.config/awesome/rc.lua"
 alias cff="vim ~/.config/fontconfig/fonts.conf"
 alias cfv="vim ~/.vimrc"
-alias cfvv="vim ~/.config/nvim/init.vim"
+alias cfvv="nvim ~/.config/nvim/"
 alias cfp="vim ~/.config/picom.conf"
 
 alias clc="calcurse"
@@ -86,7 +86,7 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;32m'
 
-function chst {
+function cheat {
     [ -z $1 ] && echo "no args provided!" || (curl -s cheat.sh/$1 | bat --style=plain)
 }
 
