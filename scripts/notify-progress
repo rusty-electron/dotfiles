@@ -24,7 +24,13 @@ notifyMuted() {
 
 notifyAudio() {
         volume="$1"
-        pamixer --get-mute && notifyMuted "$volume" && return
+        # pamixer --get-mute && notifyMuted "$volume" && return
+
+        # check if audio is muted
+        if [ $(pamixer --get-mute) = true ]; then
+                notifyMuted "$volume"
+                return
+        fi
 
         paplay $AUDIOLOC &
         if [ $volume -eq 0 ]; then
@@ -54,7 +60,14 @@ notifyBrightness() {
 case "$1" in
         muted)
                 volume=`pamixer --get-volume`
-                pamixer --get-muted && notifyMuted "$volume" || notifyAudio "$volume"
+
+                # check if audio is muted
+                if [ $(pamixer --get-mute) = true ]; then
+                        notifyMuted "$volume"
+                        return
+                else
+                        notifyAudio "$volume"
+                fi
                 ;;
         audio)
                 volume=`pamixer --get-volume`
