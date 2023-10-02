@@ -706,10 +706,6 @@ awful.rules.rules = {
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
 
-    -- Set Ferdi to open in tag 9
-    { rule = { class = "[fF]erdium" },
-      properties = { screen = 1, tag = tagnames[9] } },
-
     -- Set Rambox to open in tag 9
     { rule = { class = "[rR]ambox" },
       properties = { screen = 1, tag = tagnames[9] } },
@@ -717,6 +713,12 @@ awful.rules.rules = {
     -- Set OneDriveGUI to open in tag 9
     { rule = { class = "OneDriveGUI" },
       properties = { screen = 1, tag = tagnames[8] } },
+
+    -- always center dragon window
+    -- always sticky and on top
+    -- requires installation of https://github.com/mwh/dragon
+    { rule = { class = "Dragon" },
+     properties = { floating = true, sticky = true, ontop = true, placement = awful.placement.centered } },
 
     -- TODO: disable titlebars in quake terminals
     -- { rule = { role = "quake-dd" },
