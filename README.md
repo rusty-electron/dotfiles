@@ -6,7 +6,8 @@ I now maintain two linux installations, one on my thinkpad and the other on my d
 
 ### good-stuff
 * look for good bash aliases - `.bashrc`
-* my vim and neovim configs - `.vimrc` & `.config/neovim/init.vim`
+* my vim config - `.vimrc`
+* neovim config - I now use my fork of [kickstart.nvim](https://github.com/rusty-electron/kickstart.nvim). I previously maintained a `init.lua` file but it is no longer maintained by me.
 * my i3 and i3blocks config - `.config/i3/config` & `.config/i3blocks/config`
 * alacritty terminal config - `.config/alacritty/alacritty.yaml`
 * picom config - `.config/picom.conf`
