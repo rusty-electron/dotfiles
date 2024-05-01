@@ -1,0 +1,71 @@
+#!/usr/bin/expect -f
+
+# Start the CISCO VPN client on a Mac. Adapted from
+# https://blog.felipe-alfaro.com/2014/05/23/automating-cisco-anyconnect-secure-mobility-client-on-mac-os-x/
+
+# Check for command-line arguments
+set DISCONNECT_ONLY 0
+set CHECK_STATUS 0
+
+if {[llength $argv] > 0} {
+    foreach arg $argv {
+        switch -exact -- $arg {
+            "--end" { set DISCONNECT_ONLY 1 }
+            "--query"    { set CHECK_STATUS 1 }
+            default {
+                puts "Unknown argument: $arg"
+                exit 1
+            }
+        }
+    }
+
+    if {$DISCONNECT_ONLY == 1 && $CHECK_STATUS == 1} {
+        puts "Warning: Conflicting flags. Cannot disconnect and check status simultaneously."
+        exit 1
+    }
+}
+
+set HOSTNAME vpn.tik.uni-stuttgart.de
+
+# Move username and password setup into conditional block
+if {$DISCONNECT_ONLY == 0} {
+  set USER_NAME [exec pass uni/main/mail]
+  set PASSWORD [exec pass uni/main/password]
+}
+
+spawn /opt/cisco/secureclient/bin/vpn
+
+expect {
+ "state: Connected" {
+   if {$CHECK_STATUS == 1} {
+       puts 1
+       exit 0
+   } elseif {$DISCONNECT_ONLY == 1} {
+     send "disconnect\n"
+     expect "state: Disconnected"
+     send "exit\n"
+   } else {
+     send "disconnect\n"
+     expect "state: Disconnected"
+     sleep 2
+     send "connect $HOSTNAME\n"
+     expect -timeout 60 -re "Username: .+] "; send $USER_NAME\n
+     expect "Password: " ; send $PASSWORD\n
+     expect "state: Connected"; sleep 2; send "exit\n"
+   }
+ }
+ "state: Disconnected" {
+   if {$CHECK_STATUS == 1} {
+       puts 0
+       exit 0
+   } elseif {$DISCONNECT_ONLY == 0} {
+     sleep 2
+     send "connect $HOSTNAME\n"
+     expect -timeout 60 -re "Username: .+] "; send $USER_NAME\n
+     expect "Password: " ; send $PASSWORD\n
+     expect "state: Connected"; sleep 2; send "exit\n"
+   } else {
+     send "exit\n"
+   }
+ }
+}
